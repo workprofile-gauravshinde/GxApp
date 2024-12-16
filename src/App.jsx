@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import { useLocation } from "react-router-dom";
 // import BackgroundGraphics from "./components/BackgroundGraphics";
+//
 
 function App() {
   const location = useLocation();
