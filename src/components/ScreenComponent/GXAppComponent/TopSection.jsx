@@ -63,7 +63,7 @@ const TopSection = () => {
         </MotionAnimate>
         <img
           src={topLeftMobileImg}
-          className="mb-0 block h-[354px] w-5/6 md:hidden"
+          className="mb-0 block h-[325px] w-5/6 md:hidden"
         />
         <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
           <img

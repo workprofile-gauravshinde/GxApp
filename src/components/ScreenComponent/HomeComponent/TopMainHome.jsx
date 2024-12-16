@@ -10,7 +10,7 @@ const TopMainHome = () => {
     <>
       <Row
         justify={"center"}
-        className="boxSquare relative h-screen items-start overflow-hidden bg-mainBackground px-4 md:px-16"
+        className="boxSquare relative h-auto items-start overflow-hidden bg-mainBackground px-4 md:h-screen md:px-16"
         // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
         <div className="gxApp-spread-background-pink"></div>
@@ -51,16 +51,20 @@ const TopMainHome = () => {
             />
           </div>
         </Col>
-        <Col className="gutter-row flex justify-end" xs={24} md={12}>
+        <Col
+          className="gutter-row flex justify-center md:justify-end"
+          xs={24}
+          md={12}
+        >
           <img
             src={LandingImage}
-            className="mb-0 h-[320px] w-full md:mb-10 md:h-[460px] md:w-[486px]"
+            className="mb-0 h-[325px] w-[90%] md:mb-10 md:h-[460px] md:w-[486px]"
             alt="SportsGameX"
             title="SportsGameX"
           />
         </Col>
         <Col
-          className="gutter-row block items-start px-0 text-center md:hidden md:px-10"
+          className="gutter-row mb-24 mt-12 block items-start px-0 text-center md:hidden md:px-10"
           xs={24}
           md={12}
         >

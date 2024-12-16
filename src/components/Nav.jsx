@@ -93,28 +93,44 @@ const Nav = () => {
             <ul className="mb-4 flex flex-col gap-y-4 border-b border-lightGray pb-4 font-body text-lg font-medium text-white transition-all md:hidden ">
               <Link
                 to="/"
-                className="w-fit cursor-pointer active:text-neonYellow "
+                className={`w-fit cursor-pointer ${
+                  location.pathname.toString() === "/"
+                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    : "text-white"
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 <li>Home</li>
               </Link>
               <Link
                 to="/gxapp"
-                className="w-fit cursor-pointer active:text-neonYellow "
+                className={`w-fit cursor-pointer ${
+                  location.pathname.toString() === "/gxapp"
+                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    : "text-white"
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 <li>GX App</li>
               </Link>
               <Link
                 to="/careers"
-                className="w-fit cursor-pointer active:text-neonYellow "
+                className={`w-fit cursor-pointer ${
+                  location.pathname.toString() === "/careers"
+                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    : "text-white"
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 <li>Careers</li>
               </Link>
               <Link
                 to="/contact"
-                className="w-fit cursor-pointer active:text-neonYellow"
+                className={`w-fit cursor-pointer ${
+                  location.pathname.toString() === "/contact"
+                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    : "text-white"
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 <li>Contact Us</li>

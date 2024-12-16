@@ -4,6 +4,7 @@ import MainLoader from "./components/ScreenComponent/MainLoader";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import { useLocation } from "react-router-dom";
+import ScrollProgressBar from "./components/ScrollProgressBar";
 // import BackgroundGraphics from "./components/BackgroundGraphics";
 
 function App() {
@@ -24,10 +25,12 @@ function App() {
         location.pathname === "/" && "boxSquare bg-mainBackground"
       }`}
     >
-      {/* <BackgroundGraphics /> */}
-      <Nav />
-      <Outlet />
-      <Footer />
+      <ScrollProgressBar>
+        {/* <BackgroundGraphics /> */}
+        <Nav />
+        <Outlet />
+        <Footer />
+      </ScrollProgressBar>
     </div>
   );
 }
