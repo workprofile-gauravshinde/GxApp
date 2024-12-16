@@ -1,0 +1,131 @@
+.slideBox {
+  box-shadow: 0px 20px 40px 0px #13131333;
+  border: 1px solid #454a58;
+  background-color: #191d2f;
+  border-radius: 20px;
+  min-height: 18.688rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  width: 100%; /* Adjust width of the carousel */
+  margin: 0 auto; /* Center the carousel */
+  overflow: hidden; /* Hide overflow content */
+  position: relative;
+}
+
+/* Hide the default slick dots and other features */
+.slick-dots {
+  display: none !important;
+}
+
+.slick-slide {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Emphasize the centered slide */
+.slick-center .slide {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
+/* Apply blur to the adjacent slides */
+.slick-slide:not(.slick-center) .slide-content {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+
+/* Equal spacing between slides */
+.slick-slide {
+  padding: 0px 30px;
+}
+
+/* Style for each slide */
+.slide {
+  height: 18.688rem;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  margin: 7.5rem auto 8.5rem auto;
+  border: 1px solid #454a58;
+  background-color: #191d2f;
+  border-radius: 20px;
+}
+
+/* Style for the content inside each slide */
+.slide-content {
+  text-align: center;
+  color: white;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+/* Optional: Customize the arrows */
+.slick-prev,
+.slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Optional: Styling for the navigation arrows */
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.custom-prev,
+.custom-next {
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px; /* Position the arrows at the bottom */
+  z-index: 1;
+  cursor: pointer;
+}
+
+.custom-prev {
+  left: 45%; /* Position prev button on the left */
+}
+
+.custom-next {
+  right: 45%; /* Position next button on the right */
+}
+
+.with-blur-backdrop-left {
+  /* border-bottom-right-radius: 8rem;
+  border-top-right-radius: 8rem; */
+  opacity: 1;
+  background: #141723;
+  filter: blur(24px);
+  width: 15rem;
+  height: 24rem;
+  transform: rotate(0deg);
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 1;
+  top: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .custom-prev {
+    left: 32%; /* Position prev button on the left */
+  }
+
+  .custom-next {
+    right: 32%; /* Position next button on the right */
+  }
+}

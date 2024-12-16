@@ -1,0 +1,235 @@
+/****************************
+@DESC MOUSE SCROLL CSS
+****************************/
+@-webkit-keyframes wheel {
+  0% {
+    top: 20%;
+    opacity: 1;
+  }
+  99% {
+    top: 50%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+  }
+}
+@keyframes wheel {
+  0% {
+    top: 20%;
+    opacity: 1;
+  }
+  99% {
+    top: 50%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mouse-wheel .mouse {
+  position: relative;
+  width: 1.375rem;
+  height: 2.25rem;
+  margin: 10px auto;
+  border: 2px solid #fff;
+  -webkit-border-radius: 0.688rem;
+  border-radius: 0.688rem;
+}
+.mouse-wheel .mouse:before {
+  content: "";
+  position: absolute;
+  width: 0.25rem;
+  height: 0.25rem;
+  top: 20%;
+  left: 50%;
+  margin-left: -2px;
+  background: #fff;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  opacity: 1;
+  animation: wheel 2s infinite ease-out;
+}
+.mouse-wheel p {
+  position: relative;
+  top: -1.563rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  animation: blink 2s infinite ease-out;
+  /* writing-mode: vertical-rl; */
+  transform: rotate(270deg);
+}
+
+/****************************
+@DESC SHADOW BUTTON CSS
+****************************/
+.shadow-button-set {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5vmin;
+  border-radius: 10px;
+}
+
+.shadow-button-set > li {
+  display: inline-flex;
+  border-radius: 5px;
+}
+
+.shadow-button-set > li:is(:hover, :focus-within) > button:not(:active) {
+  --distance: 0px;
+}
+
+.shadow-button-set button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 195px;
+  height: 57px;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: -9%;
+  font-weight: 400;
+  font-family: var(--font-space-grotesk);
+  background: #8249e4;
+  border-radius: 4px;
+  --distance: -3px;
+  transform: translateX(var(--distance)) translateY(var(--distance));
+}
+@media (prefers-reduced-motion: no-preference) {
+  .shadow-button-set button {
+    will-change: transform;
+    transition: transform 0.2s ease;
+  }
+}
+
+/****************************
+@DESC IMAGE BORDER CSS
+****************************/
+.box:hover {
+  --border-angle: 0deg;
+  border-radius: 18px;
+  width: 20.813rem;
+  height: 32.813rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 25%);
+  animation: border-angle-rotate 2s infinite linear;
+  border: 0.2rem solid transparent;
+  position: relative;
+
+  &.a {
+    background:
+      linear-gradient(white, white) padding-box,
+      conic-gradient(
+          from var(--border-angle),
+          oklch(100% 100% 0deg),
+          oklch(100% 100% 45deg),
+          oklch(100% 100% 90deg),
+          oklch(100% 100% 135deg),
+          oklch(100% 100% 180deg),
+          oklch(100% 100% 225deg),
+          oklch(100% 100% 270deg),
+          oklch(100% 100% 315deg),
+          oklch(100% 100% 360deg)
+        )
+        border-box;
+  }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-angle-rotate {
+  from {
+    --border-angle: 0deg;
+  }
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+.main-slider-card {
+  box-shadow: 0px 20px 40px 0px #13131333;
+  border: 1px solid #454a58;
+  background: #191d2f;
+  background-color: #191d2f;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .box:hover {
+    height: 14.813rem;
+  }
+}
