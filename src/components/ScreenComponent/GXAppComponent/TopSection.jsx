@@ -1,13 +1,11 @@
 import { Col, Row } from "antd";
 import React from "react";
 import topLeftImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.png";
-import topLeftMobileImg from "../../../assets/home/App_page_mockup_mobile.png";
+import topLeftMobileImg from "../../../assets/Home/App_mobile.png";
 import topRightImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME LIGHT.png";
 import leftPlayStoreImg from "../../../assets/Home/Play_store CTA SVG.svg";
 import rightAppleStoreImg from "../../../assets/Home/App_store CTA SVG.svg";
-import ApplePlayIcon from "../../Apple&PlayIcon";
 import { footerConst } from "../../../utils/ConstantPageData/FooterConstantData";
-import { faApple, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
 import ScrollMouse from "../../ScrollMouse";
 import { GxAppConst } from "../../../utils/ConstantPageData/GxAppConstantData";
 import { MotionAnimate } from "react-motion-animate";
