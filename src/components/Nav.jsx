@@ -22,7 +22,11 @@ const Nav = () => {
       <nav className="mx-auto w-11/12 max-w-screen-3xl items-center justify-between md:flex">
         <div className="flex items-center justify-between pb-6 pt-8 text-white md:pb-12 md:pt-14">
           <div className="w-8 cursor-pointer md:w-[60px]">
-            <Link onClick={() => setMenuOpen(false)} to={"/"}>
+            <Link
+              onClick={() => setMenuOpen(false)}
+              to={"/"}
+              aria-label="GameX Logo"
+            >
               <img
                 className="h-8 w-8 md:h-fit md:w-fit"
                 src={logo}
@@ -54,6 +58,7 @@ const Nav = () => {
                   ? "border-b-2 border-neonYellow text-neonYellow"
                   : "text-white"
               }`}
+              aria-label="Home"
             >
               <li>Home</li>
             </Link>
@@ -64,6 +69,7 @@ const Nav = () => {
                   ? "border-b-2 border-neonYellow text-neonYellow"
                   : "text-white"
               }`}
+              aria-label="Gx App"
             >
               <li>GX App</li>
             </Link>
@@ -74,6 +80,7 @@ const Nav = () => {
                   ? "border-b-2 border-neonYellow text-neonYellow"
                   : "text-white"
               }`}
+              aria-label="Careers"
             >
               <li>Careers</li>
             </Link>
@@ -84,6 +91,7 @@ const Nav = () => {
                   ? "border-b-2 border-neonYellow text-neonYellow"
                   : "text-white"
               }`}
+              aria-label="Contact"
             >
               <li>Contact Us</li>
             </Link>
@@ -98,6 +106,7 @@ const Nav = () => {
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
+                aria-label="Home"
                 onClick={() => setMenuOpen(false)}
               >
                 <li>Home</li>
@@ -109,6 +118,7 @@ const Nav = () => {
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
+                aria-label="Gx App"
                 onClick={() => setMenuOpen(false)}
               >
                 <li>GX App</li>
@@ -120,6 +130,7 @@ const Nav = () => {
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
+                aria-label="Careers"
                 onClick={() => setMenuOpen(false)}
               >
                 <li>Careers</li>
@@ -131,6 +142,7 @@ const Nav = () => {
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
+                aria-label="Contact"
                 onClick={() => setMenuOpen(false)}
               >
                 <li>Contact Us</li>

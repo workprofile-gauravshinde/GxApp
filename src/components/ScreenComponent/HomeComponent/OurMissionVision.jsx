@@ -114,10 +114,7 @@ const OurMissionVision = () => {
                 <React.Fragment key={item?.title + index}>
                   <ReusableButtonBoxText
                     itemId={item}
-                    onButtonClickAction={() => {
-                      handleButtonClick();
-                      setCurrentActiveTab(item.id);
-                    }}
+                    onButtonClickAction={() => setCurrentActiveTab(item.id)}
                     currentActiveTab={currentActiveTab}
                   />
                 </React.Fragment>

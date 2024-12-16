@@ -56,7 +56,10 @@ const Modal = ({ show, onClose }) => {
             subject. We will get back to you.
           </p>
           <p className="font-spaceGrotesk text-xl font-bold text-neonYellow md:text-[28px]">
-            Email: <a href="mailto:hr@sportsgamex.com">hr@sportsgamex.com</a>
+            Email:{" "}
+            <a href="mailto:hr@sportsgamex.com" aria-label="Support mail">
+              hr@sportsgamex.com
+            </a>
           </p>
         </div>
       </div>

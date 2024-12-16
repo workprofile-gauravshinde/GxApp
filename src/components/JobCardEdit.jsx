@@ -100,18 +100,17 @@ const JobCardEdit = ({ jobData, setJobList, jobList }) => {
             </div>
           </div>
           <div className="grid w-full grid-cols-1 gap-4 pt-2 md:w-fit md:grid-cols-2">
-            <Link to={`/dashboard/edit/${_id}`}>
+            <Link to={`/dashboard/edit/${_id}`} aria-label={"Edit Job"}>
               <PrimaryButton full>
                 <div className="flex w-full items-center justify-center gap-2">
-                  <img src={editIcon} alt="Edit Job" />
-                  Edit Job
+                  <img src={editIcon} alt="Edit Job" title="Edit Job" /> Edit
+                  Job
                 </div>
               </PrimaryButton>
             </Link>
             <DeleteButton onClick={() => deleteJobHandler(_id)}>
               <div className="flex items-center justify-center gap-2">
-                <img src={deleteIcon} alt="Delete Job" />
-                Delete Job
+                <img src={deleteIcon} alt="Delete Job" /> Delete Job
               </div>
             </DeleteButton>
           </div>

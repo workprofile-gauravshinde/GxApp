@@ -12,7 +12,11 @@ const DashboardNav = () => {
       <nav className="mx-auto w-11/12 max-w-screen-3xl items-center justify-between md:flex">
         <div className="flex items-center justify-between pb-6 pt-8 text-white md:pb-12 md:pt-14">
           <div className="cursor-pointer ">
-            <Link onClick={() => setMenuOpen(false)} to={"/dashboard"}>
+            <Link
+              onClick={() => setMenuOpen(false)}
+              to={"/dashboard"}
+              aria-label={"Open Dashboard Menu"}
+            >
               <img className="w-8 md:w-fit" src={logo} alt="GameX logo" />
             </Link>
           </div>
@@ -34,6 +38,7 @@ const DashboardNav = () => {
                 className={({ isActive }) =>
                   isActive ? "text-neonYellow" : "text-white"
                 }
+                aria-label={"Publish Job"}
               >
                 Publish Job
               </NavLink>
@@ -45,6 +50,7 @@ const DashboardNav = () => {
                 className={({ isActive }) =>
                   isActive ? "text-neonYellow" : "text-white"
                 }
+                aria-label={"Edit Job"}
               >
                 Edit Job
               </NavLink>
@@ -61,6 +67,7 @@ const DashboardNav = () => {
                     isActive ? "text-neonYellow" : "text-white"
                   }
                   onClick={() => setMenuOpen(false)}
+                  aria-label={"Publish Job"}
                 >
                   Publish Job
                 </NavLink>
@@ -73,6 +80,7 @@ const DashboardNav = () => {
                     isActive ? "text-neonYellow" : "text-white"
                   }
                   onClick={() => setMenuOpen(false)}
+                  aria-label={"Edit Job"}
                 >
                   Edit Job
                 </NavLink>

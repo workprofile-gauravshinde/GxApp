@@ -75,9 +75,9 @@ const ReuseBoxComp = ({ imgSrc, title, desc }) => {
             />
           </MotionAnimate>
           <MotionAnimate animation="fadeInUp" reset={true}>
-            <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-3xl">
+            <p className="mb-4 font-secondFont text-xl font-bold text-white md:text-3xl">
               {title}
-            </h5>
+            </p>
           </MotionAnimate>
           <MotionAnimate animation="fadeInUp" reset={true}>
             <p className="font-body text-sm font-normal text-white md:text-base">

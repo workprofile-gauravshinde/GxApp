@@ -60,9 +60,9 @@ const ReuseableComponent = ({ title, desc }) => {
     <div className="slide shadow-lg">
       <div className="px-3 text-center">
         <MotionAnimate animation="fadeInUp" reset={true}>
-          <h5 className="mb-8 font-secondFont text-[28px] font-bold leading-[39.01px] text-white">
+          <p className="mb-8 font-secondFont text-[28px] font-bold leading-[39.01px] text-white">
             {title}
-          </h5>
+          </p>
         </MotionAnimate>
         <MotionAnimate animation="fadeInUp" reset={true}>
           <p className="font-body text-lg font-normal text-[#FDFDFDCC]">
@@ -78,6 +78,7 @@ const CustomPrevArrow = (props) => {
   const { onClick } = props; // onClick will be used to trigger the slide change
   return (
     <button
+      aria-label="Previous Btn"
       className="custom-prev h-[60px] w-[60px] border border-white bg-transparent"
       onClick={onClick}
     >
@@ -94,6 +95,7 @@ const CustomNextArrow = (props) => {
   const { onClick } = props; // onClick will be used to trigger the slide change
   return (
     <button
+      aria-label="Next Btn"
       className="custom-next h-[60px] w-[60px] border border-lightPurple bg-lightPurple"
       onClick={onClick}
     >

@@ -42,6 +42,7 @@ const Footer = () => {
                 <Link
                   to={"https://facebook.com"}
                   target="_blank"
+                  aria-label={"Facebook"}
                   className="flex h-12 w-12 items-center justify-center rounded-full border"
                 >
                   <FontAwesomeIcon
@@ -53,6 +54,7 @@ const Footer = () => {
                 <Link
                   to={"https://twitter.com"}
                   target="_blank"
+                  aria-label={"Twitter"}
                   className="flex h-12 w-12 items-center justify-center rounded-full border"
                 >
                   <FontAwesomeIcon
@@ -64,6 +66,7 @@ const Footer = () => {
                 <Link
                   to={"https://instagram.com"}
                   target="_blank"
+                  aria-label={"Instagram"}
                   className="flex h-12 w-12 items-center justify-center rounded-full border"
                 >
                   <FontAwesomeIcon

@@ -26,7 +26,9 @@ const Contact = () => {
                 <img className="max-w-full" src={phoneIcon} alt="phone" />
               </div>
               <p className="font-spaceGrotesk text-base font-medium md:text-xl">
-                <a href="tel:+1(215)874-3883">+1 (215) 874-3883</a>
+                <a href="tel:+1(215)874-3883" aria-label="Mob no.">
+                  +1 (215) 874-3883
+                </a>
               </p>
             </div>
           </div>
@@ -36,7 +38,12 @@ const Contact = () => {
                 <img className="max-w-full" src={emailIcon} alt="email" />
               </div>
               <p className="font-spaceGrotesk text-base font-medium md:text-xl">
-                <a href="mailto:media@sportsgamex.com">media@sportsgamex.com</a>
+                <a
+                  href="mailto:media@sportsgamex.com"
+                  aria-label="Mail Support"
+                >
+                  media@sportsgamex.com
+                </a>
               </p>
             </div>
           </div>

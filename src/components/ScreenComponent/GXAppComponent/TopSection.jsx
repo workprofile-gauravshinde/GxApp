@@ -39,12 +39,20 @@ const TopSection = () => {
             md={10}
             className="my-6 mr-0 flex justify-center text-base md:my-0 md:mr-8 md:justify-start"
           >
-            <Link to={footerConst.playStoreLink} target="_blank">
+            <Link
+              to={footerConst.playStoreLink}
+              target="_blank"
+              aria-label="Play Store"
+            >
               <img src={leftPlayStoreImg} className="h-[53px] w-[180px]" />
             </Link>
           </Col>
           <Col xs={24} md={10} className="flex justify-center md:justify-start">
-            <Link to={footerConst.appleAppLink} target="_blank">
+            <Link
+              to={footerConst.appleAppLink}
+              target="_blank"
+              aria-label="Apple Store"
+            >
               <img src={rightAppleStoreImg} className="h-[53px] w-[180px]" />
             </Link>
           </Col>
@@ -99,12 +107,20 @@ const TopSection = () => {
             md={10}
             className="my-6 mr-0 flex justify-center text-base md:my-0 md:mr-8 md:justify-start"
           >
-            <Link to={footerConst.playStoreLink} target="_blank">
+            <Link
+              to={footerConst.playStoreLink}
+              target="_blank"
+              aria-label="Play Store"
+            >
               <img src={leftPlayStoreImg} className="h-[53px] w-[180px]" />
             </Link>
           </Col>
           <Col xs={24} md={10} className="flex justify-center md:justify-start">
-            <Link to={footerConst.appleAppLink} target="_blank">
+            <Link
+              to={footerConst.appleAppLink}
+              target="_blank"
+              aria-label="Apple Store"
+            >
               <img src={rightAppleStoreImg} className="h-[53px] w-[180px]" />
             </Link>
           </Col>
