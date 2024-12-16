@@ -13,11 +13,14 @@ const ShadowButtonComp = (props) => {
   } = props;
   return (
     <div className={`shadow-button-set ${extraCss}`}>
-      <li style={{ backgroundColor: backgroundColor }}>
+      <div style={{ backgroundColor: backgroundColor }}>
         <button
           onClick={onClickBtn}
           className="text-white"
-          style={{ border: `1px solid ${borderColor}` }}
+          style={{
+            border: `1px solid ${borderColor}`,
+          }}
+          aria-label={btnTitle}
         >
           {btnTitle}
           {displayIcon && (
@@ -28,7 +31,7 @@ const ShadowButtonComp = (props) => {
             />
           )}
         </button>
-      </li>
+      </div>
     </div>
   );
 };

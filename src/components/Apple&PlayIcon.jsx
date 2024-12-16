@@ -18,7 +18,7 @@ const ApplePlayIcon = (props) => {
       <Flex
         gap={"14px"}
         align="center"
-        className={`w-44 rounded-md px-3 py-2 shadow-md md:w-48 ${mainStyle}`}
+        className={`rounded-md px-3 py-2 shadow-md ${mainStyle}`}
       >
         {/* <img src={logo} className="h-5 w-[18px]" /> */}
         <FontAwesomeIcon

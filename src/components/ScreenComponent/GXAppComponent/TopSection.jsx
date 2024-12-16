@@ -27,35 +27,37 @@ const TopSection = () => {
         </MotionAnimate>
         <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
           <p
-            className="pr-36 font-body text-xl font-normal"
+            className="mt-3 pr-36 font-body text-xl font-normal"
             style={{ color: "#FDFDFD80" }}
           >
             {GxAppConst.sectionOneDesc}
           </p>
         </MotionAnimate>
-        <Row justify={"start"} className="mt-0 md:mt-7">
-          <Col
+        <Row justify={"start"} className="mt-0 md:mt-16">
+          {/* <Col
             xs={24}
             md={10}
             className="my-6 mr-0 flex justify-center text-base md:my-0 md:mr-8 md:justify-start"
+          > */}
+          <Link
+            to={footerConst.playStoreLink}
+            target="_blank"
+            aria-label="Play Store"
+            className="mr-5 h-[53px] w-[180px]"
           >
-            <Link
-              to={footerConst.playStoreLink}
-              target="_blank"
-              aria-label="Play Store"
-            >
-              <img src={leftPlayStoreImg} className="h-[53px] w-[180px]" />
-            </Link>
-          </Col>
-          <Col xs={24} md={10} className="flex justify-center md:justify-start">
-            <Link
-              to={footerConst.appleAppLink}
-              target="_blank"
-              aria-label="Apple Store"
-            >
-              <img src={rightAppleStoreImg} className="h-[53px] w-[180px]" />
-            </Link>
-          </Col>
+            <img src={leftPlayStoreImg} className="h-auto w-full" />
+          </Link>
+          {/* </Col>
+          <Col xs={24} md={10} className="flex justify-center md:justify-start"> */}
+          <Link
+            to={footerConst.appleAppLink}
+            target="_blank"
+            aria-label="Apple Store"
+            className="h-[53px] w-[180px]"
+          >
+            <img src={rightAppleStoreImg} className="h-auto w-full" />
+          </Link>
+          {/* </Col> */}
         </Row>
       </Col>
       <Col

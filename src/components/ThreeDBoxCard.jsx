@@ -1,31 +1,52 @@
+import { Col } from "antd";
 import React from "react";
+import { MotionAnimate } from "react-motion-animate";
 
-const ThreeDBoxCard = () => {
+const ThreeDBoxCard = (props) => {
+  const { imgSrc, title, desc } = props;
   return (
-    <div className="box-container">
-      <div className="box-item">
-        <div className="flip-box">
-          <div className="flip-box-front text-center">
-            <div className="inner color-white">
-              <h3 className="flip-box-header">Custom Domains</h3>
-              <p>A short sentence describing this callout is.</p>
+    <Col xs={24} xl={7} className="m-2">
+      <div className="flip-box cardBoxGradient a">
+        <div className="flip-box-front gxApp-card-box text-center ">
+          <div className="min-h-[150px] w-full text-center md:min-h-[260px] md:text-left">
+            <MotionAnimate animation="fadeInUp" reset={true}>
               <img
-                src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
-                alt=""
-                className="flip-box-img"
+                src={imgSrc}
+                className="m-auto mb-6 h-12 w-12 md:m-0 md:mb-6"
+                alt={title}
+                title={title}
               />
-            </div>
+            </MotionAnimate>
+            <MotionAnimate animation="fadeInUp" reset={true}>
+              <p className="mb-4 font-secondFont text-xl font-bold text-white md:text-3xl">
+                {title}
+              </p>
+            </MotionAnimate>
+            <MotionAnimate animation="fadeInUp" reset={true}>
+              <p className="font-body text-sm font-normal text-white md:text-base">
+                {desc}
+              </p>
+            </MotionAnimate>
           </div>
-          <div className="flip-box-back text-center">
-            <div className="inner color-white">
-              <h3 className="flip-box-header">Custom Domains</h3>
-              <p>A short sentence describing this callout is.</p>
-              <button className="flip-box-button">Learn More</button>
-            </div>
+        </div>
+        <div className="flip-box-back gxApp-card-box text-center">
+          <div className="min-h-[150px] w-full text-center md:min-h-[260px] md:text-left">
+            <img
+              src={imgSrc}
+              className="m-auto mb-6 h-12 w-12 md:m-0 md:mb-6"
+              alt={title}
+              title={title}
+            />
+            <p className="mb-4 font-secondFont text-xl font-bold text-white md:text-3xl">
+              {title}
+            </p>
+            <p className="font-body text-sm font-normal text-white md:text-base">
+              {desc}
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </Col>
   );
 };
 

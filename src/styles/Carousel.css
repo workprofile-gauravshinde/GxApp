@@ -124,6 +124,9 @@
   .custom-prev {
     left: 32%; /* Position prev button on the left */
   }
+  .slide {
+    height: 14.625rem;
+  }
 
   .custom-next {
     right: 32%; /* Position next button on the right */

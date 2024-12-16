@@ -18,7 +18,7 @@ const BlurCollapse = (props) => {
       }}
     >
       <span className="flex items-center justify-between">
-        <img src={icon} className="mr-5 h-5 w-6 md:h-9 md:w-9" />
+        <img src={icon} className="mr-5 h-6 w-6 md:h-9 md:w-9" />
         <h4 className="font-body text-base font-semibold md:text-2xl">
           {headerText}
         </h4>

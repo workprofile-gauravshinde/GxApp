@@ -18,12 +18,12 @@ const WhySportsGameX = () => {
               animation="scrollFadeIn"
               scrollPositions={[0.1, 0.9]}
             >
-              <h3 className="mb-10 flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
+              <p className="mb-10 flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
                 {homeData?.SectionThreeHeadOneText}
-                <p className="text-3xl font-bold text-white md:text-5xl">
+                <span className="text-3xl font-bold text-white md:text-5xl">
                   &nbsp;{homeData?.SectionThreeHeadTwoText}
-                </p>
-              </h3>
+                </span>
+              </p>
             </MotionAnimate>
             <MotionAnimate
               animation="scrollFadeIn"
@@ -44,17 +44,21 @@ const WhySportsGameX = () => {
           {homeWhySportsGameXArr.map((item, index) => {
             return (
               <React.Fragment key={item?.title + index}>
-                <ReuseBoxComp
+                <ThreeDBoxCard
                   title={item.title}
                   desc={item.desc}
                   imgSrc={item?.imgSrc}
                 />
+                {/* <ReuseBoxComp
+                  title={item.title}
+                  desc={item.desc}
+                  imgSrc={item?.imgSrc}
+                /> */}
               </React.Fragment>
             );
           })}
         </Row>
       </MotionAnimate>
-      {/* <ThreeDBoxCard/> */}
     </div>
   );
 };

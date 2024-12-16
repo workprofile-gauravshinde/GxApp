@@ -60,12 +60,12 @@ const ReuseableComponent = ({ title, desc }) => {
     <div className="slide shadow-lg">
       <div className="px-3 text-center">
         <MotionAnimate animation="fadeInUp" reset={true}>
-          <p className="mb-8 font-secondFont text-[28px] font-bold leading-[39.01px] text-white">
+          <p className="mb-8 font-secondFont text-xl font-bold leading-6 text-white md:text-[28px] md:leading-[39.01px]">
             {title}
           </p>
         </MotionAnimate>
         <MotionAnimate animation="fadeInUp" reset={true}>
-          <p className="font-body text-lg font-normal text-[#FDFDFDCC]">
+          <p className="font-body text-sm font-normal text-[#FDFDFDCC] md:text-lg">
             {desc}
           </p>
         </MotionAnimate>

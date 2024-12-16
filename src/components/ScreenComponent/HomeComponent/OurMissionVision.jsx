@@ -108,7 +108,7 @@ const OurMissionVision = () => {
           </Row>
         </Col>
         <Col xs={24} md={10}>
-          <div className="mt-20">
+          <div className="mt-20 pl-0 md:pl-5">
             {SectionFourHeadArr.map((item, index) => {
               return (
                 <React.Fragment key={item?.title + index}>
@@ -188,20 +188,24 @@ const ReusableButtonBoxText = (props) => {
   return (
     <div className="mt-10 flex items-start justify-start">
       <MotionAnimate animation="fadeInUp" reset={true}>
-        <Button
+        <button
           onClick={onButtonClickAction}
-          className={`flex h-14 w-14 items-center justify-center rounded-full ${
-            currentActiveTab === itemId?.id ? "bg-lightPurple" : "bg-[#43454F]"
+          className={`flex h-14 w-14 items-center justify-center rounded-full hover:text-black ${
+            currentActiveTab === itemId?.id
+              ? "bg-lightPurple"
+              : "bg-[#43454F] hover:bg-lightPurple"
           }`}
         >
           <p
-            className={`font-secondFont text-base font-bold md:text-xl  ${
-              currentActiveTab === itemId?.id ? "text-white" : "text-[#E0E7E1]"
+            className={`font-secondFont text-base font-bold  md:text-xl ${
+              currentActiveTab === itemId?.id
+                ? "text-white"
+                : "text-[#E0E7E1] hover:bg-lightPurple"
             }`}
           >
             {itemId?.num}
           </p>
-        </Button>
+        </button>
       </MotionAnimate>
       <div className="px-5 md:px-11">
         <MotionAnimate animation="fadeInUp" reset={true}>

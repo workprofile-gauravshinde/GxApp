@@ -39,7 +39,7 @@ const InnovatingSports = () => {
         </MotionAnimate>
       </Col>
       <Col xs={24} md={14} className="">
-        <div className="round-patch"></div>
+        <div className="round-patch hidden md:block"></div>
         <Row type="flex" justify={"center"}>
           <Col
             xs={24}

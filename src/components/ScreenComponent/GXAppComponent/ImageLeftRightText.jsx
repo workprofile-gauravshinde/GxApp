@@ -37,7 +37,7 @@ const ImageLeftRightText = (props) => {
             />
             <img
               src={gridImg}
-              className="absolute left-16 -z-10 h-52 w-52 md:left-0"
+              className="absolute left-[76px] -z-10 h-44 w-44 md:left-0 md:h-52 md:w-52"
             />
             <MotionAnimate
               animation="fadeInUp"
@@ -160,7 +160,7 @@ const ImageLeftRightText = (props) => {
             />
             <img
               src={gridImg}
-              className="absolute right-16 -z-10 h-52 w-52 md:right-0"
+              className="absolute right-[70px] -z-10 h-44 w-44 md:right-0 md:h-52 md:w-52"
             />
             <MotionAnimate
               animation="fadeInUp"

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import menuIcon from "../assets/Menu.svg";
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.svg";
@@ -19,7 +19,8 @@ const Nav = () => {
   return (
     <React.Fragment>
       {/* <BackgroundGraphics /> */}
-      <nav className="mx-auto w-11/12 max-w-screen-3xl items-center justify-between md:flex">
+      <nav className="mx-auto w-full items-center justify-between px-5 md:flex md:px-16">
+        {/* max-w-screen-3xl */}
         <div className="flex items-center justify-between pb-6 pt-8 text-white md:pb-12 md:pt-14">
           <div className="w-8 cursor-pointer md:w-[60px]">
             <Link
@@ -51,102 +52,126 @@ const Nav = () => {
         <div className="gap-8 pb-4 font-body font-semibold transition-all md:block md:pb-0">
           {/** nav for desktop */}
           <ul className="hidden flex-row space-x-8 font-body font-medium text-white md:flex ">
-            <Link
-              to="/"
-              className={`cursor-pointer ${
-                location.pathname.toString() === "/"
-                  ? "border-b-2 border-neonYellow text-neonYellow"
-                  : "text-white"
-              }`}
-              aria-label="Home"
-            >
-              <li>Home</li>
-            </Link>
-            <Link
-              to="/gxapp"
-              className={`cursor-pointer ${
-                location.pathname.toString() === "/gxapp"
-                  ? "border-b-2 border-neonYellow text-neonYellow"
-                  : "text-white"
-              }`}
-              aria-label="Gx App"
-            >
-              <li>GX App</li>
-            </Link>
-            <Link
-              to="/careers"
-              className={`cursor-pointer ${
-                location.pathname.toString() === "/careers"
-                  ? "border-b-2 border-neonYellow text-neonYellow"
-                  : "text-white"
-              }`}
-              aria-label="Careers"
-            >
-              <li>Careers</li>
-            </Link>
-            <Link
-              to="/contact"
-              className={`cursor-pointer ${
-                location.pathname.toString() === "/contact"
-                  ? "border-b-2 border-neonYellow text-neonYellow"
-                  : "text-white"
-              }`}
-              aria-label="Contact"
-            >
-              <li>Contact Us</li>
-            </Link>
-          </ul>
-          {/** nav for mobile screens and tablets */}
-          {menuOpen && (
-            <ul className="mb-4 flex flex-col gap-y-4 border-b border-lightGray pb-4 font-body text-lg font-medium text-white transition-all md:hidden ">
-              <Link
+            <li>
+              <NavLink
                 to="/"
-                className={`w-fit cursor-pointer ${
+                className={`cursor-pointer ${
                   location.pathname.toString() === "/"
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
+                activeClassName="active"
                 aria-label="Home"
-                onClick={() => setMenuOpen(false)}
               >
-                <li>Home</li>
-              </Link>
-              <Link
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/gxapp"
-                className={`w-fit cursor-pointer ${
+                className={`cursor-pointer ${
                   location.pathname.toString() === "/gxapp"
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
                 aria-label="Gx App"
-                onClick={() => setMenuOpen(false)}
+                activeClassName="active"
               >
-                <li>GX App</li>
-              </Link>
-              <Link
+                GX App
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/careers"
-                className={`w-fit cursor-pointer ${
+                className={`cursor-pointer ${
                   location.pathname.toString() === "/careers"
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
                 aria-label="Careers"
-                onClick={() => setMenuOpen(false)}
+                activeClassName="active"
               >
-                <li>Careers</li>
-              </Link>
-              <Link
+                Careers
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/contact"
-                className={`w-fit cursor-pointer ${
+                className={`cursor-pointer ${
                   location.pathname.toString() === "/contact"
                     ? "border-b-2 border-neonYellow text-neonYellow"
                     : "text-white"
                 }`}
                 aria-label="Contact"
-                onClick={() => setMenuOpen(false)}
+                activeClassName="active"
               >
-                <li>Contact Us</li>
-              </Link>
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+          {/** nav for mobile screens and tablets */}
+          {menuOpen && (
+            <ul className="mb-4 flex flex-col gap-y-4 border-b border-lightGray pb-4 font-body text-lg font-medium text-white transition-all md:hidden ">
+              <li>
+                <NavLink
+                  to="/"
+                  className={`w-fit cursor-pointer ${
+                    location.pathname.toString() === "/"
+                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      : "text-white"
+                  }`}
+                  aria-label="Home"
+                  activeClassName="active"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/gxapp"
+                  className={`w-fit cursor-pointer ${
+                    location.pathname.toString() === "/gxapp"
+                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      : "text-white"
+                  }`}
+                  aria-label="Gx App"
+                  activeClassName="active"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  GX App
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/careers"
+                  className={`w-fit cursor-pointer ${
+                    location.pathname.toString() === "/careers"
+                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      : "text-white"
+                  }`}
+                  aria-label="Careers"
+                  activeClassName="active"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Careers
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={`w-fit cursor-pointer ${
+                    location.pathname.toString() === "/contact"
+                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      : "text-white"
+                  }`}
+                  aria-label="Contact"
+                  activeClassName="active"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Contact Us
+                </NavLink>
+              </li>
             </ul>
           )}
         </div>

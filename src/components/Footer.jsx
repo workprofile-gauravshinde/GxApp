@@ -22,11 +22,11 @@ const Footer = () => {
         className="relative bg-footerBackgroundTwo px-5 pb-16 pt-8 md:px-3 md:py-16"
       >
         <Col xs={24} md={22} lg={20} xl={20}>
-          <Row className="pb-4" style={{ borderBottom: "2px solid #C7C7D7" }}>
+          <Row className="pb-0 md:pb-4">
             <Col xs={24} md={12} lg={12} xl={12}>
               <img
                 src={logo}
-                className="mx-auto mb-6 mt-14 h-16 w-16 md:mx-0 md:mb-0 md:mt-0"
+                className="mx-auto mb-6 mt-6 h-16 w-16 md:mx-0 md:mb-0 md:mt-0"
                 title={"GameX logo"}
                 alt={"GameX logo"}
               />
@@ -36,7 +36,7 @@ const Footer = () => {
               md={12}
               lg={12}
               xl={12}
-              className="mt-6 flex justify-center md:mt-0 md:justify-end"
+              className="mt-3 flex items-center justify-center md:mt-0 md:justify-end"
             >
               <Flex gap="middle">
                 <Link
@@ -78,7 +78,11 @@ const Footer = () => {
               </Flex>
             </Col>
           </Row>
-          <Row className="mt-8">
+          <div
+            className="my-8 md:my-0"
+            style={{ borderBottom: "2px solid #C7C7D7" }}
+          ></div>
+          <Row className="mt-0 md:mt-8">
             <Col xs={24} md={6} lg={6} xl={6}>
               <div className="flex items-center justify-center md:justify-start">
                 <FontAwesomeIcon
@@ -91,12 +95,12 @@ const Footer = () => {
                 </p>
               </div>
               <p
-                className="mt-4 px-12 text-center font-spaceGrotesk text-base font-normal md:p-0 md:text-left"
+                className="mt-5 px-12 text-center font-spaceGrotesk text-base font-normal md:p-0 md:text-left"
                 style={{ color: "#C7C7D7" }}
               >
                 {footerConst.organizationAddress}
               </p>
-              <div className="my-4 flex items-center justify-center md:justify-start">
+              <div className="my-5 flex items-center justify-center md:justify-start">
                 <FontAwesomeIcon
                   icon={faPhone}
                   className="fas faPhone"
@@ -129,42 +133,49 @@ const Footer = () => {
               lg={{ span: 8, offset: 3 }}
               xl={{ span: 8, offset: 3 }}
             >
-              <p className="mt-9 text-center font-body text-lg font-semibold text-white md:mt-0 md:text-left">
+              <p className="mb-6 mt-9 text-center font-body text-lg font-semibold text-white md:mb-0 md:mt-0 md:text-left">
                 Download App
               </p>
-              <Row justify={"start"} className="mt-0 md:mt-7">
-                <Col
+              <Row
+                justify={"start"}
+                className="mt-0 flex-col items-center md:mt-7 md:flex-row md:items-start"
+              >
+                {/* <Col
                   xs={24}
                   md={10}
                   className="my-6 mr-0 flex justify-center md:my-0 md:mr-8 md:justify-start"
-                >
+                > */}
+                <div className="h-[42px] w-[158px]">
                   <ApplePlayIcon
                     mainStyle="bg-ApplePlayBg"
                     toUrl={footerConst.appleAppLink}
                     smText={"Download on the"}
                     mdText={"App Store"}
-                    smTextExtra="text-xs"
-                    mdTextExtra="text-md"
+                    smTextExtra="text-[9px]"
+                    mdTextExtra="text-[15px]"
                     icon={faApple}
                     iconSize={"1.7rem"}
                   />
-                </Col>
+                </div>
+                {/* </Col>
                 <Col
                   xs={24}
                   md={10}
                   className="flex justify-center md:justify-start"
-                >
+                > */}
+                <div className="ml-0 mt-8 h-[42px] w-[158px] md:ml-5 md:mt-0">
                   <ApplePlayIcon
                     mainStyle="bg-ApplePlayBg"
                     toUrl={footerConst.playStoreLink}
                     smText={"GET IT ON"}
                     mdText={"Google Play"}
-                    smTextExtra="text-xs"
-                    mdTextExtra="text-md"
+                    smTextExtra="text-[9px]"
+                    mdTextExtra="text-[15px]"
                     icon={faGooglePlay}
                     iconSize={"1.7rem"}
                   />
-                </Col>
+                </div>
+                {/* </Col> */}
               </Row>
             </Col>
           </Row>
