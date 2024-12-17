@@ -102,10 +102,7 @@ const InvestWithEase = () => {
                   </Row>
                 </div>
               </MotionAnimate>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <div className="mt-8 w-full px-3 text-center md:text-left">
                   <h5 className="text-xl font-bold text-white md:text-3xl">
                     {InvestWithEaseObj.orders.title}
@@ -138,16 +135,19 @@ const InvestWithEase = () => {
                           className="absolute bottom-0 left-6 border-2 border-white"
                         />
                         <div className="ml-4">
-                          <p className="font-body text-sm font-semibold text-black">
+                          <p className="font-body text-xs font-semibold text-black md:text-sm">
                             Jayson Tatum
                           </p>
-                          <p className="font-body text-xs font-normal text-black">
+                          <p className="font-body text-[10px] font-normal text-black md:text-xs">
                             25 Stocks
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center">
-                        <img src={graphImg} className="mr-8 h-9 w-24" />
+                      <div className="flex items-center gap-4">
+                        <img
+                          src={graphImg}
+                          className="mr:0 h-9 w-24 object-cover md:mr-8"
+                        />
                         <div>
                           <h4 className="text-base font-normal text-black">
                             $750
@@ -165,18 +165,12 @@ const InvestWithEase = () => {
                 </div>
               </MotionAnimate>
               <div className="w-full px-3 text-center md:text-left">
-                <MotionAnimate
-                  animation="scrollFadeIn"
-                  scrollPositions={[0.1, 0.9]}
-                >
+                <MotionAnimate animation="fadeInUp" reset={true}>
                   <h5 className="mb-4 mt-6 text-xl font-bold text-white md:text-3xl">
                     {InvestWithEaseObj.analyze.title}
                   </h5>
                 </MotionAnimate>
-                <MotionAnimate
-                  animation="scrollFadeIn"
-                  scrollPositions={[0.1, 0.9]}
-                >
+                <MotionAnimate animation="fadeInUp" reset={true}>
                   <p className="text-xs font-normal text-white md:text-base">
                     {InvestWithEaseObj.analyze.desc}
                   </p>
@@ -184,31 +178,37 @@ const InvestWithEase = () => {
               </div>
             </div>
           </MotionAnimate>
-          <div className="gxApp-card-box mt-5 h-auto w-full text-center md:text-left">
+          <div className="gxApp-card-box mt-5 h-auto w-full justify-start text-center md:justify-center md:text-left">
             <MotionAnimate animation="fadeInUp" reset={true}>
-              {" "}
               <h1 className="font-display text-xl uppercase text-white md:text-3xl">
                 {InvestWithEaseObj.multiple}
               </h1>
             </MotionAnimate>
-            <Flex className="mt-8" gap="middle" wrap>
+            <Flex
+              className="mt-8 justify-center md:justify-start"
+              gap="middle"
+              wrap
+            >
               <MotionAnimate animation="fadeInUp" reset={true}>
-                <img src={BallOne} className="h-9 w-9 rounded" />
+                <img src={BallOne} className="h-8 w-8 rounded md:h-9 md:w-9" />
               </MotionAnimate>
               <MotionAnimate animation="fadeInUp" reset={true}>
-                <img src={BallTwo} className="h-9 w-9 rounded" />
+                <img src={BallTwo} className="h-8 w-8 rounded md:h-9 md:w-9" />
               </MotionAnimate>
               <MotionAnimate animation="fadeInUp" reset={true}>
-                <img src={BallThree} className="h-9 w-9 rounded" />
+                <img
+                  src={BallThree}
+                  className="h-8 w-8 rounded md:h-9 md:w-9"
+                />
               </MotionAnimate>
               <MotionAnimate animation="fadeInUp" reset={true}>
-                <img src={BallFour} className="h-9 w-9 rounded" />
+                <img src={BallFour} className="h-8 w-8 rounded md:h-9 md:w-9" />
               </MotionAnimate>
               <MotionAnimate animation="fadeInUp" reset={true}>
-                <img src={BallFive} className="h-9 w-9 rounded" />
+                <img src={BallFive} className="h-8 w-8 rounded md:h-9 md:w-9" />
               </MotionAnimate>
               <MotionAnimate animation="fadeInUp" reset={true}>
-                <img src={BallSix} className="h-9 w-9 rounded" />
+                <img src={BallSix} className="h-8 w-8 rounded md:h-9 md:w-9" />
               </MotionAnimate>
             </Flex>
           </div>
@@ -216,84 +216,84 @@ const InvestWithEase = () => {
         <Col xs={24} xl={7} className="m-2">
           <div className="gxApp-card-box w-full p-0">
             <MotionAnimate animation="fadeInUp" reset={true}>
-              <Row className="p-7">
+              <Row className="p-4 md:p-7">
                 <Col
                   xs={24}
                   xl={24}
                   className="flex items-start justify-between"
                 >
-                  <div className="items-Start flex">
-                    <Avatar size={42} shape="circle" src={avatarOne} />
-                    <div className="ml-4">
-                      <p className="font-body text-sm font-semibold text-white">
-                        Lebron James
-                      </p>
-                      <Flex className="my-3" gap="4px 0" wrap>
-                        <Button
-                          type="primary"
-                          className="mr-4 h-6 rounded-3xl font-body text-[10px] font-semibold"
-                          style={{
-                            backgroundColor: "#8249E4",
-                          }}
-                        >
-                          Market Buy
-                        </Button>
-                        <Button
-                          type="primary"
-                          className="h-6 rounded-3xl font-body text-[10px] font-semibold text-black"
-                          style={{
-                            backgroundColor: "#FFCC00",
-                          }}
-                        >
-                          Pending
-                        </Button>
-                      </Flex>
-                      <Row className="my-2">
-                        <Col>
+                  <div className="flex w-full justify-center">
+                    <div className="w-1/5">
+                      <Avatar size={42} shape="circle" src={avatarOne} />
+                    </div>
+                    <div className="w-4/5">
+                      <div className="flex w-full items-start justify-between md:items-center">
+                        <div>
+                          <p className="font-body text-sm font-semibold text-white">
+                            Lebron James
+                          </p>
+                          <Flex className="my-3" gap="4px 0" wrap>
+                            <Button
+                              type="primary"
+                              className="mr-4 h-6 rounded-3xl font-body text-[10px] font-semibold"
+                              style={{
+                                backgroundColor: "#8249E4",
+                              }}
+                            >
+                              Market Buy
+                            </Button>
+                            <Button
+                              type="primary"
+                              className="h-6 rounded-3xl font-body text-[10px] font-semibold text-black"
+                              style={{
+                                backgroundColor: "#FFCC00",
+                              }}
+                            >
+                              Pending
+                            </Button>
+                          </Flex>
+                        </div>
+                        <div>
+                          <p className="text-base font-normal text-[#E55541]">
+                            -$100
+                          </p>
+                        </div>
+                      </div>
+                      <div className="my-2 flex items-center">
+                        <div>
                           <p className="font-body text-xs font-normal text-white">
                             Avg Price
                           </p>
                           <p className="mt-2 font-body text-xs font-normal text-white">
                             $100
                           </p>
-                        </Col>
-                        <Col className="mx-6 border-l-2"></Col>
-                        <Col>
+                        </div>
+                        <div className="mx-4 h-9 border-l-[1px] md:mx-6"></div>
+                        <div>
                           <p className="font-body text-xs font-normal text-white">
                             Filled Quantity
                           </p>
                           <p className="mt-1 font-body text-xs font-normal text-white">
                             0
                           </p>
-                        </Col>
-                      </Row>
+                        </div>
+                      </div>
                       <p className="mt-3 font-body text-xs font-normal text-white">
                         06/19/2024
                       </p>
                     </div>
-                  </div>
-                  <div>
-                    <p className="text-base font-normal text-[#E55541]">
-                      -$100
-                    </p>
                   </div>
                 </Col>
               </Row>
             </MotionAnimate>
             <div className="w-full border-t-[1px]"></div>
             <div className="w-full p-7 text-center md:text-left">
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h5 className="mb-4 text-xl font-bold text-white md:text-3xl">
                   {InvestWithEaseObj.status.title}
                 </h5>
               </MotionAnimate>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p className="text-xs font-normal text-white md:text-base">
                   {InvestWithEaseObj.status.desc}
                 </p>
