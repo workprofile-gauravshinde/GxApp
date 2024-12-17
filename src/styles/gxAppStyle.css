@@ -9,6 +9,7 @@
   );
   backdrop-filter: blur(15px);
   box-sizing: border-box;
+  height: 27rem;
 }
 
 .gxApp-spread-background-purple {
@@ -38,4 +39,10 @@
   height: 9rem;
   background: #8249e4;
   filter: blur(4.5rem);
+}
+
+@media screen and (max-width: 767px) {
+  .gxApp-card-box {
+    height: 23rem;
+  }
 }

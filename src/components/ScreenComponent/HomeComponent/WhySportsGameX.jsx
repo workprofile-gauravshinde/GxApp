@@ -11,7 +11,7 @@ const WhySportsGameX = () => {
   return (
     <div className="relative w-full overflow-hidden bg-mainBackground py-16 md:py-[150px]">
       <div className="why_sports_gamex_purpal"></div>
-      <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+      <MotionAnimate animation="fadeInUp" reset={true}>
         <Row justify={"center"} type="flex" className="px-5">
           <Col xs={24} xl={16}>
             <MotionAnimate
@@ -39,21 +39,21 @@ const WhySportsGameX = () => {
           </Col>
         </Row>
       </MotionAnimate>
-      <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+      <MotionAnimate animation="fadeInUp" reset={true}>
         <Row justify={"center"} type="flex" className="px-5">
           {homeWhySportsGameXArr.map((item, index) => {
             return (
               <React.Fragment key={item?.title + index}>
-                <ThreeDBoxCard
-                  title={item.title}
-                  desc={item.desc}
-                  imgSrc={item?.imgSrc}
-                />
-                {/* <ReuseBoxComp
+                {/* <ThreeDBoxCard
                   title={item.title}
                   desc={item.desc}
                   imgSrc={item?.imgSrc}
                 /> */}
+                <ReuseBoxComp
+                  title={item.title}
+                  desc={item.desc}
+                  imgSrc={item?.imgSrc}
+                />
               </React.Fragment>
             );
           })}

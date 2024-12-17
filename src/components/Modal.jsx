@@ -55,7 +55,7 @@ const Modal = ({ show, onClose }) => {
             Mail us your resume, portfolio, and mention the job title in the
             subject. We will get back to you.
           </p>
-          <p className="font-spaceGrotesk text-xl font-bold text-neonYellow md:text-[28px]">
+          <p className="font-spaceGrotesk text-xl font-bold text-blurColor md:text-[28px]">
             Email:{" "}
             <a href="mailto:hr@sportsgamex.com" aria-label="Support mail">
               hr@sportsgamex.com

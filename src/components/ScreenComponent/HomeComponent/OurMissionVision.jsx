@@ -13,6 +13,7 @@ import MissionImgThree from "../../../assets/Home/Our_mission_image_3.png";
 import MissionImgFour from "../../../assets/Home/Our_mission_image_4.png";
 import MissionImgFive from "../../../assets/Home/Our_mission_image_5.png";
 import MissionImgSix from "../../../assets/Home/Our_mission_image_6.png";
+import ArrowDownImg from "../../../assets/Home/Arrow-down.svg";
 
 const OurMissionVision = () => {
   const [currentActiveTab, setCurrentActiveTab] = useState(1);
@@ -24,10 +25,7 @@ const OurMissionVision = () => {
         <Col span={24}>
           <Row justify={"center"} type="flex" className="px-0 md:px-5">
             <Col xs={24} md={16}>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h3 className="mb-10 flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
                   {homeData?.SectionFourHeadOneText}
                   <p className="text-3xl font-bold text-white md:text-5xl">
@@ -35,10 +33,7 @@ const OurMissionVision = () => {
                   </p>
                 </h3>
               </MotionAnimate>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="mb-10 text-center font-body text-base font-normal md:mb-[132px] md:text-xl"
                   style={{ color: "rgba(253, 253, 253, 0.8)" }}
@@ -50,7 +45,7 @@ const OurMissionVision = () => {
           </Row>
         </Col>
       </Row>
-      <Row className="bg-mainBackgroundTwo px-4 md:px-8">
+      <Row className="bg-mainBackgroundTwo px-4 md:px-16">
         <Col xs={24} md={11} className="block md:hidden">
           <Row gutter={16}>
             <Col xs={12} md={12}>
@@ -107,8 +102,12 @@ const OurMissionVision = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={24} md={10}>
-          <div className="mt-20 pl-0 md:pl-5">
+        <Col
+          xs={24}
+          md={12}
+          className="relative flex items-center justify-center"
+        >
+          <div>
             {SectionFourHeadArr.map((item, index) => {
               return (
                 <React.Fragment key={item?.title + index}>
@@ -122,8 +121,8 @@ const OurMissionVision = () => {
             })}
           </div>
         </Col>
-        <Col xs={24} md={11} offset={3} className="hidden md:block">
-          <Row gutter={16}>
+        <Col xs={24} md={11} offset={1} className="hidden md:block">
+          <Row justify={"end"} gutter={16}>
             <Col xs={12} md={12}>
               <img
                 src={
@@ -147,7 +146,8 @@ const OurMissionVision = () => {
                     ? "Promote Financial Literacy Through Sports"
                     : "Encourage Strategic Thinking"
                 }
-                className="box a mt-4 h-[525px] w-[333px]"
+                className="mt-4 h-full w-full"
+                // box a
               />
             </Col>
             <Col xs={12} md={12}>
@@ -173,7 +173,8 @@ const OurMissionVision = () => {
                     ? "Promote Financial Literacy Through Sports"
                     : "Encourage Strategic Thinking"
                 }
-                className="box a mt-4 h-[525px] w-[333px]"
+                className="mt-4 h-full w-full"
+                // box a
               />
             </Col>
           </Row>
@@ -206,6 +207,12 @@ const ReusableButtonBoxText = (props) => {
             {itemId?.num}
           </p>
         </button>
+        <img
+          src={ArrowDownImg}
+          className={`m-auto -mb-4 mt-4 h-12 w-6 ${
+            +itemId?.id === 3 ? "hidden" : "block"
+          }`}
+        />
       </MotionAnimate>
       <div className="px-5 md:px-11">
         <MotionAnimate animation="fadeInUp" reset={true}>

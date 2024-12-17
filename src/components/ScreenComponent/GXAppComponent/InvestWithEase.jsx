@@ -17,17 +17,14 @@ import { MotionAnimate } from "react-motion-animate";
 const InvestWithEase = () => {
   return (
     <React.Fragment>
-      <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+      <MotionAnimate animation="fadeInUp" reset={true}>
         <Row
           justify={"center"}
           type="flex"
           className="mt-0 px-5 py-16 md:mt-28 md:py-5"
         >
           <Col xs={24} xl={16}>
-            <MotionAnimate
-              animation="scrollFadeIn"
-              scrollPositions={[0.1, 0.9]}
-            >
+            <MotionAnimate animation="fadeInUp" reset={true}>
               <h3 className="flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
                 {GxAppConst.sectionFiveHead}
                 <p className="text-3xl font-bold text-white md:text-5xl">
@@ -35,10 +32,7 @@ const InvestWithEase = () => {
                 </p>
               </h3>
             </MotionAnimate>
-            <MotionAnimate
-              animation="scrollFadeIn"
-              scrollPositions={[0.1, 0.9]}
-            >
+            <MotionAnimate animation="fadeInUp" reset={true}>
               <p
                 className="my-8 text-center font-body text-base font-normal md:text-xl"
                 style={{ color: "rgba(253, 253, 253, 0.8)" }}
@@ -51,7 +45,7 @@ const InvestWithEase = () => {
       </MotionAnimate>
       <Row justify={"center"} type="flex" className="px-5">
         <Col xs={24} xl={7} className="m-2">
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+          <MotionAnimate animation="fadeInUp" reset={true}>
             <div className="gxApp-card-box w-full">
               <MotionAnimate animation="fadeInUp" reset={true}>
                 <div className="relative w-full rounded-2xl bg-cardBackgroundTwo p-5">
@@ -112,8 +106,8 @@ const InvestWithEase = () => {
                 animation="scrollFadeIn"
                 scrollPositions={[0.1, 0.9]}
               >
-                <div className="mb-2 w-full px-3 text-center md:text-left">
-                  <h5 className="mb-4 mt-6 text-xl font-bold text-white md:text-3xl">
+                <div className="mt-8 w-full px-3 text-center md:text-left">
+                  <h5 className="text-xl font-bold text-white md:text-3xl">
                     {InvestWithEaseObj.orders.title}
                   </h5>
                   <p className="text-xs font-normal text-white md:text-base">
@@ -125,8 +119,8 @@ const InvestWithEase = () => {
           </MotionAnimate>
         </Col>
         <Col xs={24} xl={7} className="m-2">
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
-            <div className="gxApp-card-box mb-6 w-full">
+          <MotionAnimate animation="fadeInUp" reset={true}>
+            <div className="gxApp-card-box h-auto w-full">
               <MotionAnimate animation="fadeInUp" reset={true}>
                 <div className="relative w-full rounded-2xl bg-cardBackgroundTwo p-2">
                   <Row>
@@ -190,11 +184,8 @@ const InvestWithEase = () => {
               </div>
             </div>
           </MotionAnimate>
-          <div className="gxApp-card-box w-full text-center md:text-left">
-            <MotionAnimate
-              animation="scrollFadeIn"
-              scrollPositions={[0.1, 0.9]}
-            >
+          <div className="gxApp-card-box mt-5 h-auto w-full text-center md:text-left">
+            <MotionAnimate animation="fadeInUp" reset={true}>
               {" "}
               <h1 className="font-display text-xl uppercase text-white md:text-3xl">
                 {InvestWithEaseObj.multiple}
@@ -290,7 +281,7 @@ const InvestWithEase = () => {
               </Row>
             </MotionAnimate>
             <div className="w-full border-t-[1px]"></div>
-            <div className="mb-4 w-full p-7 text-center md:mb-20 md:text-left">
+            <div className="w-full p-7 text-center md:text-left">
               <MotionAnimate
                 animation="scrollFadeIn"
                 scrollPositions={[0.1, 0.9]}

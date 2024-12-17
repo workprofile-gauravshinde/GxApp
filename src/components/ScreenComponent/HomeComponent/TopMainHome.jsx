@@ -10,21 +10,17 @@ const TopMainHome = () => {
     <>
       <Row
         justify={"center"}
-        className="boxSquare relative h-auto items-start overflow-hidden bg-mainBackground px-4 md:h-screen md:px-16"
+        className="boxSquare relative h-auto items-start overflow-hidden bg-mainBackground px-4 md:h-[85vh] md:items-center md:px-32"
         // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
         <div className="gxApp-spread-background-pink"></div>
-        <Col
-          className="gutter-row hidden items-start px-10 md:block"
-          xs={24}
-          md={12}
-        >
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
-            <h1 className="mt-28 font-secondFont text-[64px] font-bold text-white">
+        <Col className="gutter-row hidden items-start md:block" xs={24} md={12}>
+          <MotionAnimate animation="fadeInUp" reset={true}>
+            <h1 className="font-secondFont text-[64px] font-bold text-white">
               {homeData?.SectionOneHead}
             </h1>
           </MotionAnimate>
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+          <MotionAnimate animation="fadeInUp" reset={true}>
             <p
               className="mb-5 font-body text-xl font-normal"
               style={{ color: "#FDFDFD80" }}
@@ -32,7 +28,7 @@ const TopMainHome = () => {
               {homeData?.SectionOneDesc}
             </p>
           </MotionAnimate>
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+          <MotionAnimate animation="fadeInUp" reset={true}>
             <p
               className="font-body text-xl font-normal"
               style={{ color: "#FDFDFD80" }}

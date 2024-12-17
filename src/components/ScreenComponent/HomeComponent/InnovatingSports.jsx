@@ -20,7 +20,7 @@ const InnovatingSports = () => {
         md={10}
         className="justify-center pr-0 md:justify-start md:pr-20"
       >
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <h5 className="text-center font-body text-3xl font-bold leading-9 text-white md:text-left md:text-[48px] md:leading-[58px]">
             {homeData?.SectionFiveHeadOneText}{" "}
             <span className="bg-blurColor px-1">
@@ -29,7 +29,7 @@ const InnovatingSports = () => {
             {homeData?.SectionFiveHeadThreeText}
           </h5>
         </MotionAnimate>
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <p
             className="mt-6 text-center font-body text-sm font-normal text-white md:text-left md:text-xl"
             style={{ letterSpacing: "1%" }}
@@ -47,23 +47,25 @@ const InnovatingSports = () => {
             className="flex items-start justify-start border-b-[1px] border-r-0 border-[#DDDDDD] px-5 py-10 text-center hover:bg-slate-500 md:border-r-[1px] md:py-20 md:text-left"
           >
             <div>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 {" "}
                 <h4 className="mb-5 font-secondFont text-xl font-extrabold text-white md:text-2xl">
                   {InnovatingSportsObj?.box1Head}
                 </h4>
               </MotionAnimate>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="w-full font-body text-base font-normal md:w-4/5 md:text-xl"
                   style={{ color: "#CCCDCF" }}
@@ -79,22 +81,24 @@ const InnovatingSports = () => {
             className="flex items-start justify-start border-b-[1px] border-[#DDDDDD] px-9 py-10 text-center hover:bg-slate-500 md:border-0 md:border-b-[0px] md:py-20 md:text-left"
           >
             <div>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h4 className="mb-5 font-secondFont text-xl font-extrabold text-white md:text-2xl ">
                   {InnovatingSportsObj?.box2Head}
                 </h4>
               </MotionAnimate>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="w-full font-body text-base font-normal md:w-4/5 md:text-xl"
                   style={{ color: "#CCCDCF" }}
@@ -112,22 +116,24 @@ const InnovatingSports = () => {
             className="md:order-b-[0px] flex items-start justify-start  border-b-[1px] border-[#DDDDDD] px-5 py-10 text-center hover:bg-slate-500 md:border-b-[0px] md:border-r-[1px] md:py-20 md:text-left"
           >
             <div>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h4 className="mb-5 font-secondFont text-xl font-extrabold text-white md:text-2xl">
                   {InnovatingSportsObj?.box3Head}
                 </h4>
               </MotionAnimate>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="w-full font-body text-base font-normal md:w-4/5 md:text-xl"
                   style={{ color: "#CCCDCF" }}
@@ -143,22 +149,24 @@ const InnovatingSports = () => {
             className="flex items-start justify-start border-b-[1px] border-[#DDDDDD] px-9 py-10 text-center hover:bg-slate-500 md:border-0 md:border-t-[1px] md:py-20 md:text-left"
           >
             <div className="">
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h4 className="mb-5 font-secondFont text-xl font-extrabold text-white md:text-2xl">
                   {InnovatingSportsObj?.box4Head}
                 </h4>
               </MotionAnimate>
-              <MotionAnimate
+              {/* <MotionAnimate
                 delay={0.4}
                 speed={2}
                 ease={[0.75, 0.45, 0.53, 0.94]}
                 reset={true}
-              >
+              > */}
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="w-full font-body text-base font-normal md:w-4/5 md:text-xl"
                   style={{ color: "#CCCDCF" }}

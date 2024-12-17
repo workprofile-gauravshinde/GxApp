@@ -20,12 +20,12 @@ const TopSection = () => {
     >
       <div className="gxApp-spread-background-pink"></div>
       <Col className="gutter-row hidden items-start md:block" xs={24} md={10}>
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <h1 className="mt-28 font-secondFont text-[64px] font-bold text-white">
             {GxAppConst.sectionOneHead}
           </h1>
         </MotionAnimate>
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <p
             className="mt-3 pr-36 font-body text-xl font-normal"
             style={{ color: "#FDFDFD80" }}
@@ -65,7 +65,7 @@ const TopSection = () => {
         xs={24}
         md={14}
       >
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <img
             src={topLeftImg}
             className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[675px]"
@@ -75,7 +75,7 @@ const TopSection = () => {
           src={topLeftMobileImg}
           className="mb-0 block h-[325px] w-5/6 md:hidden"
         />
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <img
             src={topRightImg}
             className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[500px]"
@@ -90,12 +90,12 @@ const TopSection = () => {
         xs={24}
         md={10}
       >
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <h1 className="mb-6 mt-10 font-secondFont text-3xl font-bold text-white md:mb-0 md:text-[64px]">
             {GxAppConst.sectionOneHead}
           </h1>
         </MotionAnimate>
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <p
             className="mb-6 px-8 font-body text-base font-normal md:text-xl"
             style={{ color: "#FDFDFD80" }}

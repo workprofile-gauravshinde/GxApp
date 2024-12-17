@@ -11,7 +11,7 @@ const Contact = () => {
       ></div>
       <div className="mx-auto w-11/12 max-w-5xl space-y-8 py-8 text-center text-white md:space-y-16 md:py-24">
         <div className="space-y-4 md:space-y-8">
-          <h1 className="font-body text-2xl capitalize md:text-6xl ">
+          <h1 className="font-secondFont text-2xl font-bold capitalize md:text-6xl ">
             Let&apos;s get in touch!
           </h1>
           <p className="mx-auto w-4/5 text-sm text-[#686565] md:text-xl">
@@ -20,7 +20,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-          <div className="bg-bgPurple">
+          <div className="bg-[#6038AC]">
             <div className="flex items-center justify-center gap-4 p-3 md:block md:gap-0 md:space-y-4 md:p-8">
               <div className="w-7 md:mx-auto md:w-fit">
                 <img className="max-w-full" src={phoneIcon} alt="phone" />

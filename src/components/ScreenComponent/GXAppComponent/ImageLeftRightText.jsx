@@ -39,18 +39,15 @@ const ImageLeftRightText = (props) => {
               src={gridImg}
               className="absolute left-[76px] -z-10 h-44 w-44 md:left-0 md:h-52 md:w-52"
             />
-            <MotionAnimate
+            {/* <MotionAnimate
               animation="fadeInUp"
               reset={true}
               distance={200}
               delay={1}
               speed={1}
-            >
-              <img
-                src={leftImgProp}
-                className="z-10 m-auto h-2/3 w-3/6 md:m-0"
-              />
-            </MotionAnimate>
+            > */}
+            <img src={leftImgProp} className="z-10 m-auto h-2/3 w-3/6 md:m-0" />
+            {/* </MotionAnimate> */}
           </Col>
           <Col
             xs={24}
@@ -59,18 +56,12 @@ const ImageLeftRightText = (props) => {
             id={"gxApp-blurCollapse"}
           >
             <div className="w-full text-center md:text-start">
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
                   {headerText}
                 </h5>
               </MotionAnimate>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="mb-4 font-body text-sm font-normal md:text-xl"
                   style={{ color: "#FFFFFF80" }}
@@ -111,18 +102,12 @@ const ImageLeftRightText = (props) => {
             id={"gxApp-blurCollapse"}
           >
             <div className="w-full text-center md:text-start">
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
                   {headerText}
                 </h5>
               </MotionAnimate>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="mb-4 font-body text-sm font-normal md:text-xl"
                   style={{ color: "#FFFFFF80" }}
@@ -162,18 +147,18 @@ const ImageLeftRightText = (props) => {
               src={gridImg}
               className="absolute right-[70px] -z-10 h-44 w-44 md:right-0 md:h-52 md:w-52"
             />
-            <MotionAnimate
+            {/* <MotionAnimate
               animation="fadeInUp"
               reset={true}
               distance={200}
               delay={1}
               speed={1}
-            >
-              <img
-                src={rightImgProp}
-                className="z-10 m-auto h-2/3 w-3/6 md:mr-0"
-              />
-            </MotionAnimate>
+            > */}
+            <img
+              src={rightImgProp}
+              className="z-10 m-auto h-2/3 w-3/6 md:mr-0"
+            />
+            {/* </MotionAnimate> */}
           </Col>
           <Col
             xs={24}
@@ -184,18 +169,12 @@ const ImageLeftRightText = (props) => {
             id={"gxApp-blurCollapse"}
           >
             <div className="w-full text-center md:text-start">
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
                   {headerText}
                 </h5>
               </MotionAnimate>
-              <MotionAnimate
-                animation="scrollFadeIn"
-                scrollPositions={[0.1, 0.9]}
-              >
+              <MotionAnimate animation="fadeInUp" reset={true}>
                 <p
                   className="mb-4 font-body text-sm font-normal md:text-xl"
                   style={{ color: "#FFFFFF80" }}

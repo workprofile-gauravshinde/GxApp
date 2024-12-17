@@ -14,7 +14,7 @@ const HowItWorks = () => {
       <div className="home-spread-background-purple"></div>
       <Col xs={24} xl={9} id={"gxApp-faq"}>
         <Col xs={24} xl={24} className="text-center">
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+          <MotionAnimate animation="fadeInUp" reset={true}>
             <Flex
               align="center"
               className="mb-5 justify-center md:mb-10 md:px-0"
@@ -27,7 +27,7 @@ const HowItWorks = () => {
               </h3>
             </Flex>
           </MotionAnimate>
-          <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+          <MotionAnimate animation="fadeInUp" reset={true}>
             <p
               className="text-basel mb-10 px-8 font-body font-normal md:px-0 md:text-xl"
               style={{ color: "#FDFDFDCC" }}

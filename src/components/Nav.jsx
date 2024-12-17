@@ -57,7 +57,7 @@ const Nav = () => {
                 to="/"
                 className={`cursor-pointer ${
                   location.pathname.toString() === "/"
-                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    ? "border-b-2 border-white text-white"
                     : "text-white"
                 }`}
                 activeClassName="active"
@@ -71,7 +71,7 @@ const Nav = () => {
                 to="/gxapp"
                 className={`cursor-pointer ${
                   location.pathname.toString() === "/gxapp"
-                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    ? "border-b-2 border-white text-white"
                     : "text-white"
                 }`}
                 aria-label="Gx App"
@@ -85,7 +85,7 @@ const Nav = () => {
                 to="/careers"
                 className={`cursor-pointer ${
                   location.pathname.toString() === "/careers"
-                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    ? "border-b-2 border-white text-white"
                     : "text-white"
                 }`}
                 aria-label="Careers"
@@ -99,7 +99,7 @@ const Nav = () => {
                 to="/contact"
                 className={`cursor-pointer ${
                   location.pathname.toString() === "/contact"
-                    ? "border-b-2 border-neonYellow text-neonYellow"
+                    ? "border-b-2 border-white text-white"
                     : "text-white"
                 }`}
                 aria-label="Contact"
@@ -117,7 +117,7 @@ const Nav = () => {
                   to="/"
                   className={`w-fit cursor-pointer ${
                     location.pathname.toString() === "/"
-                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      ? "border-b-2 border-white text-white"
                       : "text-white"
                   }`}
                   aria-label="Home"
@@ -132,7 +132,7 @@ const Nav = () => {
                   to="/gxapp"
                   className={`w-fit cursor-pointer ${
                     location.pathname.toString() === "/gxapp"
-                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      ? "border-b-2 border-white text-white"
                       : "text-white"
                   }`}
                   aria-label="Gx App"
@@ -147,7 +147,7 @@ const Nav = () => {
                   to="/careers"
                   className={`w-fit cursor-pointer ${
                     location.pathname.toString() === "/careers"
-                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      ? "border-b-2 border-white text-white"
                       : "text-white"
                   }`}
                   aria-label="Careers"
@@ -162,7 +162,7 @@ const Nav = () => {
                   to="/contact"
                   className={`w-fit cursor-pointer ${
                     location.pathname.toString() === "/contact"
-                      ? "border-b-2 border-neonYellow text-neonYellow"
+                      ? "border-b-2 border-white text-white"
                       : "text-white"
                   }`}
                   aria-label="Contact"

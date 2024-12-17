@@ -36,7 +36,7 @@ const DashboardNav = () => {
                 to="/dashboard"
                 end
                 className={({ isActive }) =>
-                  isActive ? "text-neonYellow" : "text-white"
+                  isActive ? "border-white text-white" : "text-white"
                 }
                 aria-label={"Publish Job"}
               >
@@ -48,7 +48,7 @@ const DashboardNav = () => {
                 to="/dashboard/edit"
                 end
                 className={({ isActive }) =>
-                  isActive ? "text-neonYellow" : "text-white"
+                  isActive ? "border-white text-white" : "text-white"
                 }
                 aria-label={"Edit Job"}
               >
@@ -64,7 +64,7 @@ const DashboardNav = () => {
                   to="/dashboard"
                   end
                   className={({ isActive }) =>
-                    isActive ? "text-neonYellow" : "text-white"
+                    isActive ? "border-white text-white" : "text-white"
                   }
                   onClick={() => setMenuOpen(false)}
                   aria-label={"Publish Job"}
@@ -77,7 +77,7 @@ const DashboardNav = () => {
                   to="/dashboard/edit"
                   end
                   className={({ isActive }) =>
-                    isActive ? "text-neonYellow" : "text-white"
+                    isActive ? "border-white text-white" : "text-white"
                   }
                   onClick={() => setMenuOpen(false)}
                   aria-label={"Edit Job"}

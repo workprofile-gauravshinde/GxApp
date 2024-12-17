@@ -11,6 +11,8 @@ import { toast } from "react-hot-toast";
 import { toast_styles } from "../utils/constants";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp, faPenAlt } from "@fortawesome/free-solid-svg-icons";
 
 dayjs.extend(relativeTime);
 
@@ -103,8 +105,13 @@ const JobCardEdit = ({ jobData, setJobList, jobList }) => {
             <Link to={`/dashboard/edit/${_id}`} aria-label={"Edit Job"}>
               <PrimaryButton full>
                 <div className="flex w-full items-center justify-center gap-2">
-                  <img src={editIcon} alt="Edit Job" title="Edit Job" /> Edit
-                  Job
+                  {/* <img src={editIcon} alt="Edit Job" title="Edit Job" /> */}
+                  <FontAwesomeIcon
+                    icon={faPenAlt}
+                    className="fas fa-solid faPenAlt pt-1"
+                    style={{ color: "#ffffff", fontSize: "1.5rem" }}
+                  />
+                  Edit Job
                 </div>
               </PrimaryButton>
             </Link>

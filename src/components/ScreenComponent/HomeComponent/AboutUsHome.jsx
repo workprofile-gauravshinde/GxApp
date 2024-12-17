@@ -12,7 +12,7 @@ const AboutUsHome = () => {
     >
       <div className="home-about-us-blur"></div>
       <Col xs={24} md={20} className="px-4 text-center md:px-20">
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <Flex align="center" className="mb-10 justify-center">
             <p className="text-3xl font-bold text-lightPurple md:text-5xl">
               {homeData?.SectionTwoHeadOneText}&nbsp;
@@ -22,7 +22,7 @@ const AboutUsHome = () => {
             </p>
           </Flex>
         </MotionAnimate>
-        <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <MotionAnimate animation="fadeInUp" reset={true}>
           <p
             className="font-body text-base font-normal md:text-xl"
             style={{ color: "#FDFDFDCC" }}
