@@ -68,8 +68,8 @@ export default WhySportsGameX;
 const ReuseBoxComp = ({ imgSrc, title, desc }) => {
   return (
     <Col xs={24} xl={7} className="m-2">
-      <div className="gxApp-card-box w-full">
-        <div className="min-h-[300px] w-full px-3 text-center md:text-left">
+      <div className="gxApp-card-box-opacity w-full">
+        <div className="min-h-[280px] w-full px-3 text-center md:text-left">
           <MotionAnimate animation="fadeInUp" reset={true}>
             <img
               src={imgSrc}
