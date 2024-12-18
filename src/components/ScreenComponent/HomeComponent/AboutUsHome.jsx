@@ -8,10 +8,10 @@ const AboutUsHome = () => {
   return (
     <Row
       justify={"center"}
-      className="relative bg-mainBackgroundTwo py-16 md:py-[150px]"
+      className="relative bg-mainBackgroundTwo py-16 md:py-28 xl:py-[150px]"
     >
       <div className="home-about-us-blur"></div>
-      <Col xs={24} md={20} className="px-4 text-center md:px-20">
+      <Col xs={24} md={22} xl={20} className="px-4 text-center md:px-20">
         <MotionAnimate animation="fadeInUp" reset={true}>
           <Flex align="center" className="mb-10 justify-center">
             <p className="text-3xl font-bold text-lightPurple md:text-5xl">

@@ -9,7 +9,7 @@ const HowItWorks = () => {
   return (
     <Row
       justify={"center"}
-      className="relative bg-mainBackgroundTwo px-5 pt-16 md:pt-[150px]"
+      className="relative bg-mainBackgroundTwo px-5 pt-16 md:pt-28 xl:pt-[150px]"
     >
       <div className="home-spread-background-purple"></div>
       <Col xs={24} xl={9} id={"gxApp-faq"}>

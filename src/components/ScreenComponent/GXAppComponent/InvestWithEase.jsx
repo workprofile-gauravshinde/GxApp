@@ -43,8 +43,8 @@ const InvestWithEase = () => {
           </Col>
         </Row>
       </MotionAnimate>
-      <Row justify={"center"} type="flex" className="px-5">
-        <Col xs={24} xl={7} className="m-2">
+      <Row justify={"center"} type="flex" className="px-5 md:px-0 xl:px-5">
+        <Col xs={24} md={7} xl={7} className="m-2">
           <MotionAnimate animation="fadeInUp" reset={true}>
             <div className="gxApp-card-box w-full">
               <MotionAnimate animation="fadeInUp" reset={true}>
@@ -115,7 +115,7 @@ const InvestWithEase = () => {
             </div>
           </MotionAnimate>
         </Col>
-        <Col xs={24} xl={7} className="m-2">
+        <Col xs={24} md={7} xl={7} className="m-2">
           <MotionAnimate animation="fadeInUp" reset={true}>
             <div className="gxApp-card-box h-auto w-full">
               <MotionAnimate animation="fadeInUp" reset={true}>
@@ -213,7 +213,7 @@ const InvestWithEase = () => {
             </Flex>
           </div>
         </Col>
-        <Col xs={24} xl={7} className="m-2">
+        <Col xs={24} md={7} xl={7} className="m-2">
           <div className="gxApp-card-box w-full p-0">
             <MotionAnimate animation="fadeInUp" reset={true}>
               <Row className="p-4 md:p-7">

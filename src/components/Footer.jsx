@@ -129,9 +129,9 @@ const Footer = () => {
             </Col>
             <Col
               xs={24}
-              md={{ span: 8, offset: 3 }}
-              lg={{ span: 8, offset: 3 }}
-              xl={{ span: 8, offset: 3 }}
+              md={{ span: 12, offset: 3 }}
+              lg={{ span: 12, offset: 3 }}
+              xl={{ span: 12, offset: 3 }}
             >
               <p className="mb-6 mt-9 text-center font-body text-lg font-semibold text-white md:mb-0 md:mt-0 md:text-left">
                 Download App

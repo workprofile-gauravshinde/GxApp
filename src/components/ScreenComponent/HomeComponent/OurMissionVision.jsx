@@ -19,7 +19,7 @@ const OurMissionVision = () => {
   const [currentActiveTab, setCurrentActiveTab] = useState(1);
 
   return (
-    <div className="relative bg-mainBackgroundTwo py-16 md:py-[150px]">
+    <div className="relative bg-mainBackgroundTwo py-16 md:py-28 xl:py-[150px]">
       <Row justify={"center"} className="px-8">
         <div className="why_sports_gamex_purpal"></div>
         <Col span={24}>
@@ -45,7 +45,7 @@ const OurMissionVision = () => {
           </Row>
         </Col>
       </Row>
-      <Row className="bg-mainBackgroundTwo px-4 md:px-16">
+      <Row className="bg-mainBackgroundTwo px-4 md:px-8 xl:px-16">
         <Col xs={24} md={11} className="block md:hidden">
           <Row gutter={16}>
             <Col xs={12} md={12}>
@@ -187,7 +187,7 @@ const OurMissionVision = () => {
 const ReusableButtonBoxText = (props) => {
   const { onButtonClickAction, currentActiveTab, itemId } = props;
   return (
-    <div className="mt-10 flex items-start justify-start">
+    <div className="mb-0 mt-10 flex items-start justify-start md:mb-8 md:mt-0 xl:mb-0 xl:mt-10">
       <MotionAnimate animation="fadeInUp" reset={true}>
         <button
           onClick={onButtonClickAction}
@@ -214,7 +214,7 @@ const ReusableButtonBoxText = (props) => {
           }`}
         />
       </MotionAnimate>
-      <div className="px-5 md:px-11">
+      <div className="px-5 md:px-6 xl:px-11">
         <MotionAnimate animation="fadeInUp" reset={true}>
           <h4
             className={`mb-3 font-body text-lg font-semibold md:text-[26px]  ${

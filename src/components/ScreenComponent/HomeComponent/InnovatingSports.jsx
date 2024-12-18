@@ -11,17 +11,17 @@ const InnovatingSports = () => {
     <Row
       type="flex"
       justify={"center"}
-      className="relative items-center overflow-hidden bg-mainBackground px-4 py-16 md:px-20 md:py-[150px]"
+      className="relative items-center overflow-hidden bg-mainBackground px-4 py-16 md:px-8 md:py-24 xl:px-20 xl:py-[150px]"
     >
       <div className="home-innovating-sports"></div>
       <div className="home-innovating-sports-top-two"></div>
       <Col
         xs={24}
         md={10}
-        className="justify-center pr-0 md:justify-start md:pr-20"
+        className="justify-center pr-0 md:justify-start md:pr-10 xl:pr-20"
       >
         <MotionAnimate animation="fadeInUp" reset={true}>
-          <h5 className="text-center font-body text-3xl font-bold leading-9 text-white md:text-left md:text-[48px] md:leading-[58px]">
+          <h5 className="text-center font-body text-3xl font-bold leading-9 text-white md:text-left md:text-[38px] md:leading-[48px] xl:text-[48px] xl:leading-[58px]">
             {homeData?.SectionFiveHeadOneText}{" "}
             <span className="bg-blurColor px-1">
               {homeData?.SectionFiveHeadTwoText}
@@ -44,7 +44,7 @@ const InnovatingSports = () => {
           <Col
             xs={24}
             md={12}
-            className="flex items-start justify-start border-b-[1px] border-r-0 border-[#DDDDDD] px-5 py-10 text-center hover:bg-slate-500 md:border-r-[1px] md:py-20 md:text-left"
+            className="flex items-start justify-start border-b-[1px] border-r-0 border-[#DDDDDD] px-5 py-10 text-center hover:bg-slate-500 md:border-r-[1px] md:py-8 md:text-left xl:py-20"
           >
             <div>
               {/* <MotionAnimate
@@ -78,7 +78,7 @@ const InnovatingSports = () => {
           <Col
             xs={24}
             md={12}
-            className="flex items-start justify-start border-b-[1px] border-[#DDDDDD] px-9 py-10 text-center hover:bg-slate-500 md:border-0 md:border-b-[0px] md:py-20 md:text-left"
+            className="flex items-start justify-start border-b-[1px] border-[#DDDDDD] px-9 py-10 text-center hover:bg-slate-500 md:border-0 md:border-b-[0px] md:py-8 md:text-left xl:py-20"
           >
             <div>
               {/* <MotionAnimate
@@ -113,7 +113,7 @@ const InnovatingSports = () => {
           <Col
             xs={24}
             md={12}
-            className="md:order-b-[0px] flex items-start justify-start  border-b-[1px] border-[#DDDDDD] px-5 py-10 text-center hover:bg-slate-500 md:border-b-[0px] md:border-r-[1px] md:py-20 md:text-left"
+            className="md:order-b-[0px] flex items-start justify-start  border-b-[1px] border-[#DDDDDD] px-5 py-10 text-center hover:bg-slate-500 md:border-b-[0px] md:border-r-[1px] md:py-8 md:text-left xl:py-20"
           >
             <div>
               {/* <MotionAnimate
@@ -146,7 +146,7 @@ const InnovatingSports = () => {
           <Col
             xs={24}
             md={12}
-            className="flex items-start justify-start border-b-[1px] border-[#DDDDDD] px-9 py-10 text-center hover:bg-slate-500 md:border-0 md:border-t-[1px] md:py-20 md:text-left"
+            className="flex items-start justify-start border-b-[1px] border-[#DDDDDD] px-9 py-10 text-center hover:bg-slate-500 md:border-0 md:border-t-[1px] md:py-8 md:text-left xl:py-20"
           >
             <div className="">
               {/* <MotionAnimate

@@ -10,11 +10,15 @@ const TopMainHome = () => {
     <>
       <Row
         justify={"center"}
-        className="boxSquare relative h-auto items-start overflow-hidden bg-mainBackground px-4 md:h-[85vh] md:items-center md:px-32"
+        className="boxSquare relative h-auto items-start overflow-hidden bg-mainBackground px-4 md:h-[60vh] md:items-center md:px-12 xl:h-[85vh] xl:px-32"
         // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
         <div className="gxApp-spread-background-pink"></div>
-        <Col className="gutter-row hidden items-start md:block" xs={24} md={12}>
+        <Col
+          className="gutter-row hidden items-start md:block xl:block"
+          xs={24}
+          md={12}
+        >
           <MotionAnimate animation="fadeInUp" reset={true}>
             <h1 className="font-secondFont text-[64px] font-bold text-white">
               {homeData?.SectionOneHead}
@@ -54,7 +58,7 @@ const TopMainHome = () => {
         >
           <img
             src={LandingImage}
-            className="mb-0 h-[325px] w-[90%] md:mb-10 md:h-[460px] md:w-[486px]"
+            className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]"
             alt="SportsGameX"
             title="SportsGameX"
           />

@@ -20,12 +20,13 @@ const ImageLeftRightText = (props) => {
       {displayLeft && (
         <Row
           justify={"center"}
-          className={`md:pb20 h-auto w-screen items-center justify-center pb-2 ${
-            mobileTopPadding === 1 && "pt-20"
+          className={`h-auto w-screen items-center justify-center pb-2 ${
+            mobileTopPadding === 1 && "pb-0 pt-20"
           }`}
         >
           <Col
             xs={24}
+            md={12}
             xl={12}
             className={
               "relative flex items-center justify-center pl-0 md:justify-start md:pl-9"
@@ -51,6 +52,7 @@ const ImageLeftRightText = (props) => {
           </Col>
           <Col
             xs={24}
+            md={10}
             xl={8}
             className={"z-10 items-center justify-center p-5 md:p-0"}
             id={"gxApp-blurCollapse"}
@@ -91,10 +93,11 @@ const ImageLeftRightText = (props) => {
       {!displayLeft && (
         <Row
           justify={"center"}
-          className={`md-py-20 h-auto w-screen items-center justify-center py-2`}
+          className={`h-auto w-screen items-center justify-center py-2 md:py-20`}
         >
           <Col
             xs={24}
+            md={10}
             xl={8}
             className={
               "z-10 hidden items-center justify-center p-5 md:block md:p-0"
@@ -134,6 +137,7 @@ const ImageLeftRightText = (props) => {
           </Col>
           <Col
             xs={24}
+            md={12}
             xl={12}
             className={
               "relative flex items-center justify-center pr-0 md:justify-end md:pr-9"
@@ -162,6 +166,7 @@ const ImageLeftRightText = (props) => {
           </Col>
           <Col
             xs={24}
+            md={8}
             xl={8}
             className={
               "z-10 block items-center justify-center p-5 md:hidden md:p-0"

@@ -19,7 +19,12 @@ const TopSection = () => {
       // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
     >
       <div className="gxApp-spread-background-pink"></div>
-      <Col className="gutter-row hidden items-start md:block" xs={24} md={10}>
+      <Col
+        className="gutter-row hidden items-start md:block"
+        xs={24}
+        md={12}
+        xl={10}
+      >
         <MotionAnimate animation="fadeInUp" reset={true}>
           <h1 className="mt-28 font-secondFont text-[64px] font-bold text-white">
             {GxAppConst.sectionOneHead}
@@ -63,12 +68,13 @@ const TopSection = () => {
       <Col
         className="gutter-row relative flex items-end justify-center align-middle md:justify-start"
         xs={24}
-        md={14}
+        md={12}
+        xl={14}
       >
         <MotionAnimate animation="fadeInUp" reset={true}>
           <img
             src={topLeftImg}
-            className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[675px]"
+            className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
           />
         </MotionAnimate>
         <img
@@ -78,7 +84,7 @@ const TopSection = () => {
         <MotionAnimate animation="fadeInUp" reset={true}>
           <img
             src={topRightImg}
-            className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[500px]"
+            className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
           />
         </MotionAnimate>
         <div className="absolute -right-8 bottom-20 hidden md:block">
