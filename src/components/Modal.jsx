@@ -31,13 +31,13 @@ const Modal = ({ show, onClose }) => {
         <div className="max-h-[205px] max-w-full bg-lightGray md:max-h-[298px]">
           <picture>
             <source
-              srcSet="/images/modal-hero.png"
+              srcSet="/images/CareerPopupModalImg.svg"
               media="(min-width: 768px)"
             />
             <img
               className="max-h-full max-w-full bg-lightGray"
               loading="eager"
-              src="/images/modal-hero-mobile.png"
+              src="/images/CareerPopupModalImg.svg"
               alt="We are hiring, apply now"
             />
           </picture>

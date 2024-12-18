@@ -13,6 +13,9 @@ import { footerConst } from "../utils/ConstantPageData/FooterConstantData";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import ApplePlayIcon from "./Apple&PlayIcon";
+import twitterIcon from "../assets/twitter-icon.svg";
+import fbIcon from "../assets/fb-icon.svg";
+import linkedinIcon from "../assets/linkedin-icon.svg";
 
 const Footer = () => {
   return (
@@ -39,7 +42,7 @@ const Footer = () => {
               className="mt-3 flex items-center justify-center md:mt-0 md:justify-end"
             >
               <Flex gap="middle">
-                <Link
+                {/* <Link
                   to={"https://facebook.com"}
                   target="_blank"
                   aria-label={"Facebook"}
@@ -74,6 +77,30 @@ const Footer = () => {
                     className="fas faInstagram pt-1"
                     style={{ color: "#ffffff", fontSize: "1.5rem" }}
                   />
+                </Link> */}
+                <Link
+                  to={"https://www.facebook.com/SportsGamex?mibextid=LQQJ4d"}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="mx-auto w-fit cursor-pointer md:mx-0"
+                >
+                  <img src={fbIcon} alt="facebook icon" />
+                </Link>
+                <Link
+                  to={"https://twitter.com/SportsGameX"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto w-fit cursor-pointer md:mx-0"
+                >
+                  <img src={twitterIcon} alt="twitter icon" />
+                </Link>
+                <Link
+                  to={"https://www.linkedin.com/company/94191108"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto w-fit cursor-pointer md:mx-0"
+                >
+                  <img src={linkedinIcon} alt="linkedin icon" />
                 </Link>
               </Flex>
             </Col>
@@ -183,7 +210,9 @@ const Footer = () => {
       </Row>
       <div className="w-full bg-white text-black">
         <div className="mx-auto w-fit py-4 font-spaceGrotesk md:py-6">
-          <p className="text-base font-medium">{footerConst.copyRights}</p>
+          <p className="text-base font-medium">
+            © <span>{new Date().getFullYear()}</span> {footerConst.copyRights}
+          </p>
         </div>
       </div>
     </React.Fragment>

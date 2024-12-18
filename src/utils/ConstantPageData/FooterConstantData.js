@@ -9,7 +9,7 @@ const footerConst = {
     "104 S 20th Street,Philadelphia,Pennsylvania,USA - 19103",
   organizationNumber: "+1 (215) 874-3883",
   organizationEmail: "info@sportsgamex.com",
-  copyRights: "© 2023 GX. All rights reserved.",
+  copyRights: `GX. All rights reserved.`,
 };
 
 export { footerConst };
