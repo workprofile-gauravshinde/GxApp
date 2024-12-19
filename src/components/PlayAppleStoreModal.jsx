@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 import { createPortal } from "react-dom";
 import modalCloseIcon from "../assets/modal-close-icon.svg";
 import playStoreIcon from "../assets/icons/playstore.png";
-import appStoreIcon from "../assets/icons/App Store.png";
+import appStoreIcon from "../assets/icons/App store.png";
 
 const PlayAppleStoreModal = ({ show, onClose, activeType }) => {
   if (!show) {
