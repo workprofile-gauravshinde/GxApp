@@ -61,42 +61,6 @@ const Footer = () => {
               className="mt-3 flex items-center justify-center md:mt-0 md:justify-end"
             >
               <Flex gap="middle">
-                {/* <Link
-                  to={"https://facebook.com"}
-                  target="_blank"
-                  aria-label={"Facebook"}
-                  className="flex h-12 w-12 items-center justify-center rounded-full border"
-                >
-                  <FontAwesomeIcon
-                    icon={faFacebookF}
-                    className="fas faFacebookF pt-1"
-                    style={{ color: "#ffffff", fontSize: "1.5rem" }}
-                  />
-                </Link>
-                <Link
-                  to={"https://twitter.com"}
-                  target="_blank"
-                  aria-label={"Twitter"}
-                  className="flex h-12 w-12 items-center justify-center rounded-full border"
-                >
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    className="fas faTwitter pt-1"
-                    style={{ color: "#ffffff", fontSize: "1.5rem" }}
-                  />
-                </Link>
-                <Link
-                  to={"https://instagram.com"}
-                  target="_blank"
-                  aria-label={"Instagram"}
-                  className="flex h-12 w-12 items-center justify-center rounded-full border"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="fas faInstagram pt-1"
-                    style={{ color: "#ffffff", fontSize: "1.5rem" }}
-                  />
-                </Link> */}
                 <Link
                   to={"https://www.facebook.com/SportsGamex?mibextid=LQQJ4d"}
                   rel="noopener noreferrer"
@@ -194,11 +158,6 @@ const Footer = () => {
                 justify={"start"}
                 className="mt-0 flex-col items-center md:mt-7 md:flex-row md:items-start"
               >
-                {/* <Col
-                  xs={24}
-                  md={10}
-                  className="my-6 mr-0 flex justify-center md:my-0 md:mr-8 md:justify-start"
-                > */}
                 <div className="h-[42px] w-[158px]">
                   <ApplePlayIcon
                     mainStyle="bg-ApplePlayBg"
@@ -211,12 +170,6 @@ const Footer = () => {
                     iconSize={"1.7rem"}
                   />
                 </div>
-                {/* </Col>
-                <Col
-                  xs={24}
-                  md={10}
-                  className="flex justify-center md:justify-start"
-                > */}
                 <div className="ml-0 mt-8 h-[42px] w-[158px] md:ml-5 md:mt-0">
                   <ApplePlayIcon
                     mainStyle="bg-ApplePlayBg"
@@ -229,7 +182,6 @@ const Footer = () => {
                     iconSize={"1.7rem"}
                   />
                 </div>
-                {/* </Col> */}
               </Row>
             </Col>
           </Row>
