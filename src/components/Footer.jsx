@@ -107,7 +107,7 @@ const Footer = () => {
                   to={"https://www.instagram.com/sportsgamex/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-auto flex h-[41px] w-[42px] w-fit cursor-pointer items-center justify-center rounded-full border border-white bg-white md:mx-0"
+                  className="mx-auto flex h-[41px] w-[42px] cursor-pointer items-center justify-center rounded-full border border-white bg-white md:mx-0"
                 >
                   <img src={instagramIcon} alt="Instagram icon" />
                 </Link>
