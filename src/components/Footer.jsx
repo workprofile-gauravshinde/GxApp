@@ -16,6 +16,7 @@ import ApplePlayIcon from "./Apple&PlayIcon";
 import twitterIcon from "../assets/twitter-icon.svg";
 import fbIcon from "../assets/fb-icon.svg";
 import linkedinIcon from "../assets/linkedin-icon.svg";
+import instagramIcon from "../assets/instagram.svg";
 
 const Footer = () => {
   return (
@@ -101,6 +102,14 @@ const Footer = () => {
                   className="mx-auto w-fit cursor-pointer md:mx-0"
                 >
                   <img src={linkedinIcon} alt="linkedin icon" />
+                </Link>
+                <Link
+                  to={"https://www.instagram.com/sportsgamex/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto flex h-[41px] w-[42px] w-fit cursor-pointer items-center justify-center rounded-full border border-white bg-white md:mx-0"
+                >
+                  <img src={instagramIcon} alt="Instagram icon" />
                 </Link>
               </Flex>
             </Col>

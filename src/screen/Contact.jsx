@@ -11,9 +11,9 @@ const Contact = () => {
       ></div>
       <div className="mx-auto w-11/12 max-w-5xl space-y-8 py-8 text-center text-white md:space-y-16 md:py-24">
         <div className="space-y-4 md:space-y-8">
-          <h1 className="font-secondFont text-2xl font-bold capitalize md:text-6xl ">
+          <p className="font-secondFont text-2xl font-bold capitalize md:text-6xl ">
             Let&apos;s get in touch!
-          </h1>
+          </p>
           <p className="mx-auto w-4/5 text-sm text-[#686565] md:text-xl">
             Give us a call or send us an email and we will get back to you as
             soon as possible!

@@ -3,7 +3,6 @@ import { Col, Row } from "antd";
 import BlurCollapse from "../../BlurCollapse";
 import gridImg from "../../../assets/gxAppImg/Mockups/Grid.svg";
 import PropTypes from "prop-types";
-import { MotionAnimate } from "react-motion-animate";
 
 const ImageLeftRightText = (props) => {
   const {
@@ -39,16 +38,14 @@ const ImageLeftRightText = (props) => {
             <img
               src={gridImg}
               className="absolute left-[76px] -z-10 h-44 w-44 md:left-0 md:h-52 md:w-52"
+              alt={"Grid_Image"}
             />
-            {/* <MotionAnimate
-              animation="fadeInUp"
-              reset={true}
-              distance={200}
-              delay={1}
-              speed={1}
-            > */}
-            <img src={leftImgProp} className="z-10 m-auto h-2/3 w-3/6 md:m-0" />
-            {/* </MotionAnimate> */}
+            <img
+              src={leftImgProp}
+              className="z-10 m-auto h-2/3 w-3/6 md:m-0"
+              alt={headerText}
+              title={headerText}
+            />
           </Col>
           <Col
             xs={24}
@@ -58,19 +55,15 @@ const ImageLeftRightText = (props) => {
             id={"gxApp-blurCollapse"}
           >
             <div className="w-full text-center md:text-start">
-              <MotionAnimate animation="fadeInUp" reset={true}>
-                <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
-                  {headerText}
-                </h5>
-              </MotionAnimate>
-              <MotionAnimate animation="fadeInUp" reset={true}>
-                <p
-                  className="mb-4 font-body text-sm font-normal md:text-xl"
-                  style={{ color: "#FFFFFF80" }}
-                >
-                  {paragraph}
-                </p>
-              </MotionAnimate>
+              <p className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
+                {headerText}
+              </p>
+              <p
+                className="mb-4 font-body text-sm font-normal md:text-xl"
+                style={{ color: "#FFFFFF80" }}
+              >
+                {paragraph}
+              </p>
             </div>
             <div className="w-full md:w-5/6">
               {dataArr?.length > 0 &&
@@ -105,19 +98,15 @@ const ImageLeftRightText = (props) => {
             id={"gxApp-blurCollapse"}
           >
             <div className="w-full text-center md:text-start">
-              <MotionAnimate animation="fadeInUp" reset={true}>
-                <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
-                  {headerText}
-                </h5>
-              </MotionAnimate>
-              <MotionAnimate animation="fadeInUp" reset={true}>
-                <p
-                  className="mb-4 font-body text-sm font-normal md:text-xl"
-                  style={{ color: "#FFFFFF80" }}
-                >
-                  {paragraph}
-                </p>
-              </MotionAnimate>
+              <p className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
+                {headerText}
+              </p>
+              <p
+                className="mb-4 font-body text-sm font-normal md:text-xl"
+                style={{ color: "#FFFFFF80" }}
+              >
+                {paragraph}
+              </p>
             </div>
             <div className="w-full md:w-5/6">
               {dataArr?.length > 0 &&
@@ -150,19 +139,14 @@ const ImageLeftRightText = (props) => {
             <img
               src={gridImg}
               className="absolute right-[70px] -z-10 h-44 w-44 md:right-0 md:h-52 md:w-52"
+              alt={"Grid_Image"}
             />
-            {/* <MotionAnimate
-              animation="fadeInUp"
-              reset={true}
-              distance={200}
-              delay={1}
-              speed={1}
-            > */}
             <img
               src={rightImgProp}
               className="z-10 m-auto h-2/3 w-3/6 md:mr-0"
+              alt={headerText}
+              title={headerText}
             />
-            {/* </MotionAnimate> */}
           </Col>
           <Col
             xs={24}
@@ -174,19 +158,15 @@ const ImageLeftRightText = (props) => {
             id={"gxApp-blurCollapse"}
           >
             <div className="w-full text-center md:text-start">
-              <MotionAnimate animation="fadeInUp" reset={true}>
-                <h5 className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
-                  {headerText}
-                </h5>
-              </MotionAnimate>
-              <MotionAnimate animation="fadeInUp" reset={true}>
-                <p
-                  className="mb-4 font-body text-sm font-normal md:text-xl"
-                  style={{ color: "#FFFFFF80" }}
-                >
-                  {paragraph}
-                </p>
-              </MotionAnimate>
+              <p className="mb-4 font-secondFont text-xl font-bold text-white md:text-4xl">
+                {headerText}
+              </p>
+              <p
+                className="mb-4 font-body text-sm font-normal md:text-xl"
+                style={{ color: "#FFFFFF80" }}
+              >
+                {paragraph}
+              </p>
             </div>
             <div className="w-full md:w-5/6">
               {dataArr?.length > 0 &&

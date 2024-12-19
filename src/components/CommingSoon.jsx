@@ -31,10 +31,10 @@ const Home = () => {
             <h1 className="text-center font-display text-[32px] uppercase leading-relaxed md:text-left md:text-[64px] md:leading-none">
               We&apos;re <span className="text-purple-400">coming soon!</span>
             </h1>
-            <h3 className="mx-auto w-[80%] text-center font-body text-sm leading-6 text-[#FFFFFF] opacity-80 md:w-full md:text-left md:text-xl">
+            <p className="mx-auto w-[80%] text-center font-body text-sm leading-6 text-[#FFFFFF] opacity-80 md:w-full md:text-left md:text-xl">
               GX is a real-time sports trading app that allows users to buy and
               sell shares in athletes.
-            </h3>
+            </p>
             <form
               onSubmit={emailSubmitHandler}
               className="relative flex w-full flex-col items-center md:flex-row xl:w-[80%]"

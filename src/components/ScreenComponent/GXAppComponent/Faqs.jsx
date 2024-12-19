@@ -4,7 +4,6 @@ import {
   GX_FAQS,
   GxAppConst,
 } from "../../../utils/ConstantPageData/GxAppConstantData";
-import { MotionAnimate } from "react-motion-animate";
 
 const Faqs = () => {
   return (
@@ -12,33 +11,25 @@ const Faqs = () => {
       <div className="why_sports_gamex_purpal"></div>
       <Col xs={24} md={15} xl={11} id={"gxApp-faq"}>
         <Col xs={24} xl={24} className="mb-14 text-center">
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <h3 className="text-3xl font-bold text-white md:text-5xl">
-              {GxAppConst.sectionSixHead}
-            </h3>
-          </MotionAnimate>
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <h3 className="text-3xl font-bold text-lightPurple md:text-5xl">
-              {GxAppConst.sectionSixHeadTwo}
-            </h3>
-          </MotionAnimate>
+          <p className="text-3xl font-bold text-white md:text-5xl">
+            {GxAppConst.sectionSixHead}
+          </p>
+          <p className="text-3xl font-bold text-lightPurple md:text-5xl">
+            {GxAppConst.sectionSixHeadTwo}
+          </p>
         </Col>
-
-        <MotionAnimate animation="fadeInUp" reset={true}>
-          <Collapse
-            defaultActiveKey={["1"]}
-            expandIcon={
-              ({ isActive }) =>
-                isActive ? <MinusOutlined /> : <PlusOutlined /> // Conditional rendering of icons based on panel state
-            }
-            expandIconPosition={"end"}
-            size="middle"
-            accordion
-            items={GX_FAQS}
-            ghost={true}
-            contentBg={"transparent"}
-          />
-        </MotionAnimate>
+        <Collapse
+          defaultActiveKey={["1"]}
+          expandIcon={
+            ({ isActive }) => (isActive ? <MinusOutlined /> : <PlusOutlined />) // Conditional rendering of icons based on panel state
+          }
+          expandIconPosition={"end"}
+          size="middle"
+          accordion
+          items={GX_FAQS}
+          ghost={true}
+          contentBg={"transparent"}
+        />
       </Col>
       <div className="gxApp-spread-background-lightWhite"></div>
     </Row>

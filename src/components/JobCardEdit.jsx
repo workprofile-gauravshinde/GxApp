@@ -60,9 +60,9 @@ const JobCardEdit = ({ jobData, setJobList, jobList }) => {
     <div className="w-full bg-[#21222F]">
       <div className="space-y-6 px-[14px] py-5 md:space-y-4 md:p-8">
         <div className="flex flex-col flex-wrap gap-x-10 gap-y-4 md:flex-row md:items-center">
-          <h3 className="min-w-fit text-lg font-bold md:text-[28px]">
+          <p className="min-w-fit text-lg font-bold md:text-[28px]">
             {jobTitle}
-          </h3>
+          </p>
           <div className="flex gap-4 text-sm text-black ">
             <div className="bg-lightPurple px-4 py-[6px] ">{jobType}</div>
             {urgentlyHiring && (

@@ -59,3 +59,10 @@
     height: 23rem;
   }
 }
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .gxApp-card-box {
+    height: 29rem;
+  }
+}

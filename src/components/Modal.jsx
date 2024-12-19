@@ -43,9 +43,9 @@ const Modal = ({ show, onClose }) => {
           </picture>
         </div>
         <div className="space-y-4 p-5 font-body md:space-y-[30px] md:p-[30px]">
-          <h3 className="text-lg font-bold md:text-[28px] md:leading-[38px]">
+          <p className="text-lg font-bold md:text-[28px] md:leading-[38px]">
             Apply for Your Dream Job Today!
-          </h3>
+          </p>
           <p className="text-sm md:text-lg">
             Embarking on a new career path is an exciting endeavor, and
             we&apos;re delighted that you&apos;re considering joining our team

@@ -3,7 +3,7 @@ import ShadowButtonComp from "../../ShadowButtonComp";
 import LandingImage from "../../../assets/Home/Landing_image.png";
 import ScrollMouse from "../../ScrollMouse";
 import { homeData } from "../../../utils/ConstantPageData/Home";
-import { MotionAnimate } from "react-motion-animate";
+import PrimaryButton from "../../PrimaryButton";
 
 const TopMainHome = () => {
   return (
@@ -19,36 +19,32 @@ const TopMainHome = () => {
           xs={24}
           md={12}
         >
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <h1 className="font-secondFont text-[64px] font-bold text-white">
-              {homeData?.SectionOneHead}
-            </h1>
-          </MotionAnimate>
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <p
-              className="mb-5 font-body text-xl font-normal"
-              style={{ color: "#FDFDFD80" }}
-            >
-              {homeData?.SectionOneDesc}
-            </p>
-          </MotionAnimate>
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <p
-              className="font-body text-xl font-normal"
-              style={{ color: "#FDFDFD80" }}
-            >
-              {homeData?.SectionOneDescTwo}
-            </p>
-          </MotionAnimate>
-
+          <p className="font-secondFont text-[64px] font-bold text-white">
+            {homeData?.SectionOneHead}
+          </p>
+          <p
+            className="mb-5 font-body text-xl font-normal"
+            style={{ color: "#FDFDFD80" }}
+          >
+            {homeData?.SectionOneDesc}
+          </p>
+          <p
+            className="font-body text-xl font-normal"
+            style={{ color: "#FDFDFD80" }}
+          >
+            {homeData?.SectionOneDescTwo}
+          </p>
           <div className="mt-9 flex justify-start">
-            <ShadowButtonComp
+            {/* <ShadowButtonComp
               btnTitle={homeData?.SectionOneBtnText}
               extraCss={"z-10"}
               borderColor={"#000000"}
               backgroundColor={"#ffffff"}
               onClickBtn={() => {}}
-            />
+            /> */}
+            <PrimaryButton onClick={() => {}}>
+              {homeData?.SectionOneBtnText}
+            </PrimaryButton>
           </div>
         </Col>
         <Col
@@ -68,9 +64,9 @@ const TopMainHome = () => {
           xs={24}
           md={12}
         >
-          <h1 className="mb-10 font-secondFont text-3xl font-bold text-white md:text-5xl">
+          <p className="mb-10 font-secondFont text-3xl font-bold text-white md:text-5xl">
             {homeData?.SectionOneHead}
-          </h1>
+          </p>
           <p
             className="mb-5 font-body text-base font-normal md:text-xl"
             style={{ color: "#FDFDFD80" }}
@@ -84,13 +80,16 @@ const TopMainHome = () => {
             {homeData?.SectionOneDescTwo}
           </p>
           <div className="mt-9 flex justify-center">
-            <ShadowButtonComp
+            {/* <ShadowButtonComp
               btnTitle={homeData?.SectionOneBtnText}
               extraCss={"z-10"}
               borderColor={"#000000"}
               backgroundColor={"#ffffff"}
               onClickBtn={() => {}}
-            />
+            /> */}
+            <PrimaryButton onClick={() => {}}>
+              {homeData?.SectionOneBtnText}
+            </PrimaryButton>
           </div>
         </Col>
         <div className="absolute bottom-5 right-0">

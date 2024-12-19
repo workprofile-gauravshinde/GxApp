@@ -14,7 +14,7 @@ const homeData = {
   SectionTwoDesc:
     "SportsGameX is more than just a platform—it’s a movement to reshape how fans interact with sports. For decades, sports fandom has been about passion, support, and loyalty. But what if it could also be about growth, empowerment, and financial opportunities?",
   SectionThreeHeadOneText: "Why",
-  SectionThreeHeadTwoText: "Sportsgamex?",
+  SectionThreeHeadTwoText: "SportsGamex?",
   SectionThreeDesc:
     "At SportsGamex Inc, we are not just reimagining the sports industry—we’re creating an entirely new way for fans to be part of the action.",
   SectionFourHeadOneText: "Our",

@@ -4,7 +4,7 @@ import "./../styles/Carousel.css"; // Import custom styles
 import { homeSliderContentArr } from "../utils/ConstantPageData/Home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { MotionAnimate } from "react-motion-animate";
+// import { MotionAnimate } from "react-motion-animate";
 
 const CustomCarousel = () => {
   const settings = {
@@ -59,16 +59,14 @@ const ReuseableComponent = ({ title, desc }) => {
   return (
     <div className="slide shadow-lg">
       <div className="px-3 text-center">
-        <MotionAnimate animation="fadeInUp" reset={true}>
-          <p className="mb-8 font-secondFont text-xl font-bold leading-6 text-white md:text-[28px] md:leading-[39.01px]">
-            {title}
-          </p>
-        </MotionAnimate>
-        <MotionAnimate animation="fadeInUp" reset={true}>
-          <p className="font-body text-sm font-normal text-[#FDFDFDCC] md:text-lg">
-            {desc}
-          </p>
-        </MotionAnimate>
+        {/* <MotionAnimate animation="fadeInUp" reset={true}> */}
+        <p className="mb-8 font-secondFont text-xl font-bold leading-6 text-white md:text-[28px] md:leading-[39.01px]">
+          {title}
+        </p>
+        {/* </MotionAnimate> */}
+        <p className="font-body text-sm font-normal text-[#FDFDFDCC] md:text-lg">
+          {desc}
+        </p>
       </div>
     </div>
   );

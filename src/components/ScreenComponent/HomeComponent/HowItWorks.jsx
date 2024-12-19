@@ -3,7 +3,7 @@ import React from "react";
 import ShadowButtonComp from "../../ShadowButtonComp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
 import { homeData } from "../../../utils/ConstantPageData/Home";
-import { MotionAnimate } from "react-motion-animate";
+import PrimaryButton from "../../PrimaryButton";
 
 const HowItWorks = () => {
   return (
@@ -14,35 +14,31 @@ const HowItWorks = () => {
       <div className="home-spread-background-purple"></div>
       <Col xs={24} xl={9} id={"gxApp-faq"}>
         <Col xs={24} xl={24} className="text-center">
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <Flex
-              align="center"
-              className="mb-5 justify-center md:mb-10 md:px-0"
-            >
-              <h3 className="text-3xl font-bold text-lightPurple md:text-5xl">
-                {homeData.SectionSixHeadOneText}&nbsp;
-              </h3>
-              <h3 className="text-3xl font-bold text-white md:text-5xl">
-                {homeData.SectionSixHeadTwoText}
-              </h3>
-            </Flex>
-          </MotionAnimate>
-          <MotionAnimate animation="fadeInUp" reset={true}>
-            <p
-              className="text-basel mb-10 px-8 font-body font-normal md:px-0 md:text-xl"
-              style={{ color: "#FDFDFDCC" }}
-            >
-              {homeData.SectionSixDesc}
+          <Flex align="center" className="mb-5 justify-center md:mb-10 md:px-0">
+            <p className="text-3xl font-bold text-lightPurple md:text-5xl">
+              {homeData.SectionSixHeadOneText}&nbsp;
             </p>
-          </MotionAnimate>
+            <p className="text-3xl font-bold text-white md:text-5xl">
+              {homeData.SectionSixHeadTwoText}
+            </p>
+          </Flex>
+          <p
+            className="text-basel mb-10 px-8 font-body font-normal md:px-0 md:text-xl"
+            style={{ color: "#FDFDFDCC" }}
+          >
+            {homeData.SectionSixDesc}
+          </p>
           <div className="mb-16 flex justify-center md:mb-20">
-            <ShadowButtonComp
+            {/* <ShadowButtonComp
               btnTitle={homeData.SectionSixBtnText}
               extraCss={"z-10"}
               borderColor={"#000000"}
               backgroundColor={"#ffffff"}
               onClickBtn={() => {}}
-            />
+            /> */}
+            <PrimaryButton onClick={() => {}}>
+              {homeData.SectionSixBtnText}
+            </PrimaryButton>
           </div>
           <div className="flex justify-center">
             <img
