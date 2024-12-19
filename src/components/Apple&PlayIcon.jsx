@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const ApplePlayIcon = (props) => {
   const {
+    toUrl,
     mainStyle,
     icon,
     smTextExtra,
@@ -11,10 +12,9 @@ const ApplePlayIcon = (props) => {
     smText,
     mdText,
     iconSize,
-    toUrl,
   } = props;
   return (
-    <Link to={toUrl} target="_blank" aria-label={mdText}>
+    <button onClick={toUrl} aria-label={mdText} className="w-full">
       <Flex
         gap={"14px"}
         align="center"
@@ -35,7 +35,7 @@ const ApplePlayIcon = (props) => {
           </p>
         </div>
       </Flex>
-    </Link>
+    </button>
   );
 };
 

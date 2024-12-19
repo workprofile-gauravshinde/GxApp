@@ -12,8 +12,13 @@ import {
   TRANSACTION_ARR,
 } from "../utils/ConstantPageData/GxAppConstantData";
 import TopSection from "../components/ScreenComponent/GXAppComponent/TopSection";
+import { useEffect } from "react";
 
 const GxApp = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div>
       <TopSection />

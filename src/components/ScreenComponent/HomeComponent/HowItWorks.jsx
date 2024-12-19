@@ -4,8 +4,10 @@ import ShadowButtonComp from "../../ShadowButtonComp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
 import { homeData } from "../../../utils/ConstantPageData/Home";
 import PrimaryButton from "../../PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 const HowItWorks = () => {
+  const navigate = useNavigate();
   return (
     <Row
       justify={"center"}
@@ -36,7 +38,7 @@ const HowItWorks = () => {
               backgroundColor={"#ffffff"}
               onClickBtn={() => {}}
             /> */}
-            <PrimaryButton onClick={() => {}}>
+            <PrimaryButton onClick={() => navigate("/gxapp")}>
               {homeData.SectionSixBtnText}
             </PrimaryButton>
           </div>

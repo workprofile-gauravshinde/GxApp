@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, Col, Row, Tag, Flex, Button } from "antd";
 import avatarOne from "../../../assets/avatarOne.png";
+import avatarTwo from "../../../assets/avatarTwo.jpeg";
 import BallOne from "../../../assets/gxAppImg/Basketball icon.svg";
 import BallTwo from "../../../assets/gxAppImg/Soccer icon.svg";
 import BallThree from "../../../assets/gxAppImg/Baseball_icon.svg";
@@ -109,7 +110,7 @@ const InvestWithEase = () => {
                   className="flex items-center justify-between border"
                 >
                   <div className="relative flex items-center">
-                    <Avatar size={42} shape="circle" src={avatarOne} />
+                    <Avatar size={42} shape="circle" src={avatarTwo} />
                     <Avatar
                       size={18}
                       shape="circle"

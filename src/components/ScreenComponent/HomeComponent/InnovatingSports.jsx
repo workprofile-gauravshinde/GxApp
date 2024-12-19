@@ -26,6 +26,9 @@ const InnovatingSports = () => {
           </span>{" "}
           {homeData?.SectionFiveHeadThreeText}
         </p>
+        <p className="mt-6 text-center font-body font-normal text-white md:text-left md:text-xl">
+          {homeData?.SectionFiveDesc}
+        </p>
       </Col>
       <Col xs={24} md={14} className="">
         <div className="round-patch hidden md:block"></div>

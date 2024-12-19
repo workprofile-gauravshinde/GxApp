@@ -5,7 +5,8 @@ import ScrollMouse from "../../ScrollMouse";
 import { homeData } from "../../../utils/ConstantPageData/Home";
 import PrimaryButton from "../../PrimaryButton";
 
-const TopMainHome = () => {
+const TopMainHome = (props) => {
+  const { onAboutClick } = props;
   return (
     <>
       <Row
@@ -42,7 +43,7 @@ const TopMainHome = () => {
               backgroundColor={"#ffffff"}
               onClickBtn={() => {}}
             /> */}
-            <PrimaryButton onClick={() => {}}>
+            <PrimaryButton onClick={onAboutClick}>
               {homeData?.SectionOneBtnText}
             </PrimaryButton>
           </div>

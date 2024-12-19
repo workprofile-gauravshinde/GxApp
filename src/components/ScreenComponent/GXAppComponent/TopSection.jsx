@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import topLeftImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.png";
 import topLeftMobileImg from "../../../assets/Home/App_mobile.png";
 import topRightImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME LIGHT.png";
@@ -9,8 +9,26 @@ import { footerConst } from "../../../utils/ConstantPageData/FooterConstantData"
 import ScrollMouse from "../../ScrollMouse";
 import { GxAppConst } from "../../../utils/ConstantPageData/GxAppConstantData";
 import { Link } from "react-router-dom";
+import PlayAppleStoreModal from "../../PlayAppleStoreModal";
 
 const TopSection = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [actionType, setActionType] = useState("play");
+
+  const openModal = (typeAction) => () => {
+    setShowModal(true);
+    setActionType(typeAction);
+    if (typeof window != "undefined" && window.document) {
+      document.body.style.overflow = "hidden";
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    // Unsets Background Scrolling to use when SideDrawer/Modal is closed
+    document.body.style.overflow = "unset";
+  };
+
   return (
     <Row
       justify={"center"}
@@ -39,9 +57,8 @@ const TopSection = () => {
             md={10}
             className="my-6 mr-0 flex justify-center text-base md:my-0 md:mr-8 md:justify-start"
           > */}
-          <Link
-            to={footerConst.playStoreLink}
-            target="_blank"
+          <button
+            onClick={openModal("play")}
             aria-label="Play Store"
             className="mr-5 h-[53px] w-[180px]"
           >
@@ -51,12 +68,11 @@ const TopSection = () => {
               alt="Play Store"
               title="Play Store"
             />
-          </Link>
+          </button>
           {/* </Col>
           <Col xs={24} md={10} className="flex justify-center md:justify-start"> */}
-          <Link
-            to={footerConst.appleAppLink}
-            target="_blank"
+          <button
+            onClick={openModal("apple")}
             aria-label="Apple Store"
             className="h-[53px] w-[180px]"
           >
@@ -66,7 +82,7 @@ const TopSection = () => {
               alt="Apple Store"
               title="Apple Store"
             />
-          </Link>
+          </button>
           {/* </Col> */}
         </Row>
       </Col>
@@ -118,38 +134,45 @@ const TopSection = () => {
             md={10}
             className="my-6 mr-0 flex justify-center text-base md:my-0 md:mr-8 md:justify-start"
           >
-            <Link
-              to={footerConst.playStoreLink}
-              target="_blank"
+            <button
+              onClick={openModal("play")}
               aria-label="Play Store"
+              className="mr-0 h-[53px] w-[180px] md:mr-5"
             >
               <img
                 src={leftPlayStoreImg}
-                className="h-[53px] w-[180px]"
+                className="h-auto w-full"
                 alt="Play Store"
                 title="Play Store"
               />
-            </Link>
+            </button>
           </Col>
           <Col xs={24} md={10} className="flex justify-center md:justify-start">
-            <Link
-              to={footerConst.appleAppLink}
-              target="_blank"
+            <button
+              onClick={openModal("apple")}
               aria-label="Apple Store"
+              className="h-[53px] w-[180px]"
             >
               <img
                 src={rightAppleStoreImg}
-                className="h-[53px] w-[180px]"
+                className="h-auto w-full"
                 alt="Apple Store"
                 title="Apple Store"
               />
-            </Link>
+            </button>
           </Col>
           <div className="absolute -right-2 bottom-6 block md:hidden">
             <ScrollMouse />
           </div>
         </Row>
       </Col>
+      {showModal && (
+        <PlayAppleStoreModal
+          show={showModal}
+          onClose={closeModal}
+          activeType={actionType}
+        />
+      )}
     </Row>
   );
 };

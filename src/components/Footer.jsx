@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Flex } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,8 +17,26 @@ import twitterIcon from "../assets/twitter-icon.svg";
 import fbIcon from "../assets/fb-icon.svg";
 import linkedinIcon from "../assets/linkedin-icon.svg";
 import instagramIcon from "../assets/instagram.svg";
+import PlayAppleStoreModal from "./PlayAppleStoreModal";
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [actionType, setActionType] = useState("play");
+
+  const openModal = (typeAction) => () => {
+    setShowModal(true);
+    setActionType(typeAction);
+    if (typeof window != "undefined" && window.document) {
+      document.body.style.overflow = "hidden";
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    // Unsets Background Scrolling to use when SideDrawer/Modal is closed
+    document.body.style.overflow = "unset";
+  };
+
   return (
     <React.Fragment>
       <Row
@@ -184,7 +202,7 @@ const Footer = () => {
                 <div className="h-[42px] w-[158px]">
                   <ApplePlayIcon
                     mainStyle="bg-ApplePlayBg"
-                    toUrl={footerConst.appleAppLink}
+                    toUrl={openModal("apple")}
                     smText={"Download on the"}
                     mdText={"App Store"}
                     smTextExtra="text-[9px]"
@@ -202,7 +220,7 @@ const Footer = () => {
                 <div className="ml-0 mt-8 h-[42px] w-[158px] md:ml-5 md:mt-0">
                   <ApplePlayIcon
                     mainStyle="bg-ApplePlayBg"
-                    toUrl={footerConst.playStoreLink}
+                    toUrl={openModal("play")}
                     smText={"GET IT ON"}
                     mdText={"Google Play"}
                     smTextExtra="text-[9px]"
@@ -224,6 +242,13 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      {showModal && (
+        <PlayAppleStoreModal
+          show={showModal}
+          onClose={closeModal}
+          activeType={actionType}
+        />
+      )}
     </React.Fragment>
   );
 };
