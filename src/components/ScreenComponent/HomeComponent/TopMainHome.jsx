@@ -88,7 +88,7 @@ const TopMainHome = (props) => {
               backgroundColor={"#ffffff"}
               onClickBtn={() => {}}
             /> */}
-            <PrimaryButton onClick={() => {}}>
+            <PrimaryButton onClick={onAboutClick}>
               {homeData?.SectionOneBtnText}
             </PrimaryButton>
           </div>

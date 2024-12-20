@@ -13,7 +13,6 @@ export const validEmails = [
   // "harsh.techilia@gmail.com",
   "kinza.k@sportsgamex.com",
   "arbaz.s@sportsgamex.com",
-  "gauravshinde.workprofile@gmail.com",
 ];
 
 export const formDefaultValues = {

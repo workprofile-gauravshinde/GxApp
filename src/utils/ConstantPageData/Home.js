@@ -14,9 +14,9 @@ const homeData = {
   SectionTwoDesc:
     "SportsGameX is more than just a platform—it’s a movement to reshape how fans interact with sports. For decades, sports fandom has been about passion, support, and loyalty. But what if it could also be about growth, empowerment, and financial opportunities?",
   SectionThreeHeadOneText: "Why",
-  SectionThreeHeadTwoText: "SportsGamex?",
+  SectionThreeHeadTwoText: "SportsGameX?",
   SectionThreeDesc:
-    "At SportsGamex Inc, we are not just reimagining the sports industry—we’re creating an entirely new way for fans to be part of the action.",
+    "At SportsGameX Inc, we are not just reimagining the sports industry—we’re creating an entirely new way for fans to be part of the action.",
   SectionFourHeadOneText: "Our",
   SectionFourHeadTwoText: "Mission",
   SectionFourDesc:
@@ -29,7 +29,7 @@ const homeData = {
   SectionSixHeadOneText: "How",
   SectionSixHeadTwoText: "It Works",
   SectionSixDesc:
-    "Head over to our Preview Page to explore detailed app screens and see how Sportsgamex will bring sports trading to life.",
+    "Head over to our Preview Page to explore detailed app screens and see how SportsGameX will bring sports trading to life.",
   SectionSixBtnText: "App Preview",
 };
 
