@@ -157,7 +157,7 @@ const InvestWithEaseObj = {
     title: "Status",
     desc: "Dive deeper into your transaction history for a comprehensive overview of your trading activity.",
   },
-  multiple: "Multiple sports",
+  multiple: "Multiple Sports",
 };
 
 export {

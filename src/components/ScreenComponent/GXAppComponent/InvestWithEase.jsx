@@ -154,7 +154,7 @@ const InvestWithEase = () => {
             </div>
           </div>
           <div className="gxApp-card-box mt-5 h-auto w-full justify-start text-center md:justify-center md:text-left">
-            <p className="font-secondFont text-xl uppercase font-bold text-white md:text-2xl xl:text-3xl">
+            <p className="font-secondFont text-xl font-bold text-white md:text-2xl xl:text-3xl">
               {InvestWithEaseObj.multiple}
             </p>
             <Flex
