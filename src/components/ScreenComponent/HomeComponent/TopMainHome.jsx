@@ -60,17 +60,17 @@ const TopMainHome = (props) => {
             alt="SportsGameX"
             title="SportsGameX"
           /> */}
-          <picture>
+          <picture className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]">
             <source
               srcSet={LandingImageWebp}
               type="image/webp"
-              className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]"
+              className="h-auto w-full"
               alt="SportsGameX"
               title="SportsGameX"
             />
             <img
               src={LandingImage}
-              className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]"
+              className="h-auto w-full"
               alt="SportsGameX"
               title="SportsGameX"
             />
