@@ -1,14 +1,15 @@
 import { Col, Row } from "antd";
 import React, { useState } from "react";
+import topLeftImgWebp from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.webp";
+import topLeftMobileImgWebp from "../../../assets/gxAppImg/Mockups/App_mobile.webp";
+import topRightImgWebp from "../../../assets/gxAppImg/Mockups/GX_APP_HOME LIGHT.webp";
 import topLeftImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.png";
-import topLeftMobileImg from "../../../assets/Home/App_mobile.png";
+import topLeftMobileImg from "../../../assets/gxAppImg/Mockups/App_mobile.png";
 import topRightImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME LIGHT.png";
 import leftPlayStoreImg from "../../../assets/Home/Play_store CTA SVG.svg";
 import rightAppleStoreImg from "../../../assets/Home/App_store CTA SVG.svg";
-import { footerConst } from "../../../utils/ConstantPageData/FooterConstantData";
 import ScrollMouse from "../../ScrollMouse";
 import { GxAppConst } from "../../../utils/ConstantPageData/GxAppConstantData";
-import { Link } from "react-router-dom";
 import PlayAppleStoreModal from "../../PlayAppleStoreModal";
 
 const TopSection = () => {
@@ -92,24 +93,102 @@ const TopSection = () => {
         md={12}
         xl={14}
       >
+        <picture className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]">
+          <source
+            srcSet={topLeftImgWebp}
+            type="image/webp"
+            className="h-auto w-full"
+            // className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
+            alt="GX APP"
+            title="GX APP"
+          />
+          <img
+            src={topLeftImg}
+            className="h-auto w-full"
+            // className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
+            alt="GX APP"
+            title="GX APP"
+          />
+        </picture>
+        <picture className="mb-0 block h-[325px] w-5/6 md:hidden">
+          <source
+            srcSet={topLeftMobileImgWebp}
+            type="image/webp"
+            className="h-auto w-full"
+            // className="mb-0 block h-[325px] w-5/6 md:hidden"
+            alt="GX APP"
+            title="GX APP"
+          />
+          <img
+            src={topLeftMobileImg}
+            className="h-auto w-full"
+            // className="mb-0 block h-[325px] w-5/6 md:hidden"
+            alt="GX APP"
+            title="GX APP"
+          />
+        </picture>
+        <picture className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]">
+          <source
+            srcSet={topRightImgWebp}
+            type="image/webp"
+            className="h-auto w-full"
+            // className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
+            alt="GX APP"
+            title="GX APP"
+          />
+          <img
+            src={topRightImg}
+            className="h-auto w-full"
+            // className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
+            alt="GX APP"
+            title="GX APP"
+          />
+        </picture>
+        {/* <picture>
+          <source
+            srcSet={topLeftImgWebp}
+            type="image/webp"
+            className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
+            alt="GX APP"
+            title="GX APP"
+          /> 
         <img
           src={topLeftImg}
           className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
           alt="GX APP"
           title="GX APP"
         />
+        </picture>
+        <picture>
+          <source
+            srcSet={topLeftMobileImgWebp}
+            type="image/webp"
+            className="mb-0 block h-[325px] w-5/6 md:hidden"
+            alt="GX APP"
+            title="GX APP"
+          />
         <img
           src={topLeftMobileImg}
           className="mb-0 block h-[325px] w-5/6 md:hidden"
           alt="GX APP"
           title="GX APP"
         />
+         </picture>
+        <picture>
+          <source
+            srcSet={topRightImgWebp}
+            type="image/webp"
+            className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
+            alt="GX APP"
+            title="GX APP"
+          />
         <img
           src={topRightImg}
           className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
           alt="GX APP"
           title="GX APP"
         />
+        </picture> */}
         <div className="absolute -right-8 bottom-20 hidden md:block">
           <ScrollMouse />
         </div>

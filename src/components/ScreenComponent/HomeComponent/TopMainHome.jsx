@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import ShadowButtonComp from "../../ShadowButtonComp";
+import LandingImageWebp from "../../../assets/Home/Landing_image.webp";
 import LandingImage from "../../../assets/Home/Landing_image.png";
 import ScrollMouse from "../../ScrollMouse";
 import { homeData } from "../../../utils/ConstantPageData/Home";
@@ -53,12 +54,27 @@ const TopMainHome = (props) => {
           xs={24}
           md={12}
         >
-          <img
+          {/* <img
             src={LandingImage}
             className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]"
             alt="SportsGameX"
             title="SportsGameX"
-          />
+          /> */}
+          <picture>
+            <source
+              srcSet={LandingImageWebp}
+              type="image/webp"
+              className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]"
+              alt="SportsGameX"
+              title="SportsGameX"
+            />
+            <img
+              src={LandingImage}
+              className="mb-0 h-[325px] w-[90%] md:h-auto md:w-[85%] xl:mb-10 xl:h-[460px] xl:w-[486px]"
+              alt="SportsGameX"
+              title="SportsGameX"
+            />
+          </picture>
         </Col>
         <Col
           className="gutter-row mb-24 mt-12 block items-start px-0 text-center md:hidden md:px-10"

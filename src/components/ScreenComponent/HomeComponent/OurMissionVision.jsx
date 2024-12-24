@@ -12,6 +12,13 @@ import MissionImgThree from "../../../assets/Home/Our_mission_image_3.png";
 import MissionImgFour from "../../../assets/Home/Our_mission_image_4.png";
 import MissionImgFive from "../../../assets/Home/Our_mission_image_5.png";
 import MissionImgSix from "../../../assets/Home/Our_mission_image_6.png";
+import MissionImgOneWebp from "../../../assets/Home/Our_mission_image_1.webp";
+import MissionImgTwoWebp from "../../../assets/Home/Our_mission_image_2.webp";
+import MissionImgThreeWebp from "../../../assets/Home/Our_mission_image_3.webp";
+import MissionImgFourWebp from "../../../assets/Home/Our_mission_image_4.webp";
+import MissionImgFiveWebp from "../../../assets/Home/Our_mission_image_5.webp";
+import MissionImgSixWebp from "../../../assets/Home/Our_mission_image_6.webp";
+
 import ArrowDownImg from "../../../assets/Home/Arrow-down.svg";
 
 const OurMissionVision = () => {
@@ -44,58 +51,110 @@ const OurMissionVision = () => {
         <Col xs={24} md={11} className="block md:hidden">
           <Row gutter={16}>
             <Col xs={12} md={12}>
-              <img
-                src={
-                  currentActiveTab === 1
-                    ? MissionImgOne
-                    : currentActiveTab === 2
-                    ? MissionImgThree
-                    : MissionImgFive
-                }
-                alt={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                title={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
-                // box a
-              />
+              <picture>
+                <source
+                  srcSet={
+                    currentActiveTab === 1
+                      ? MissionImgOneWebp
+                      : currentActiveTab === 2
+                      ? MissionImgThreeWebp
+                      : MissionImgFiveWebp
+                  }
+                  type="image/webp"
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+                <img
+                  src={
+                    currentActiveTab === 1
+                      ? MissionImgOne
+                      : currentActiveTab === 2
+                      ? MissionImgThree
+                      : MissionImgFive
+                  }
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+              </picture>
             </Col>
             <Col xs={12} md={12}>
-              <img
-                src={
-                  currentActiveTab === 1
-                    ? MissionImgTwo
-                    : currentActiveTab === 2
-                    ? MissionImgFour
-                    : MissionImgSix
-                }
-                alt={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                title={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
-                // box a
-              />
+              <picture>
+                <source
+                  srcSet={
+                    currentActiveTab === 1
+                      ? MissionImgTwoWebp
+                      : currentActiveTab === 2
+                      ? MissionImgFourWebp
+                      : MissionImgSixWebp
+                  }
+                  type="image/webp"
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+                <img
+                  src={
+                    currentActiveTab === 1
+                      ? MissionImgTwo
+                      : currentActiveTab === 2
+                      ? MissionImgFour
+                      : MissionImgSix
+                  }
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+              </picture>
             </Col>
           </Row>
         </Col>
@@ -121,58 +180,110 @@ const OurMissionVision = () => {
         <Col xs={24} md={11} offset={1} className="hidden md:block">
           <Row justify={"end"} gutter={16}>
             <Col xs={12} md={12}>
-              <img
-                src={
-                  currentActiveTab === 1
-                    ? MissionImgOne
-                    : currentActiveTab === 2
-                    ? MissionImgThree
-                    : MissionImgFive
-                }
-                alt={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                title={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                className="mt-4 h-full w-full"
-                // box a
-              />
+              <picture>
+                <source
+                  srcSet={
+                    currentActiveTab === 1
+                      ? MissionImgOneWebp
+                      : currentActiveTab === 2
+                      ? MissionImgThreeWebp
+                      : MissionImgFiveWebp
+                  }
+                  type="image/webp"
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+                <img
+                  src={
+                    currentActiveTab === 1
+                      ? MissionImgOne
+                      : currentActiveTab === 2
+                      ? MissionImgThree
+                      : MissionImgFive
+                  }
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+              </picture>
             </Col>
             <Col xs={12} md={12}>
-              <img
-                src={
-                  currentActiveTab === 1
-                    ? MissionImgTwo
-                    : currentActiveTab === 2
-                    ? MissionImgFour
-                    : MissionImgSix
-                }
-                alt={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                title={
-                  currentActiveTab === 1
-                    ? "Redefine Sports Engagement"
-                    : currentActiveTab === 2
-                    ? "Promote Financial Literacy Through Sports"
-                    : "Encourage Strategic Thinking"
-                }
-                className="mt-4 h-full w-full"
-                // box a
-              />
+              <picture>
+                <source
+                  srcSet={
+                    currentActiveTab === 1
+                      ? MissionImgTwoWebp
+                      : currentActiveTab === 2
+                      ? MissionImgFourWebp
+                      : MissionImgSixWebp
+                  }
+                  type="image/webp"
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+                <img
+                  src={
+                    currentActiveTab === 1
+                      ? MissionImgTwo
+                      : currentActiveTab === 2
+                      ? MissionImgFour
+                      : MissionImgSix
+                  }
+                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  alt={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                  title={
+                    currentActiveTab === 1
+                      ? "Redefine Sports Engagement"
+                      : currentActiveTab === 2
+                      ? "Promote Financial Literacy Through Sports"
+                      : "Encourage Strategic Thinking"
+                  }
+                />
+              </picture>
             </Col>
           </Row>
         </Col>

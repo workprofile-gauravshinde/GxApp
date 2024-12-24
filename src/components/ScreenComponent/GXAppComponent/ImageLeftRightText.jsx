@@ -8,7 +8,9 @@ const ImageLeftRightText = (props) => {
   const {
     mobileTopPadding,
     displayLeft,
+    leftImgPropWebp,
     leftImgProp,
+    rightImgPropWebp,
     rightImgProp,
     dataArr,
     headerText,
@@ -40,12 +42,21 @@ const ImageLeftRightText = (props) => {
               className="absolute left-[76px] -z-10 h-44 w-44 md:left-0 md:h-52 md:w-52"
               alt={"Grid_Image"}
             />
-            <img
-              src={leftImgProp}
-              className="z-10 m-auto h-2/3 w-3/6 md:m-0"
-              alt={headerText}
-              title={headerText}
-            />
+            <picture>
+              <source
+                srcSet={leftImgPropWebp}
+                type="image/webp"
+                className="z-10 m-auto h-2/3 w-3/6 md:m-0"
+                alt={headerText}
+                title={headerText}
+              />
+              <img
+                src={leftImgProp}
+                className="z-10 m-auto h-2/3 w-3/6 md:m-0"
+                alt={headerText}
+                title={headerText}
+              />
+            </picture>
           </Col>
           <Col
             xs={24}
@@ -141,12 +152,21 @@ const ImageLeftRightText = (props) => {
               className="absolute right-[70px] -z-10 h-44 w-44 md:right-0 md:h-52 md:w-52"
               alt={"Grid_Image"}
             />
-            <img
-              src={rightImgProp}
-              className="z-10 m-auto h-2/3 w-3/6 md:mr-0"
-              alt={headerText}
-              title={headerText}
-            />
+            <picture>
+              <source
+                srcSet={rightImgPropWebp}
+                type="image/webp"
+                className="z-10 m-auto h-2/3 w-3/6 md:mr-0"
+                alt={headerText}
+                title={headerText}
+              />
+              <img
+                src={rightImgProp}
+                className="z-10 m-auto h-2/3 w-3/6 md:mr-0"
+                alt={headerText}
+                title={headerText}
+              />
+            </picture>
           </Col>
           <Col
             xs={24}
@@ -194,7 +214,9 @@ ImageLeftRightText.propTypes = {
   mobileTopPadding: PropTypes.number,
   displayLeft: PropTypes.bool,
   leftImgProp: PropTypes.string,
+  leftImgPropWebp: PropTypes.string,
   rightImgProp: PropTypes.string,
+  rightImgPropWebp: PropTypes.string,
   dataArr: PropTypes.array,
   headerText: PropTypes.string,
   paragraph: PropTypes.string,

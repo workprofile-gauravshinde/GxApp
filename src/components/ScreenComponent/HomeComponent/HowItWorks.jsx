@@ -1,6 +1,7 @@
 import { Col, Row, Flex } from "antd";
 import React from "react";
 import ShadowButtonComp from "../../ShadowButtonComp";
+import worksBottomWebp from "../../../assets/Home/Splash_mockup.webp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
 import { homeData } from "../../../utils/ConstantPageData/Home";
 import PrimaryButton from "../../PrimaryButton";
@@ -43,20 +44,37 @@ const HowItWorks = () => {
             </PrimaryButton>
           </div>
           <div className="flex justify-center">
-            <img
-              src={worksBottom}
-              className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
-              alt={
-                homeData.SectionSixHeadOneText +
-                " " +
-                homeData.SectionSixHeadTwoText
-              }
-              title={
-                homeData.SectionSixHeadOneText +
-                " " +
-                homeData.SectionSixHeadTwoText
-              }
-            />
+            <picture>
+              <source
+                srcSet={worksBottomWebp}
+                type="image/webp"
+                className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
+                alt={
+                  homeData.SectionSixHeadOneText +
+                  " " +
+                  homeData.SectionSixHeadTwoText
+                }
+                title={
+                  homeData.SectionSixHeadOneText +
+                  " " +
+                  homeData.SectionSixHeadTwoText
+                }
+              />
+              <img
+                src={worksBottom}
+                className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
+                alt={
+                  homeData.SectionSixHeadOneText +
+                  " " +
+                  homeData.SectionSixHeadTwoText
+                }
+                title={
+                  homeData.SectionSixHeadOneText +
+                  " " +
+                  homeData.SectionSixHeadTwoText
+                }
+              />
+            </picture>
           </div>
         </Col>
       </Col>

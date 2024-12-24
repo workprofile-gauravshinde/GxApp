@@ -2,6 +2,9 @@ import Faqs from "../components/ScreenComponent/GXAppComponent/Faqs";
 import ImageLeftRightText from "../components/ScreenComponent/GXAppComponent/ImageLeftRightText";
 import InvestWithEase from "../components/ScreenComponent/GXAppComponent/InvestWithEase";
 
+import PlayerLeftImgWebp from "../assets/gxAppImg/Mockups/GX_APP_Profile.webp";
+import TransactionRightImgWebp from "../assets/gxAppImg/Mockups/GX_APP_Transaction.webp";
+import AnalyticsLeftImgWebp from "../assets/gxAppImg/Mockups/GX_APP_Analytics.webp";
 import PlayerLeftImg from "../assets/gxAppImg/Mockups/GX_APP_Profile.png";
 import TransactionRightImg from "../assets/gxAppImg/Mockups/GX_APP_Transaction.png";
 import AnalyticsLeftImg from "../assets/gxAppImg/Mockups/GX_APP_Analytics.png";
@@ -25,7 +28,9 @@ const GxApp = () => {
       <ImageLeftRightText
         mobileTopPadding={1}
         displayLeft={true}
+        leftImgPropWebp={PlayerLeftImgWebp}
         leftImgProp={PlayerLeftImg}
+        rightImgPropWebp={TransactionRightImgWebp}
         rightImgProp={TransactionRightImg}
         dataArr={PLAY_PROFILE}
         headerText={GxAppConst.sectionTwoHead}
@@ -33,7 +38,9 @@ const GxApp = () => {
       />
       <ImageLeftRightText
         displayLeft={false}
+        leftImgPropWebp={PlayerLeftImgWebp}
         leftImgProp={PlayerLeftImg}
+        rightImgPropWebp={TransactionRightImgWebp}
         rightImgProp={TransactionRightImg}
         dataArr={TRANSACTION_ARR}
         headerText={GxAppConst.sectionThreeHead}
@@ -41,7 +48,9 @@ const GxApp = () => {
       />
       <ImageLeftRightText
         displayLeft={true}
+        leftImgPropWebp={AnalyticsLeftImgWebp}
         leftImgProp={AnalyticsLeftImg}
+        rightImgPropWebp={TransactionRightImgWebp}
         rightImgProp={TransactionRightImg}
         dataArr={ANALYTICS_ARR}
         headerText={GxAppConst.sectionFourHead}
