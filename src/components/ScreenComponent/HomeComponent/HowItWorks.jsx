@@ -15,6 +15,7 @@ const HowItWorks = () => {
       className="relative bg-mainBackgroundTwo px-5 pt-16 md:pt-28 xl:pt-[150px]"
     >
       <div className="home-spread-background-purple"></div>
+      <div className="gxApp-spread-background-lightWhite"></div>
       <Col xs={24} xl={9} id={"gxApp-faq"}>
         <Col xs={24} xl={24} className="text-center">
           <Flex align="center" className="mb-5 justify-center md:mb-10 md:px-0">
@@ -78,7 +79,6 @@ const HowItWorks = () => {
           </div>
         </Col>
       </Col>
-      <div className="gxApp-spread-background-lightWhite"></div>
     </Row>
   );
 };

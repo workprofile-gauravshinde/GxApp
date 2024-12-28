@@ -40,9 +40,12 @@
   bottom: 0;
   width: 13.75rem;
   height: 10.75rem;
+  border: 1px solid #ece1ff;
   border-radius: 10.75rem;
-  background-color: #ece1ff;
+  background: #ece1ff;
   filter: blur(11.5rem);
+  opacity: 0.5;
+  flex-shrink: 0;
 }
 
 .gxApp-spread-background-pink {
