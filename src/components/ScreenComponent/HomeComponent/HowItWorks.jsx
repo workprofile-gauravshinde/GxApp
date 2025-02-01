@@ -46,7 +46,7 @@ const HowItWorks = () => {
           </div>
           <div className="flex justify-center">
             {/* <div className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"> */}
-            <picture className="relative">
+            <picture>
               <source
                 srcSet={worksBottomWebp}
                 type="image/webp"
