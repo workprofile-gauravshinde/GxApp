@@ -15,9 +15,9 @@ const Home = () => {
   return (
     <div>
       <TopMainHome onAboutClick={handleClick} />
-      <div ref={aboutRef}>
-        <AboutUsHome />
-      </div>
+      {/* <div ref={aboutRef}> */}
+      <AboutUsHome />
+      {/* </div> */}
       <WhySportsGameX />
       <OurMissionVision />
       <InnovatingSports />

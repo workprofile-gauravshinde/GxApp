@@ -3,9 +3,11 @@ import React from "react";
 import Carousel from "../../Carousel";
 import { homeData } from "../../../utils/ConstantPageData/Home";
 
-const AboutUsHome = () => {
+const AboutUsHome = (props) => {
+  const { aboutRef } = props;
   return (
     <Row
+      ref={aboutRef}
       justify={"center"}
       className="relative bg-mainBackgroundTwo py-16 md:py-28 xl:py-[150px]"
     >
