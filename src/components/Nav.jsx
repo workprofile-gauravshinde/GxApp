@@ -9,12 +9,12 @@ const Nav = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", function () {
-      let header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", function () {
+  //     let header = document.querySelector("header");
+  //     header.classList.toggle("sticky", window.scrollY > 0);
+  //   });
+  // }, []);
 
   return (
     <React.Fragment>
@@ -60,7 +60,7 @@ const Nav = () => {
                     ? "border-b-2 border-white pb-2 text-white"
                     : "text-white"
                 }`}
-                activeClassName="active"
+                // activeClassName="active"
                 aria-label="Home"
               >
                 Home
@@ -75,7 +75,7 @@ const Nav = () => {
                     : "text-white"
                 }`}
                 aria-label="Gx App"
-                activeClassName="active"
+                // activeClassName="active"
               >
                 GX App
               </NavLink>
@@ -89,7 +89,7 @@ const Nav = () => {
                     : "text-white"
                 }`}
                 aria-label="Careers"
-                activeClassName="active"
+                // activeClassName="active"
               >
                 Careers
               </NavLink>
@@ -103,7 +103,7 @@ const Nav = () => {
                     : "text-white"
                 }`}
                 aria-label="Contact"
-                activeClassName="active"
+                // activeClassName="active"
               >
                 Contact Us
               </NavLink>
@@ -121,7 +121,7 @@ const Nav = () => {
                       : "text-white"
                   }`}
                   aria-label="Home"
-                  activeClassName="active"
+                  // activeClassName="active"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
@@ -136,7 +136,7 @@ const Nav = () => {
                       : "text-white"
                   }`}
                   aria-label="Gx App"
-                  activeClassName="active"
+                  // activeClassName="active"
                   onClick={() => setMenuOpen(false)}
                 >
                   GX App
@@ -151,7 +151,7 @@ const Nav = () => {
                       : "text-white"
                   }`}
                   aria-label="Careers"
-                  activeClassName="active"
+                  // activeClassName="active"
                   onClick={() => setMenuOpen(false)}
                 >
                   Careers
@@ -166,7 +166,7 @@ const Nav = () => {
                       : "text-white"
                   }`}
                   aria-label="Contact"
-                  activeClassName="active"
+                  // activeClassName="active"
                   onClick={() => setMenuOpen(false)}
                 >
                   Contact Us

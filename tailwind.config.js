@@ -28,7 +28,7 @@ export default {
         mainBackground: "#0B0E1B",
         mainBackgroundTwo: "#141723",
         cardBackground: "#191D2F",
-        cardBackgroundTwo: "rgba(236, 238, 241, 1)",
+        cardBackgroundTwo: "#ECEEF1",
         ApplePlayBg: "#2E313C",
       },
       screens: {

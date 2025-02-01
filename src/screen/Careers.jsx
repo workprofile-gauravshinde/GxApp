@@ -50,7 +50,13 @@ const Careers = () => {
             View More
           </p>
           <div className="w-16 md:w-full">
-            <img className="max-w-full" src={downArrowIcon} alt="View more" />
+            <img
+              // className="max-w-full"
+              src={downArrowIcon}
+              alt="View more"
+              width={"94"}
+              height={"92"}
+            />
           </div>
         </div>
       </div>

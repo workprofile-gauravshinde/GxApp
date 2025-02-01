@@ -67,7 +67,12 @@ const Footer = () => {
                   target="_blank"
                   className="mx-auto w-fit cursor-pointer md:mx-0"
                 >
-                  <img src={fbIcon} alt="facebook icon" />
+                  <img
+                    src={fbIcon}
+                    alt="facebook icon"
+                    width="48"
+                    height="27"
+                  />
                 </Link>
                 <Link
                   to={"https://twitter.com/SportsGameX"}
@@ -75,7 +80,12 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="mx-auto w-fit cursor-pointer md:mx-0"
                 >
-                  <img src={twitterIcon} alt="twitter icon" />
+                  <img
+                    src={twitterIcon}
+                    alt="twitter icon"
+                    width="48"
+                    height="27"
+                  />
                 </Link>
                 <Link
                   to={"https://www.linkedin.com/company/94191108"}
@@ -83,15 +93,25 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="mx-auto w-fit cursor-pointer md:mx-0"
                 >
-                  <img src={linkedinIcon} alt="linkedin icon" />
+                  <img
+                    src={linkedinIcon}
+                    alt="linkedin icon"
+                    width="48"
+                    height="27"
+                  />
                 </Link>
                 <Link
                   to={"https://www.instagram.com/sportsgamex/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-auto flex h-[41px] w-[42px] cursor-pointer items-center justify-center rounded-full border border-white bg-white md:mx-0"
+                  className="mx-auto flex h-[48px] w-[48px] cursor-pointer items-center justify-center rounded-full border border-white bg-white p-2 md:mx-0"
                 >
-                  <img src={instagramIcon} alt="Instagram icon" />
+                  <img
+                    src={instagramIcon}
+                    alt="Instagram icon"
+                    width="48"
+                    height="27"
+                  />
                 </Link>
               </Flex>
             </Col>

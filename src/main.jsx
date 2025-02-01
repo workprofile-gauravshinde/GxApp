@@ -15,6 +15,11 @@ import { Toaster } from "react-hot-toast";
 import EditJob from "./components/EditJob.jsx";
 import EditJobList from "./components/EditJobList.jsx";
 import ResetPassword from "./components/ResetPassword.jsx";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+import { inject } from "@vercel/analytics";
+
+injectSpeedInsights();
+inject();
 
 const router = createBrowserRouter([
   {

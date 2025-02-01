@@ -1,4 +1,5 @@
-export const API_URL = "https://sportsgamex.com";
+export const API_URL = "https://apinew.sportsgamex.com";
+// export const API_URL = "https://sportsgamex.com";
 // export const API_URL = "http://localhost:7000";
 export const toast_styles = {
   border: "1px solid white",

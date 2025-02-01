@@ -54,7 +54,12 @@ const InvestWithEase = () => {
               </div>
               <Row>
                 <Col xs={24} className="mb-7 flex items-center">
-                  <Avatar size={56} shape="circle" src={avatarOne} />
+                  <Avatar
+                    size={56}
+                    shape="circle"
+                    src={avatarOne}
+                    alt="Avatar"
+                  />
                   <p className="ml-4 font-body text-base font-bold text-black md:text-xl">
                     Lebron james
                   </p>
@@ -110,11 +115,17 @@ const InvestWithEase = () => {
                   className="flex items-center justify-between border"
                 >
                   <div className="relative flex items-center">
-                    <Avatar size={42} shape="circle" src={avatarTwo} />
+                    <Avatar
+                      size={42}
+                      shape="circle"
+                      src={avatarTwo}
+                      alt="Avatar-2"
+                    />
                     <Avatar
                       size={18}
                       shape="circle"
                       src={BallOne}
+                      alt="Avatar-3"
                       className="absolute bottom-0 left-6 border-2 border-white"
                     />
                     <div className="ml-4">
@@ -130,12 +141,13 @@ const InvestWithEase = () => {
                     <img
                       src={graphImg}
                       className="mr:0 h-9 w-24 object-cover md:mr-8"
+                      alt="Graph"
                     />
                     <div>
                       <p className="text-base font-normal text-black">$750</p>
                       <p
                         className="text-sm font-normal"
-                        style={{ color: "rgba(6, 164, 91, 1)" }}
+                        style={{ color: "#06A45B" }}
                       >
                         5.21%
                       </p>
@@ -207,7 +219,12 @@ const InvestWithEase = () => {
               <Col xs={24} xl={24} className="flex items-start justify-between">
                 <div className="flex w-full justify-center">
                   <div className="w-1/6 md:w-1/5 xl:w-1/6">
-                    <Avatar size={42} shape="circle" src={avatarOne} />
+                    <Avatar
+                      size={42}
+                      shape="circle"
+                      src={avatarOne}
+                      alt="Avatar"
+                    />
                   </div>
                   <div className="w-5/6 md:w-4/5 xl:w-5/6">
                     <div className="flex w-full items-start justify-between md:items-center">

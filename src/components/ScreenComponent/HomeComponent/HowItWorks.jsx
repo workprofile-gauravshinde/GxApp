@@ -45,11 +45,14 @@ const HowItWorks = () => {
             </PrimaryButton>
           </div>
           <div className="flex justify-center">
-            <picture>
+            {/* <div className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"> */}
+            <picture className="relative">
               <source
                 srcSet={worksBottomWebp}
                 type="image/webp"
-                className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
+                width={"425"}
+                height={"240"}
+                // className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
                 alt={
                   homeData.SectionSixHeadOneText +
                   " " +
@@ -63,7 +66,9 @@ const HowItWorks = () => {
               />
               <img
                 src={worksBottom}
-                className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
+                // className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"
+                width={"425"}
+                height={"240"}
                 alt={
                   homeData.SectionSixHeadOneText +
                   " " +
@@ -76,6 +81,7 @@ const HowItWorks = () => {
                 }
               />
             </picture>
+            {/* </div> */}
           </div>
         </Col>
       </Col>

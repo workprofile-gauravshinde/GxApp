@@ -62,10 +62,11 @@ const JobCard = ({ jobData }) => {
             </div>
           </div>
 
-          <div className="w-full space-y-5 px-[14px] text-sm  md:w-4/5 md:pb-5 md:text-lg">
-            <div className="whitespace-pre-line font-body font-normal md:text-lg">
+          <div className="w-full space-y-5 px-[14px] text-sm md:w-4/5 md:pb-5 md:text-lg">
+            {/* <div className="whitespace-pre-line font-body font-normal md:text-lg">
               {jobDescription}
-            </div>
+            </div> */}
+            <p className="whitespace-pre-line font-normal">{jobDescription}</p>
 
             <p className="font-bold">
               Minimum years of Exp:{" "}
@@ -85,11 +86,21 @@ const JobCard = ({ jobData }) => {
           <div className="h-px w-full rounded-sm bg-[#C7C7D7]"></div>
           <div className="flex gap-3 px-[14px] text-sm md:gap-8 md:pt-4 md:text-base">
             <div className="flex items-center gap-1.5 md:gap-1 ">
-              <img src={locationLightIcon} alt="Worldwide icon" />
+              <img
+                src={locationLightIcon}
+                alt="Worldwide icon"
+                width={"16"}
+                height={"16"}
+              />
               <p>{location}</p>
             </div>
             <div className="flex items-center gap-1.5 md:gap-1">
-              <img src={timeLightIcon} alt="Time icon" />
+              <img
+                src={timeLightIcon}
+                alt="Time icon"
+                width={"16"}
+                height={"16"}
+              />
               <p>{dayjs(createdAt).fromNow()}</p>
             </div>
           </div>
