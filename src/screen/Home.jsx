@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <TopMainHome onAboutClick={handleClick} />
       {/* <div ref={aboutRef}> */}
-      <AboutUsHome />
+      <AboutUsHome aboutRef={aboutRef} />
       {/* </div> */}
       <WhySportsGameX />
       <OurMissionVision />
