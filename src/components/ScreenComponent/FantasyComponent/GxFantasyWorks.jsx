@@ -44,7 +44,7 @@ const GxFantasyWorks = () => {
             </p>
           </Flex>
         </Col>
-        <Row className="w-full px-32 py-32 items-center">
+        <Row className="w-full px-0 md:px-32 py-0 md:py-32 items-center">
           <Col xs={24} xl={10} className="w-full">
             <div className="h-auto w-full">
               {GX_FANTASY_WORKS?.length > 0 &&
@@ -64,7 +64,7 @@ const GxFantasyWorks = () => {
             </div>
           </Col>
           <Col xs={24} xl={2} className="hidden w-full md:block"></Col>
-          <Col xs={24} xl={12} className="w-full border shadow-md bg-mainBackgroundTwo py-16 px-24">
+          <Col xs={24} xl={12} className="w-full border-none md:border shadow-md bg-mainBackgroundTwo py-0 md:py-16 px-0 md:px-24">
             <div className="min-h-28 w-full">
               <Flex className="mb:0 mt-8 items-center justify-start gap-3" wrap>
                 <img
@@ -73,12 +73,12 @@ const GxFantasyWorks = () => {
                   alt={"Basketball icon"}
                   title={"Basketball icon"}
                 />
-                <p className="font-secondFont text-base font-bold text-white ">
+                <p className="font-secondFont text-sm md:text-base font-bold text-white ">
                   5:00 PM ET (ATL vs BKN)
                 </p>
               </Flex>
               <Flex className="items-end justify-between">
-                <div className="w-[85%]">
+                <div className="w-[75%] md:w-[85%]">
                   <Avatar.Group
                     className="w-full"
                     size="large"
@@ -87,10 +87,10 @@ const GxFantasyWorks = () => {
                       style: { color: "#FFFFFF", backgroundColor: "#8A66C5" },
                     }}
                   >
-                    <Avatar src={avatarOne} />
-                    <Avatar src={avatarTwo} />
-                    <Avatar src={avatarOne} />
-                    <Avatar src={avatarTwo} />
+                    <Avatar src={avatarOne} alt={"icon1"} title={"icon1"} />
+                    <Avatar src={avatarTwo} alt={"icon2"} title={"icon2"} />
+                    <Avatar src={avatarOne} alt={"icon3"} title={"icon3"} />
+                    <Avatar src={avatarTwo} alt={"icon4"} title={"icon4"} />
                     <Tooltip title="Ant User" placement="top">
                       <Avatar
                         style={{ backgroundColor: "#8A66C5" }}
@@ -102,12 +102,12 @@ const GxFantasyWorks = () => {
                       icon={<AntDesignOutlined />}
                     />
                   </Avatar.Group>
-                  <p className="mt-3 font-secondFont text-sm font-normal text-white">
+                  <p className="mt-3 font-secondFont text-xs md:text-sm font-normal text-white">
                     Jalen, Ben, Trae, Clint, and 2 more
                   </p>
                 </div>
-                <div className="w-[15%]">
-                  <p className="text-right font-secondFont text-xl font-semibold text-white">
+                <div className="w-[25%] md:w-[15%]">
+                  <p className="text-right font-secondFont text-base md:text-xl font-semibold text-white">
                     5.1
                   </p>
                   <Tooltip className="text-right" title="240 mins left">
@@ -119,7 +119,7 @@ const GxFantasyWorks = () => {
                       showInfo={false}
                     />
                   </Tooltip>
-                  <p className="mb-6 mt-1 text-right font-spaceGrotesk text-sm font-medium text-white">
+                  <p className="mb-6 mt-1 text-right font-spaceGrotesk text-xs md:text-sm font-medium text-white">
                     240 mins left
                   </p>
                 </div>
@@ -128,7 +128,7 @@ const GxFantasyWorks = () => {
                 className="mt-2 flex h-auto w-full items-center justify-between border-none bg-transparent px-0 py-3 text-white"
                 onClick={() => setActiveIcon(!activeIcon)}
               >
-                <p className="font-secondFont text-base font-medium">
+                <p className="font-secondFont text-sm md:text-base font-medium">
                   Show Contest
                 </p>
                 <span>
@@ -148,11 +148,11 @@ const GxFantasyWorks = () => {
                 </span>
               </button>
               {activeIcon && (
-                <div className="w-full pt-3 text-white ">
-                  <p className="font-dmSans text-xl font-normal">
+                <div className="w-full pt-3 text-white mb-4 md:mb-0">
+                  <p className="font-dmSans text-base md:text-xl font-normal">
                     Full NBA Roster
                   </p>
-                  <Flex className="items-center justify-start font-dmSans text-base font-light mt-3">
+                  <Flex className="items-center justify-start font-dmSans text-sm md:text-base font-light mt-3">
                     <div className="w-[15%]">
                       <p>Entry</p>
                       <p>1</p>
