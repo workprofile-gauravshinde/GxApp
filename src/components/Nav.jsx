@@ -82,6 +82,20 @@ const Nav = () => {
             </li>
             <li>
               <NavLink
+                to="/fantasy"
+                className={`cursor-pointer ${
+                  location.pathname.toString() === "/fantasy"
+                    ? "border-b-2 border-white pb-2 text-white"
+                    : "text-white"
+                }`}
+                aria-label="Fantasy"
+                // activeClassName="active"
+              >
+                Fantasy
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/careers"
                 className={`cursor-pointer ${
                   location.pathname.toString() === "/careers"
@@ -142,6 +156,21 @@ const Nav = () => {
                   GX App
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/fantasy"
+                  className={`w-fit cursor-pointer ${
+                    location.pathname.toString() === "/fantasy"
+                      ? "border-b-2 border-white text-white"
+                      : "text-white"
+                  }`}
+                  aria-label="Fantasy"
+                  // activeClassName="active"
+                  onClick={() => setMenuOpen(false)}
+                >
+                 Fantasy
+                </NavLink>
+              </li>              
               <li>
                 <NavLink
                   to="/careers"

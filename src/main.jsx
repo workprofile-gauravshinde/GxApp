@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./screen/Home.jsx";
 import GxApp from "./screen/GxApp.jsx";
+import Fantasy from "./screen/Fantasy.jsx";
 import Contact from "./screen/Contact.jsx";
 import Careers from "./screen/Careers.jsx";
 import Dashboard from "./Dashboard.jsx";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/gxapp",
         element: <GxApp />,
+      },
+      {
+        path: "/fantasy",
+        element: <Fantasy />,
       },
       {
         path: "/contact",

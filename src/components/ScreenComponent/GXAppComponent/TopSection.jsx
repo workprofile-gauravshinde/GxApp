@@ -1,4 +1,5 @@
 import { Col, Row } from "antd";
+import propTypes from "prop-types";
 import React, { useState } from "react";
 import topLeftImgWebp from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.webp";
 import topLeftMobileImgWebp from "../../../assets/gxAppImg/Mockups/App_mobile.webp";
@@ -11,8 +12,10 @@ import rightAppleStoreImg from "../../../assets/Home/App_store CTA SVG.svg";
 import ScrollMouse from "../../ScrollMouse";
 import { GxAppConst } from "../../../utils/ConstantPageData/GxAppConstantData";
 import PlayAppleStoreModal from "../../PlayAppleStoreModal";
+import { FantasyConst } from "../../../utils/ConstantPageData/FantasyConstantData";
 
-const TopSection = () => {
+const TopSection = (props) => {
+  const {screeName} = props;
   const [showModal, setShowModal] = useState(false);
   const [actionType, setActionType] = useState("play");
 
@@ -44,13 +47,13 @@ const TopSection = () => {
         xl={10}
       >
         <p className="mt-28 font-secondFont text-[64px] font-bold text-white">
-          {GxAppConst.sectionOneHead}
+          {screeName === "FANTASY" ? FantasyConst.sectionOneHead : GxAppConst.sectionOneHead}
         </p>
         <p
           className="mt-3 pr-36 font-body text-xl font-normal"
           style={{ color: "#FDFDFD80" }}
         >
-          {GxAppConst.sectionOneDesc}
+          {screeName === "FANTASY" ? FantasyConst.sectionOneDesc : GxAppConst.sectionOneDesc}
         </p>
         <Row justify={"start"} className="mt-0 md:mt-16">
           {/* <Col
@@ -98,14 +101,12 @@ const TopSection = () => {
             srcSet={topLeftImgWebp}
             type="image/webp"
             className="h-auto w-full"
-            // className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
             alt="GX APP"
             title="GX APP"
           />
           <img
             src={topLeftImg}
             className="h-auto w-full"
-            // className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
             alt="GX APP"
             title="GX APP"
           />
@@ -115,14 +116,12 @@ const TopSection = () => {
             srcSet={topLeftMobileImgWebp}
             type="image/webp"
             className="h-auto w-full"
-            // className="mb-0 block h-[325px] w-5/6 md:hidden"
             alt="GX APP"
             title="GX APP"
           />
           <img
             src={topLeftMobileImg}
             className="h-auto w-full"
-            // className="mb-0 block h-[325px] w-5/6 md:hidden"
             alt="GX APP"
             title="GX APP"
           />
@@ -132,63 +131,16 @@ const TopSection = () => {
             srcSet={topRightImgWebp}
             type="image/webp"
             className="h-auto w-full"
-            // className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
             alt="GX APP"
             title="GX APP"
           />
           <img
             src={topRightImg}
             className="h-auto w-full"
-            // className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
             alt="GX APP"
             title="GX APP"
           />
         </picture>
-        {/* <picture>
-          <source
-            srcSet={topLeftImgWebp}
-            type="image/webp"
-            className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
-            alt="GX APP"
-            title="GX APP"
-          /> 
-        <img
-          src={topLeftImg}
-          className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]"
-          alt="GX APP"
-          title="GX APP"
-        />
-        </picture>
-        <picture>
-          <source
-            srcSet={topLeftMobileImgWebp}
-            type="image/webp"
-            className="mb-0 block h-[325px] w-5/6 md:hidden"
-            alt="GX APP"
-            title="GX APP"
-          />
-        <img
-          src={topLeftMobileImg}
-          className="mb-0 block h-[325px] w-5/6 md:hidden"
-          alt="GX APP"
-          title="GX APP"
-        />
-         </picture>
-        <picture>
-          <source
-            srcSet={topRightImgWebp}
-            type="image/webp"
-            className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
-            alt="GX APP"
-            title="GX APP"
-          />
-        <img
-          src={topRightImg}
-          className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]"
-          alt="GX APP"
-          title="GX APP"
-        />
-        </picture> */}
         <div className="absolute -right-8 bottom-20 hidden md:block">
           <ScrollMouse />
         </div>
@@ -254,6 +206,11 @@ const TopSection = () => {
       )}
     </Row>
   );
+};
+
+TopSection.propTypes = {
+  show: propTypes.bool,
+  onVerify: propTypes.func,
 };
 
 export default TopSection;
