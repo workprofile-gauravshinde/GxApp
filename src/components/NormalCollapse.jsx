@@ -18,7 +18,7 @@ const NormalCollapse = (props) => {
       }}
     >
       <span className="flex items-center justify-between">
-        <p className="font-body text-base font-semibold md:text-4xl text-white">
+        <p className="font-body text-base font-semibold md:text-2xl text-white">
           Step {count}: {headerText}
         </p>
       </span>
@@ -49,7 +49,7 @@ const NormalCollapse = (props) => {
     >
       <Panel header={customHeader(activeIcon)}>
         <p
-          className="font-body text-base md:text-xl font-normal"
+          className="font-body text-base md:text-lg font-normal"
           style={{ color: "#FFFFFF92" }}
         >
           {content}

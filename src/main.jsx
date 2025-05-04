@@ -18,6 +18,7 @@ import EditJobList from "./components/EditJobList.jsx";
 import ResetPassword from "./components/ResetPassword.jsx";
 import { injectSpeedInsights } from "@vercel/speed-insights";
 import { inject } from "@vercel/analytics";
+import StrikeOptions from "./screen/StrikeOptions.jsx";
 
 injectSpeedInsights();
 inject();
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/fantasy",
         element: <Fantasy />,
+      },
+      {
+        path: "/strike_options",
+        element: <StrikeOptions />,
       },
       {
         path: "/contact",

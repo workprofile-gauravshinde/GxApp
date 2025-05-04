@@ -9,7 +9,7 @@ import analyticsSports from "../../assets/icons/SportsAllocation.svg";
 import analyticsShare from "../../assets/icons/ShareAnalysisIcon.svg";
 
 const GxAppConst = {
-  sectionOneHead: "GX App",
+  sectionOneHead: "Trading",
   sectionOneDesc:
     "GX is a real-time sports trading app that allows users to buy and sell shares in athletes ",
   sectionOnePlayStore: "",

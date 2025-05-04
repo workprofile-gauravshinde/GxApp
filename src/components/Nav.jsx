@@ -74,10 +74,10 @@ const Nav = () => {
                     ? "border-b-2 border-white pb-2 text-white"
                     : "text-white"
                 }`}
-                aria-label="Gx App"
+                aria-label="Trading"
                 // activeClassName="active"
               >
-                GX App
+                Trading
               </NavLink>
             </li>
             <li>
@@ -92,6 +92,20 @@ const Nav = () => {
                 // activeClassName="active"
               >
                 Fantasy
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/strike_options"
+                className={`cursor-pointer ${
+                  location.pathname.toString() === "/strike_options"
+                    ? "border-b-2 border-white pb-2 text-white"
+                    : "text-white"
+                }`}
+                aria-label="Strike & Options"
+                // activeClassName="active"
+              >
+                Strike & Options
               </NavLink>
             </li>
             <li>
@@ -149,11 +163,11 @@ const Nav = () => {
                       ? "border-b-2 border-white text-white"
                       : "text-white"
                   }`}
-                  aria-label="Gx App"
+                  aria-label="Trading"
                   // activeClassName="active"
                   onClick={() => setMenuOpen(false)}
                 >
-                  GX App
+                  Trading
                 </NavLink>
               </li>
               <li>
@@ -170,7 +184,22 @@ const Nav = () => {
                 >
                  Fantasy
                 </NavLink>
-              </li>              
+              </li>  
+              <li>
+                <NavLink
+                  to="/strike_options"
+                  className={`w-fit cursor-pointer ${
+                    location.pathname.toString() === "/strike_options"
+                      ? "border-b-2 border-white text-white"
+                      : "text-white"
+                  }`}
+                  aria-label="Strike & Options"
+                  // activeClassName="active"
+                  onClick={() => setMenuOpen(false)}
+                >
+                 Strike & Options
+                </NavLink>
+              </li>                      
               <li>
                 <NavLink
                   to="/careers"
