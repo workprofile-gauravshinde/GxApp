@@ -15,6 +15,7 @@ const ImageLeftRightText = (props) => {
     dataArr,
     headerText,
     paragraph,
+    extraCss,
   } = props;
   return (
     <React.Fragment>
@@ -23,7 +24,7 @@ const ImageLeftRightText = (props) => {
           justify={"center"}
           className={`h-auto w-screen items-center justify-center pb-2 ${
             mobileTopPadding === 1 && "pb-0 pt-20"
-          }`}
+          } ${extraCss}`}
         >
           <Col
             xs={24}
@@ -220,6 +221,7 @@ ImageLeftRightText.propTypes = {
   dataArr: PropTypes.array,
   headerText: PropTypes.string,
   paragraph: PropTypes.string,
+  extraCss: PropTypes.string || PropTypes.object,
 };
 
 export default ImageLeftRightText;

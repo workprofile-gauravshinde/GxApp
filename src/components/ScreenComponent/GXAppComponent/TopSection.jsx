@@ -1,21 +1,22 @@
 import { Col, Row } from "antd";
 import propTypes from "prop-types";
 import React, { useState } from "react";
-import topLeftImgWebp from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.webp";
-import topLeftMobileImgWebp from "../../../assets/gxAppImg/Mockups/App_mobile.webp";
-import topRightImgWebp from "../../../assets/gxAppImg/Mockups/GX_APP_HOME LIGHT.webp";
-import topLeftImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME DARK.png";
-import topLeftMobileImg from "../../../assets/gxAppImg/Mockups/App_mobile.png";
-import topRightImg from "../../../assets/gxAppImg/Mockups/GX_APP_HOME LIGHT.png";
 import leftPlayStoreImg from "../../../assets/Home/Play_store CTA SVG.svg";
 import rightAppleStoreImg from "../../../assets/Home/App_store CTA SVG.svg";
 import ScrollMouse from "../../ScrollMouse";
-import { GxAppConst } from "../../../utils/ConstantPageData/GxAppConstantData";
 import PlayAppleStoreModal from "../../PlayAppleStoreModal";
-import { FantasyConst } from "../../../utils/ConstantPageData/FantasyConstantData";
 
 const TopSection = (props) => {
-  const {screeName} = props;
+  const {
+    mainHead,
+    mainSubDesc,
+    topLeftImgWebp,
+    topLeftImg,
+    topLeftMobileImgWebp,
+    topLeftMobileImg,
+    topRightImgWebp,
+    topRightImg,actionBy
+  } = props;
   const [showModal, setShowModal] = useState(false);
   const [actionType, setActionType] = useState("play");
 
@@ -47,13 +48,13 @@ const TopSection = (props) => {
         xl={10}
       >
         <p className="mt-28 font-secondFont text-[64px] font-bold text-white">
-          {screeName === "FANTASY" ? FantasyConst.sectionOneHead : GxAppConst.sectionOneHead}
+          {mainHead}
         </p>
         <p
           className="mt-3 pr-36 font-body text-xl font-normal"
           style={{ color: "#FDFDFD80" }}
         >
-          {screeName === "FANTASY" ? FantasyConst.sectionOneDesc : GxAppConst.sectionOneDesc}
+          {mainSubDesc}
         </p>
         <Row justify={"start"} className="mt-0 md:mt-16">
           {/* <Col
@@ -111,7 +112,7 @@ const TopSection = (props) => {
             title="GX APP"
           />
         </picture>
-        <picture className="mb-0 block h-[325px] w-5/6 md:hidden">
+        <picture className={`mb-0 block ${actionBy === "STRIKE_OPTIONS" ? "h-[475px]" : "h-[325px]"}  w-5/6 md:hidden`}>
           <source
             srcSet={topLeftMobileImgWebp}
             type="image/webp"
@@ -151,13 +152,13 @@ const TopSection = (props) => {
         md={10}
       >
         <p className="mb-6 mt-10 font-secondFont text-3xl font-bold text-white md:mb-0 md:text-[64px]">
-          {GxAppConst.sectionOneHead}
+          {mainHead}
         </p>
         <p
           className="mb-6 px-8 font-body text-base font-normal md:text-xl"
           style={{ color: "#FDFDFD80" }}
         >
-          {GxAppConst.sectionOneDesc}
+          {mainSubDesc}
         </p>
         <Row justify={"start"} className="mb-14">
           <Col
@@ -211,6 +212,8 @@ const TopSection = (props) => {
 TopSection.propTypes = {
   show: propTypes.bool,
   onVerify: propTypes.func,
+  mainHead: propTypes.string,
+  mainSubDesc: propTypes.string,
 };
 
 export default TopSection;

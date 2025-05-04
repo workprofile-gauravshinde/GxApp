@@ -1,12 +1,12 @@
 import playerStats from "../../assets/icons/PerformanceStatsIcon.svg";
 import playerInfo from "../../assets/icons/PlayerInfoIcon.svg";
-import playerBookmark from "../../assets/icons/BookmarkIcon.svg";
-import transactionStats from "../../assets/icons/TransactionIcon.svg";
+import playerBookmark from "../../assets/Fantasy/assign_roles.svg";
+import editPlayer from "../../assets/Fantasy/edit.svg";
+import transactionStats from "../../assets/Fantasy/select.svg";
 import transactionFilter from "../../assets/icons/FilterIcon.svg";
 import transactionOrder from "../../assets/icons/OrderIcon.svg";
-import analyticsOverView from "../../assets/icons/InvestmentIcon.svg";
-import analyticsSports from "../../assets/icons/SportsAllocation.svg";
-import analyticsShare from "../../assets/icons/ShareAnalysisIcon.svg";
+import analyticsOverView from "../../assets/Fantasy/prize.svg";
+import analyticsSports from "../../assets/Fantasy/easy_claim_process.svg";
 
 const FantasyConst = {
     sectionOneHead: "Fantasy",
@@ -26,20 +26,19 @@ const FantasyConst = {
     {
       key: "1",
       label: "Personalization",
-      children:
-        "The player's current stock price, accompanied by a graphical representation of its performance over time, allows you make informed trading decisions.",
-      icon: playerStats,
+      children: "Get a personalized lineup automatically generated from your existing portfolio, optimized for the best performance.",
+      icon: playerInfo,
     },
     {
       key: "2",
       label: "Edit Easily",
-      children: "A brief player bio helps you get to know the player better.",
-      icon: playerInfo,
+      children: "Swap any player with one from your portfolio or the market to create your perfect lineup.",
+      icon: editPlayer,
     },
     {
       key: "3",
       label: "Assign Roles",
-      children: "Ability to bookmark favorite players for quick and easy access",
+      children: "Boost your score by assigning key roles with special multipliers to your top players.",
       icon: playerBookmark,
     },
   ];
@@ -48,22 +47,19 @@ const FantasyConst = {
     {
       key: "1",
       label: "Select Players Easily",
-      children:
-        "Instantly check the status of your orders to see if they’re pending, completed, or cancelled",
+      children: "Select players you already own or discover new talent from the player market",
       icon: transactionStats,
     },
     {
       key: "2",
       label: "Pick From Both Teams",
-      children:
-        "Filter transactions by status, order type, or sports category to focus on the exact data you need.",
+      children: "Select players from either participating team for maximum flexibility.",
       icon: transactionFilter,
     },
     {
       key: "3",
       label: "View Key Stats",
-      children:
-        "Get a clear view of all your transactions in one place, helping you make informed decisions",
+      children: "Easily view player positions, key stats, and season match history",
       icon: transactionOrder,
     },
   ];
@@ -72,23 +68,20 @@ const FantasyConst = {
     {
       key: "1",
       label: "Win Exciting Prizes",
-      children:
-        "Keep track of your total invested amount and current investment value",
+      children: "Earn amazing rewards like MacBooks, iPhones, or cash prizes.",
       icon: analyticsOverView,
     },
     {
       key: "2",
       label: "Easy Claim Process",
-      children:
-        "See exactly what percentage of your investments is dedicated to each sport",
+      children: "Claim your rewards effortlessly with a simple and straightforward process.",
       icon: analyticsSports,
     },
     {
       key: "3",
       label: "Prize Filter",
-      children:
-        "View the total shares held in each category and identify opportunities to diversify",
-      icon: analyticsShare,
+      children: "Your rewards, your way. Select any prize to discover all the contests where you can win it.",
+      icon: transactionFilter,
     },
   ];
 
@@ -96,19 +89,19 @@ const FantasyConst = {
     {
       key: "1",
       label: "Portfolio Check",
-      children: "Begin by checking your current portfolio to see if you already own the required number of playersfrom the participating teams. GX also offers a recommended lineup based on your holdings forseamless contest entry.",
+      children: "Begin by checking your current portfolio to see if you already own the required number of players from the participating teams. GX also offers a recommended lineup based on your holdings for seamless contest entry.",
       icon: playerStats,
     },
     {
       key: "2",
       label: "Player Acquisition",
-      children: "A brief player bio helps you get to know the player better.",
+      children: "Missing a few players? Head to the GX Market to invest in them. Once acquired, these players become a permanent part of your portfolio and can be traded anytime.",
       icon: playerInfo,
     },
     {
       key: "3",
       label: "Compete & Win",
-      children: "Ability to bookmark favorite players for quick and easy access",
+      children: "Join the fantasy match with your finalized lineup and compete for exciting rewards. Win or lose, the players you’ve added remain in your portfolio—ready for future contests or trades.",
       icon: playerBookmark,
     },
   ];
