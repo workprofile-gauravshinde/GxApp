@@ -208,7 +208,7 @@ const GxFantasyWorks = () => {
                 </p>
               </Flex>
               <Flex className="items-end justify-between">
-                <div className="w-[75%] md:w-[85%] mt-3">
+                <div className="w-[75%] md:w-[85%] mt-5">
                   <img  src={CricketPlayer}
                       alt={"Player"}
                       title={"Player"}
