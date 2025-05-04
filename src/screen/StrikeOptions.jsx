@@ -18,6 +18,7 @@ import topRightImgWebp from "../assets/strikeOptions/strike_options_landing.webp
 import topLeftImg from "../assets/strikeOptions/strike_options_home.png";
 import topLeftMobileImg from "../assets/strikeOptions/strike_options_landing.png";
 import topRightImg from "../assets/strikeOptions/strike_options_landing.png";
+//
 
 const StrikeOptions = () => {
   useEffect(() => {
