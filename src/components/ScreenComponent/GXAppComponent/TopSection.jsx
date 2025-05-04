@@ -15,7 +15,7 @@ const TopSection = (props) => {
     topLeftMobileImgWebp,
     topLeftMobileImg,
     topRightImgWebp,
-    topRightImg,actionBy
+    topRightImg
   } = props;
   const [showModal, setShowModal] = useState(false);
   const [actionType, setActionType] = useState("play");
@@ -112,7 +112,7 @@ const TopSection = (props) => {
             title="GX APP"
           />
         </picture>
-        <picture className={`mb-0 block ${actionBy === "STRIKE_OPTIONS" ? "h-[475px]" : "h-[325px]"}  w-5/6 md:hidden`}>
+        <picture className={`mb-0 block "h-[325px] w-5/6 md:hidden`}>
           <source
             srcSet={topLeftMobileImgWebp}
             type="image/webp"

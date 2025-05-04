@@ -16,10 +16,10 @@ import TransactionRightImg from "../assets/Fantasy/Mockups/SelectScreen.png";
 import AnalyticsLeftImg from "../assets/Fantasy/Mockups/Rewards.png";
 import GxFantasyWorks from "../components/ScreenComponent/FantasyComponent/GxFantasyWorks";
 import topLeftImgWebp from "../assets/Fantasy/Mockups/HomeFantasy.webp";
-import topLeftMobileImgWebp from "../assets/gxAppImg/Mockups/App_mobile.webp";
+import topLeftMobileImgWebp from "../assets/Fantasy/Mockups/FantasyMobile.webp";
 import topRightImgWebp from "../assets/Fantasy/Mockups/HomeFantasyLight.webp";
 import topLeftImg from "../assets/Fantasy/Mockups/HomeFantasy.png";
-import topLeftMobileImg from "../assets/gxAppImg/Mockups/App_mobile.png";
+import topLeftMobileImg from "../assets/Fantasy/Mockups/FantasyMobile.png";
 import topRightImg from "../assets/Fantasy/Mockups/HomeFantasyLight.png";
 
 const Fantasy = () => {

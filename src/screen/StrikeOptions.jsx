@@ -13,12 +13,11 @@ import TransactionRightImgWebp from "../assets/strikeOptions/strike_options_land
 import PlayerLeftImg from "../assets/strikeOptions/strike_options_home.png";
 import TransactionRightImg from "../assets/strikeOptions/strike_options_landing_full.png";
 import topLeftImgWebp from "../assets/strikeOptions/strike_options_home.webp";
-import topLeftMobileImgWebp from "../assets/strikeOptions/strike_options_landing.webp";
+import topLeftMobileImgWebp from "../assets/strikeOptions/StrikeOptionsMobile.webp";
 import topRightImgWebp from "../assets/strikeOptions/strike_options_landing.webp";
 import topLeftImg from "../assets/strikeOptions/strike_options_home.png";
-import topLeftMobileImg from "../assets/strikeOptions/strike_options_landing.png";
+import topLeftMobileImg from "../assets/strikeOptions/StrikeOptionsMobile.png";
 import topRightImg from "../assets/strikeOptions/strike_options_landing.png";
-//
 
 const StrikeOptions = () => {
   useEffect(() => {
@@ -36,7 +35,6 @@ const StrikeOptions = () => {
         topLeftMobileImg={topLeftMobileImg}
         topRightImgWebp={topRightImgWebp}
         topRightImg={topRightImg}
-        actionBy={"STRIKE_OPTIONS"}
       />
       <ImageLeftRightText
         mobileTopPadding={1}

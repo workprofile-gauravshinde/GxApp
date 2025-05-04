@@ -21,6 +21,7 @@ import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 import smallProgresBar from "../../../assets/Fantasy/progressBarTop.png";
 import bigProgresBar from "../../../assets/Fantasy/progressBarBottom.png";
+import CricketPlayer from "../../../assets/Fantasy/circlePlayer.png";
 
 const GxFantasyWorks = () => {
   const navigate = useNavigate();
@@ -67,7 +68,11 @@ const GxFantasyWorks = () => {
                 </Flex>
                 <Flex className="items-end justify-between">
                   <div className="w-[75%] md:w-[85%]">
-                    <Avatar.Group
+                  <img  src={CricketPlayer}
+                      alt={"Player"}
+                      title={"Player"}
+                      className="h-10 w-[65%]"/>
+                    {/* <Avatar.Group
                       className="w-full"
                       size="large"
                       max={{
@@ -89,7 +94,7 @@ const GxFantasyWorks = () => {
                         style={{ backgroundColor: "#8A66C5" }}
                         icon={<AntDesignOutlined />}
                       />
-                    </Avatar.Group>
+                    </Avatar.Group> */}
                     <p className="mt-3 font-secondFont text-xs font-normal text-white md:text-sm">
                       Jalen, Ben, Trae, Clint, and 2 more
                     </p>
@@ -153,7 +158,7 @@ const GxFantasyWorks = () => {
                         <p>Macbook Pro</p>
                       </div>
                     </Flex>
-                    <div className="relative w-full pt-12">
+                    <div className="relative w-full pt-8">
                       <img
                         src={bigProgresBar}
                         alt={"Progress"}
@@ -203,8 +208,12 @@ const GxFantasyWorks = () => {
                 </p>
               </Flex>
               <Flex className="items-end justify-between">
-                <div className="w-[75%] md:w-[85%]">
-                  <Avatar.Group
+                <div className="w-[75%] md:w-[85%] mt-3">
+                  <img  src={CricketPlayer}
+                      alt={"Player"}
+                      title={"Player"}
+                      className="h-12 w-[40%]"/>
+                  {/* <Avatar.Group
                     className="w-full"
                     size="large"
                     max={{
@@ -226,7 +235,7 @@ const GxFantasyWorks = () => {
                       style={{ backgroundColor: "#8A66C5" }}
                       icon={<AntDesignOutlined />}
                     />
-                  </Avatar.Group>
+                  </Avatar.Group> */}
                   <p className="mt-3 font-secondFont text-xs font-normal text-white md:text-sm">
                     Jalen, Ben, Trae, Clint, and 2 more
                   </p>
@@ -299,7 +308,7 @@ const GxFantasyWorks = () => {
                       <p>Macbook Pro</p>
                     </div>
                   </Flex>
-                  <div className="relative w-full pt-12">
+                  <div className="relative w-full pt-8">
                     {/* <FlagOutlined style={{fontSize: 30, position: 'absolute', left: 55, top: 25 }}/>
                     <Tooltip className="text-right"title="flag 30.2">
                       <Progress
