@@ -1,11 +1,12 @@
-import { Col, Row, Flex } from "antd";
+import { Col, Row, Flex, Button, Image } from "antd";
 import React from "react";
 import ShadowButtonComp from "../../ShadowButtonComp";
 import worksBottomWebp from "../../../assets/Home/Splash_mockup.webp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
-import { homeData } from "../../../utils/ConstantPageData/Home";
+import { homeData, howItWorks } from "../../../utils/ConstantPageData/Home";
 import PrimaryButton from "../../PrimaryButton";
 import { useNavigate } from "react-router-dom";
+import { RightOutlined } from "@ant-design/icons";
 
 const HowItWorks = () => {
   const navigate = useNavigate();
@@ -26,24 +27,45 @@ const HowItWorks = () => {
               {homeData.SectionSixHeadTwoText}
             </p>
           </Flex>
-          <p
+          {/* <p
             className="text-basel mb-10 px-8 font-body font-normal md:px-0 md:text-xl"
             style={{ color: "#FDFDFDCC" }}
           >
             {homeData.SectionSixDesc}
-          </p>
-          <div className="mb-16 flex justify-center md:mb-20">
-            {/* <ShadowButtonComp
-              btnTitle={homeData.SectionSixBtnText}
-              extraCss={"z-10"}
-              borderColor={"#000000"}
-              backgroundColor={"#ffffff"}
-              onClickBtn={() => {}}
-            /> */}
-            <PrimaryButton onClick={() => navigate("/gxapp")}>
-              {homeData.SectionSixBtnText}
-            </PrimaryButton>
-          </div>
+          </p> */}
+        </Col>
+      </Col>
+      <Col xs={24} xl={24} id={"gxApp-faq"}>
+        <Row className="mx-auto h-auto w-full justify-center gap-12 mt-24 mb-36">
+          {howItWorks.map((item, index) => {
+            return (
+              <Col
+                xs={24}
+                sm={24}
+                md={6}
+                className="text-center text-white"
+                key={item?.id + index}
+              >
+                <div className="gxApp-card-box-opacity h-auto w-full">
+                  <Image
+                    src={item?.icon}
+                    alt={item?.title}
+                    title={item?.title}
+                    className="h-12 w-12 rounded-full shadow-md"
+                  />
+                  <h5 className="text-lg font-body font-bold my-4 capitalize">{item?.title}</h5>
+                  <p className="text-sm font-body font-normal w-2/3 mx-auto">{item?.desc}</p>
+                  <Button className="!border-none !bg-transparent !text-sm !font-normal text-white !font-body mt-6 underline" onClick={() => navigate(`/${item?.route}`)}>
+                    Learn more <RightOutlined style={{fontSize: 10}}/>
+                  </Button>
+                </div>
+              </Col>
+            );
+          })}
+        </Row>
+      </Col>
+      <Col xs={24} xl={9} id={"gxApp-faq"}>
+        <Col xs={24} xl={24} className="text-center">
           <div className="flex justify-center">
             {/* <div className="h-[225px] w-[225px] md:h-[365px] md:w-[425px]"> */}
             <picture>
