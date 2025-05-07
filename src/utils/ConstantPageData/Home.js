@@ -121,21 +121,21 @@ const homeWhySportsGameXArr = [
 const howItWorks = [
   {
     id: 1,
-    icon: howItWorksIcon,
+    icon: howItWorksIconTwo,
     title: "Trading",
     desc: "GX lets fans trade athlete shares, turning sports knowledge into investment opportunities.",
     route: "gxapp"
   },
   {
     id: 2,
-    icon: howItWorksIconTwo,
+    icon: howItWorksIcon,
     title: "Fantasy",
     desc: "In fantasy, you can create your lineup using players from your portfolio and compete to win exciting prizes.",
     route: "fantasy"
   },
   {
     id: 3,
-    icon: howItWorksIcon,
+    icon: howItWorksIconTwo,
     title: "Strike & Options",
     desc: "Predict athlete performance, trade options, and turn your sports knowledge into profit.",
     route: "strike_options"
