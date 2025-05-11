@@ -14,7 +14,7 @@ const Faqs = () => {
           <p className="text-3xl font-bold text-white md:text-5xl">
             {GxAppConst.sectionSixHead}
           </p>
-          <p className="text-3xl font-bold text-lightPurple md:text-5xl">
+          <p className="text-3xl font-bold text-white md:text-5xl">
             {GxAppConst.sectionSixHeadTwo}
           </p>
         </Col>

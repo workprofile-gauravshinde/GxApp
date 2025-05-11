@@ -13,9 +13,10 @@ const WhySportsGameX = () => {
       <Row justify={"center"} type="flex" className="px-5">
         <Col xs={24} xl={16}>
           <p className="mb-10 flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
-            {homeData?.SectionThreeHeadOneText}
+            {/* {homeData?.SectionThreeHeadOneText} */}
             <span className="text-3xl font-bold text-white md:text-5xl">
-              &nbsp;{homeData?.SectionThreeHeadTwoText}
+              {/* &nbsp; */}
+              {homeData?.SectionThreeHeadOneText + " " + homeData?.SectionThreeHeadTwoText}
             </span>
           </p>
           <p

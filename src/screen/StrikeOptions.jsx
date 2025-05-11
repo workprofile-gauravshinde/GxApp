@@ -8,9 +8,9 @@ import {
 
 /* ALL IMAGES */
 import ImageLeftRightText from "../components/ScreenComponent/GXAppComponent/ImageLeftRightText";
-import PlayerLeftImgWebp from "../assets/strikeOptions/strike_options_home.png";
+import PlayerLeftImgWebp from "../assets/strikeOptions/strike_options_player_profile.webp";
 import TransactionRightImgWebp from "../assets/strikeOptions/strike_options_landing_full.webp";
-import PlayerLeftImg from "../assets/strikeOptions/strike_options_home.png";
+import PlayerLeftImg from "../assets/strikeOptions/strike_options_player_profile.png";
 import TransactionRightImg from "../assets/strikeOptions/strike_options_landing_full.png";
 import topLeftImgWebp from "../assets/strikeOptions/strike_options_home.webp";
 import topLeftMobileImgWebp from "../assets/strikeOptions/StrikeOptionsMobile.webp";

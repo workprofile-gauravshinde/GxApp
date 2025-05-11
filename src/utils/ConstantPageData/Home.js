@@ -3,24 +3,22 @@ import SportsGamesXTwo from "../../assets/Home/idea_icon.svg";
 import SportsGamesXThree from "../../assets/Home/strategy_icon.svg";
 import howItWorksIcon from "../../assets/icons/Icon_Fantasy.svg";
 import howItWorksIconTwo from "../../assets/icons/Icon_Trading.svg";
+import howItWorksIconThree from "../../assets/icons/Icon_StrikeOption.svg";
 
 const homeData = {
-  SectionOneHead: "SportsGameX",
-  SectionOneDesc: "SportsGameX INC is redefining how fans engage with sports. By merging the excitement of trading with the passion for sports, we allow fans to invest in their favorite athletes and share their success.",
-  SectionOneDescTwo: "Our platform connects sports enthusiasts with the financial world, enabling direct investment in athletes alongside engaging fantasy leagues and the dynamic strategies of strike and options trading.",
+  SectionOneHead: "Sports GameX INC",
+  SectionOneDesc: "Sports GameX Inc, headquartered in Philadelphia, PA, proudly presents the GX App – a groundbreaking sports platform where fans don't just watch the game, they invest and trade in it.",
+  SectionOneDescTwo: "GX App offers a powerful blend of real-time trading, fantasy contests, and strike/options feature. It’s where sports passion meets market strategy — all in one seamless app.",
   SectionOneBtnText: "About Us",
   SectionTwoHeadOneText: "About",
   SectionTwoHeadTwoText: "Us",
-  SectionTwoDesc:
-    "SportsGameX is more than just a platform—it’s a movement to reshape how fans interact with sports. For decades, sports fandom has been about passion, support, and loyalty. But what if it could also be about growth, empowerment, and financial opportunities?",
+  SectionTwoDesc: "GX App is more than just a platform—it’s a movement to reshape how fans interact with sports. For decades, sports fandom has been about passion, support, and loyalty. But what if it could also be about growth, empowerment, and financial opportunities?",
   SectionThreeHeadOneText: "Why",
-  SectionThreeHeadTwoText: "SportsGameX?",
-  SectionThreeDesc:
-    "At SportsGameX Inc, we are not just reimagining the sports industry—we’re creating an entirely new way for fans to be part of the action.",
+  SectionThreeHeadTwoText: "GX App?",
+  SectionThreeDesc: "At GX, we are not just reimagining the sports industry—we’re creating an entirely new way for fans to be part of the action.",
   SectionFourHeadOneText: "Our",
   SectionFourHeadTwoText: "Mission",
-  SectionFourDesc:
-    "Our mission is to create a bridge between the world of sports and the fast-paced environment of modern trading. We aim to offer sports fans an unparalleled opportunity to:",
+  SectionFourDesc: "Our mission is to empower sports fans, both seasoned and newcomers, with a cutting-edge Sports Trading App that transforms their interaction with sports into a thoughtful and skill-based activity.",
   SectionFiveHeadOneText: "Innovating",
   SectionFiveHeadTwoText: "Sports",
   SectionFiveHeadThreeText: "Investments",
@@ -59,8 +57,8 @@ const SectionFourHeadArr = [
   {
     id: 3,
     num: "03.",
-    title: "Encourage Strategic Thinking",
-    description: "Provide tools and insights that help users build critical thinking and strategic skills as they analyze performance, market trends, and portfolio dynamics.",
+    title: "Fostering Responsible Engagement",
+    description: "Promoting a culture of smart, responsible trading for both seasoned traders and newcomers.",
   },
 ];
 
@@ -102,13 +100,13 @@ const homeWhySportsGameXArr = [
     id: 0,
     imgSrc: SportsGamesXOne,
     title: "Turn Your Passion into Profits",
-    desc: "Sports are more than entertainment; they’re an opportunity. With GX, your passion for the game translates into a potential for financial growth.",
+    desc: "Sports are more than entertainment; they’re an opportunity. With GX App, your passion for the  game translates into a potential for financial growth.",
   },
   {
     id: 1,
     imgSrc: SportsGamesXTwo,
     title: "A First-of-Its-Kind Concept",
-    desc: "SportsGameX bridges the worlds of sports fandom and financial trading, opening up a unique opportunity for fans to actively participate in the success of their favorite players.",
+    desc: "GX App bridges the worlds of sports fandom and financial trading, opening up a unique opportunity for fans to actively participate in the success of their favorite players.",
   },
   {
     id: 2,
@@ -135,7 +133,7 @@ const howItWorks = [
   },
   {
     id: 3,
-    icon: howItWorksIconTwo,
+    icon: howItWorksIconThree,
     title: "Strike & Options",
     desc: "Predict athlete performance, trade options, and turn your sports knowledge into profit.",
     route: "strike_options"

@@ -1,10 +1,8 @@
 import { Col, Row, Flex, Button, Image } from "antd";
 import React from "react";
-import ShadowButtonComp from "../../ShadowButtonComp";
 import worksBottomWebp from "../../../assets/Home/Splash_mockup.webp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
 import { homeData, howItWorks } from "../../../utils/ConstantPageData/Home";
-import PrimaryButton from "../../PrimaryButton";
 import { useNavigate } from "react-router-dom";
 import { RightOutlined } from "@ant-design/icons";
 
@@ -20,11 +18,11 @@ const HowItWorks = () => {
       <Col xs={24} xl={9} id={"gxApp-faq"}>
         <Col xs={24} xl={24} className="text-center">
           <Flex align="center" className="mb-5 justify-center md:mb-10 md:px-0">
-            <p className="text-3xl font-bold text-lightPurple md:text-5xl">
+            {/* <p className="text-3xl font-bold text-lightPurple md:text-5xl">
               {homeData.SectionSixHeadOneText}&nbsp;
-            </p>
+            </p> */}
             <p className="text-3xl font-bold text-white md:text-5xl">
-              {homeData.SectionSixHeadTwoText}
+              {homeData.SectionSixHeadOneText + " " + homeData.SectionSixHeadTwoText}
             </p>
           </Flex>
           {/* <p

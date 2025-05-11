@@ -20,11 +20,11 @@ const InnovatingSports = () => {
         className="justify-center pr-0 md:justify-start md:pr-10 xl:pr-20"
       >
         <p className="text-center font-body text-3xl font-bold leading-9 text-white md:text-left md:text-[38px] md:leading-[48px] xl:text-[48px] xl:leading-[58px]">
-          {homeData?.SectionFiveHeadOneText}{" "}
+          {/* {homeData?.SectionFiveHeadOneText}{" "}
           <span className="bg-blurColor px-1">
             {homeData?.SectionFiveHeadTwoText}
-          </span>{" "}
-          {homeData?.SectionFiveHeadThreeText}
+          </span>{" "} */}
+          {homeData?.SectionFiveHeadOneText + " " + homeData?.SectionFiveHeadTwoText + " " + homeData?.SectionFiveHeadThreeText}
         </p>
         <p className="mt-6 text-center font-body font-normal text-white md:text-left md:text-xl">
           {homeData?.SectionFiveDesc}
