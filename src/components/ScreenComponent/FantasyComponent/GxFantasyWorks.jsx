@@ -212,7 +212,7 @@ const GxFantasyWorks = () => {
                   <img  src={CricketPlayer}
                       alt={"Player"}
                       title={"Player"}
-                      className="h-12 w-[40%]"/>
+                      className="h-12 w-[40%] object-contain"/>
                   {/* <Avatar.Group
                     className="w-full"
                     size="large"
