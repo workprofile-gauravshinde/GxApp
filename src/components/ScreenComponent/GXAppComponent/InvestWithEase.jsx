@@ -1,7 +1,8 @@
 import React from "react";
 import { Avatar, Col, Row, Tag, Flex, Button } from "antd";
-import avatarOne from "../../../assets/avatarOne.png";
-import avatarTwo from "../../../assets/avatarTwo.jpeg";
+import avatarOne from "../../../assets/gxAppImg/JoshAllen.png";
+import avatarTwo from "../../../assets/gxAppImg/stephenCurry.jpg";
+import avatarThree from "../../../assets/gxAppImg/ViratKohli.png";
 import BallOne from "../../../assets/gxAppImg/Basketball icon.svg";
 import BallTwo from "../../../assets/gxAppImg/Soccer icon.svg";
 import BallThree from "../../../assets/gxAppImg/Baseball_icon.svg";
@@ -24,9 +25,10 @@ const InvestWithEase = () => {
       >
         <Col xs={24} xl={16}>
           <p className="flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
-            {GxAppConst.sectionFiveHead}
+            {/* {GxAppConst.sectionFiveHead} */}
             <span className="text-3xl font-bold text-white md:text-5xl">
-              &nbsp;{GxAppConst.sectionFiveHeadTwo}
+              {/* &nbsp; */}
+              {GxAppConst.sectionFiveHead + " " + GxAppConst.sectionFiveHeadTwo}
             </span>
           </p>
           <p
@@ -53,15 +55,22 @@ const InvestWithEase = () => {
                 ></div>
               </div>
               <Row>
-                <Col xs={24} className="mb-7 flex items-center">
+                <Col xs={24} className="mb-7 flex items-center relative">
                   <Avatar
                     size={56}
                     shape="circle"
                     src={avatarOne}
                     alt="Avatar"
                   />
+                  <Avatar
+                      size={19}
+                      shape="circle"
+                      src={BallFive}
+                      alt="Avatar-3"
+                      className="absolute bottom-0 left-8 border-2 border-white"
+                    />
                   <p className="ml-4 font-body text-base font-bold text-black md:text-xl">
-                    Lebron james
+                    Josh Allen
                   </p>
                 </Col>
               </Row>
@@ -82,7 +91,7 @@ const InvestWithEase = () => {
                     Price
                   </p>
                   <p className="font-body text-xs font-semibold text-black md:text-base">
-                    $100
+                    $24
                   </p>
                 </Col>
                 <Col xs={24} className="flex items-center justify-between">
@@ -90,7 +99,7 @@ const InvestWithEase = () => {
                     Total
                   </p>
                   <p className="font-body text-xs font-semibold text-black md:text-base">
-                    $100
+                    $24
                   </p>
                 </Col>
               </Row>
@@ -130,10 +139,10 @@ const InvestWithEase = () => {
                     />
                     <div className="ml-4">
                       <p className="font-body text-xs font-semibold text-black md:text-sm">
-                        Jayson Tatum
+                        Stephen Curry
                       </p>
                       <p className="font-body text-[10px] font-normal text-black md:text-xs">
-                        25 Stocks
+                        27 Stocks
                       </p>
                     </div>
                   </div>
@@ -144,7 +153,7 @@ const InvestWithEase = () => {
                       alt="Graph"
                     />
                     <div>
-                      <p className="text-base font-normal text-black">$750</p>
+                      <p className="text-base font-normal text-black">$21</p>
                       <p
                         className="text-sm font-normal"
                         style={{ color: "#06A45B" }}
@@ -218,19 +227,26 @@ const InvestWithEase = () => {
             <Row className="p-4 md:p-7">
               <Col xs={24} xl={24} className="flex items-start justify-between">
                 <div className="flex w-full justify-center">
-                  <div className="w-1/6 md:w-1/5 xl:w-1/6">
+                  <div className="w-1/6 md:w-1/5 xl:w-1/6 relative">
                     <Avatar
                       size={42}
                       shape="circle"
-                      src={avatarOne}
+                      src={avatarThree}
                       alt="Avatar"
+                    />
+                    <Avatar
+                      size={16}
+                      shape="circle"
+                      src={BallFour}
+                      alt="Avatar-3"
+                      className="absolute top-7 left-7"
                     />
                   </div>
                   <div className="w-5/6 md:w-4/5 xl:w-5/6">
                     <div className="flex w-full items-start justify-between md:items-center">
                       <div>
                         <p className="font-body text-sm font-semibold text-white">
-                          Lebron James
+                          Virat Kohli
                         </p>
                         <Flex className="my-3" gap="4px 0" wrap>
                           <Button
@@ -246,16 +262,16 @@ const InvestWithEase = () => {
                             type="primary"
                             className="mt-0 h-6 rounded-3xl font-body text-[10px] font-semibold text-black md:mt-2 xl:mt-0"
                             style={{
-                              backgroundColor: "#FFCC00",
+                              backgroundColor: "#23C38E",
                             }}
                           >
-                            Pending
+                            Completed
                           </Button>
                         </Flex>
                       </div>
                       <div>
                         <p className="text-base font-normal text-[#E55541]">
-                          -$100
+                          - ₹24,572
                         </p>
                       </div>
                     </div>
@@ -265,7 +281,7 @@ const InvestWithEase = () => {
                           Avg Price
                         </p>
                         <p className="mt-2 font-body text-xs font-normal text-white">
-                          $100
+                          ₹2349
                         </p>
                       </div>
                       <div className="mx-4 h-9 border-l-[1px] md:mx-6"></div>
@@ -274,7 +290,7 @@ const InvestWithEase = () => {
                           Filled Quantity
                         </p>
                         <p className="mt-1 font-body text-xs font-normal text-white">
-                          0
+                          10
                         </p>
                       </div>
                     </div>

@@ -14,7 +14,7 @@ const FantasyConst = {
     sectionOnePlayStore: "",
     sectionOneAppleStore: "",
     sectionTwoHead: "Recommended Lineups",
-    sectionTwoDesc: "GX auto-builds your contest lineup using players from your portfolio—quick, smart, and hassle-free.",
+    sectionTwoDesc: "GX App auto-builds your contest lineup using players from your portfolio—quick, smart, and hassle-free.",
     sectionThreeHead: "Select Players",
     sectionThreeDesc: "Build your lineup by selecting players from your portfolio or the market.",
     sectionFourHead: "Rewards",

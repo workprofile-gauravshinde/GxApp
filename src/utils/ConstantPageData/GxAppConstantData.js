@@ -25,8 +25,7 @@ const GxAppConst = {
     "Unlock the power of your portfolio with our comprehensive analytics dashboard.",
   sectionFiveHead: "Invest",
   sectionFiveHeadTwo: "with Ease",
-  sectionFiveDesc:
-    "At SportsGameX, we believe that investing in player stocks should be as easy as cheering for your favorite team. That's why we've designed our platform to offer a seamless and hassle-free trading experience.",
+  sectionFiveDesc: "At Sports GameX INC, we believe that investing in player stocks should be as easy as cheering for your favorite team. That's why we've designed our platform to offer a seamless and hassle-free trading experience.",
   sectionSixHead: "Got questions?",
   sectionSixHeadTwo: "We've got answers",
 };
@@ -34,43 +33,78 @@ const GxAppConst = {
 const GX_FAQS = [
   {
     key: "1",
-    label: "Is my personal and financial information secure on Sports GameX?",
-    children:
-      "Yes, Sports GameX uses encryption technology to ensure the security and privacy of your personal and financial information.",
+    label: "What is the GX App?",
+    children: "GX is a sports stock trading app where users can buy and sell virtual shares of athletes across six major sports. You can use your owned or market-bought players to participate in free fantasy contests, turning your portfolio into your game roster. GX also offers Strike and Options trading, letting you predict future athlete stock prices and profit from performance — combining fantasy sports with real financial strategy.",
   },
   {
     key: "2",
-    label: "How can I track the status of my orders?",
-    children: `You can easily track your orders on the "Transaction Screen" in the app. This screen shows the status of each transaction (Pending, Completed, or Cancelled), and you can apply filters to sort by factors like order status, type, and sport.`,
+    label: "What sports are available on GX, and what future sports will be included?",
+    children: `GX currently features Football, Basketball, Baseball, Hockey, Soccer, and Cricket, all available for athlete stock trading, fantasy contests, and Strike/Options trading. Users can predict price movements, compete using their portfolios, and trade based on real-world performance. Upcoming sports include Tennis, Golf, Mixed Martial Arts (MMA), and Esports.`,
   },
   {
     key: "3",
-    label: "How do I start investing in player stocks?",
-    children: `To start investing, create an account, complete the verification steps, and add funds. Once you're set-up, navigate to the "Explore" tab where you can view available player stocks and make your first purchase.`,
+    label: "How do I buy and sell athlete stocks on GX?",
+    children: `Simply search for a player, view their stock profile, and place a buy or sell order at the current market or limit price. You can also track performance charts and recent activity before making a trade.`,
   },
   {
     key: "4",
-    label: "Can I sell my player stocks at any time?",
-    children:
-      "Yes, you can sell your player stocks anytime through the app. Go to your portfolio, select the stock you wish to sell, and proceed with the sale.",
+    label: "How are player prices determined?",
+    children: "Player prices on GX are driven by real-world performance, user demand, and market activity — just like a stock market. At IPO, players are priced based on their category (A to F), sport, and regional popularity.",
   },
   {
     key: "5",
-    label: "Are there any restrictions on trading hours?",
-    children:
-      "GX allows trading 24/7, providing flexibility for users in different time zones. Users can engage in sports trading at any time, even outside traditional sports event hours.",
+    label: "What is the Strike/Options feature?",
+    children: "The Strike/Options feature lets you predict whether an athlete's stock price will go up or down within a set time period. If your prediction is right, you earn a payout based on your accuracy and stake — similar to short-term options trading.",
   },
   {
     key: "6",
-    label: "Can I trade stocks during live sports events?",
-    children:
-      "Yes, GX allows users to trade stocks in real-time, even during live sports events. This feature adds excitement and the opportunity to react to unfolding game situations.",
+    label: "Can I use the same players for both trading and fantasy?",
+    children: "Absolutely. Once you own a player’s stock, you can hold it for long-term value or use it to compete in fantasy contests at no extra cost.",
   },
   {
     key: "7",
-    label: "What sports can I trade on GX?",
-    children:
-      "The available sports include Basketball, Soccer, Baseball, Cricket, Hockey, and Football. You can purchase player stocks from any of these sports.",
+    label: "How is GX Fantasy different from other fantasy sports platforms?",
+    children: "GX Fantasy is built around your athlete stock portfolio. Instead of redrafting teams weekly, you use players you own or buy from the market. Most contests are free if you own the required stocks, creating a seamless and strategic experience.",
+  },
+  {
+    key: "8",
+    label: "What happens if I sell a player who is in an active fantasy contest?",
+    children: "If you sell a player during an active contest, you won’t receive any fantasy points from them. To earn points, you must hold the player’s stock until the game ends.",
+  },
+  {
+    key: "9",
+    label: "How is fantasy scoring calculated on GX?",
+    children: "Fantasy points are based on live game stats like goals, assists, touchdowns, wickets, etc., and vary by sport. Each contest shows its scoring breakdown before you join.  Is real money involved in GX trading and contests?  Yes. You use real money to buy athlete stocks and enter premium contests. Funds are securely handled through verified payment gateways.",
+  },
+  {
+    key: "10",
+    label: "Can I withdraw my earnings? If yes, how?",
+    children: "Yes. You can withdraw profits from trades or fantasy winnings through your linked bank account or payment method after standard verification.",
+  },
+  {
+    key: "11",
+    label: "Are there any fees or charges for trading or entering contests?",
+    children: "GX charges small transaction fees on trades and entry fees for premium contests. Most contests are free if you own the required player stock.",
+  },
+  {
+    key: "12",
+    label: "How does GX ensure fair play and prevent manipulation?",
+    children: "GX uses trusted sports data providers, monitors activity for suspicious behavior, and enforces strict contest rules to ensure fairness for all users.",
+  },
+  {
+    key: "13",
+    label: "Is my data and payment information safe on GX?",
+    children: "Yes. GX uses advanced encryption, secure payment processors, and follows global data protection practices to safeguard your information.",
+  },
+  {
+    key: "14",
+    label: "Is the GX App legal in the USA?",
+    children: "Yes. GX operates within the legal frameworks of most U.S. states by offering skill-based contests. Fantasy sports are considered legal under the UIGEA, but laws vary by state — please check your local regulations.",
+  },
+  {
+    key: "15",
+    label: "Is the GX App legal in India?",
+    children: "GX is designed as a skill-based platform in line with Indian laws that permit games of skill. However, state regulations vary, and some regions may restrict such platforms. Users are advised to review local laws before participating.",
   },
 ];
 

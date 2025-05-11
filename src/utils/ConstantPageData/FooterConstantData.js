@@ -6,10 +6,10 @@ const footerConst = {
   appleAppLink: "https://www.apple.com/in/app-store",
   playStoreLink: "https://play.google.com/store/games?hl=en",
   organizationAddress:
-    "104 S 20th Street,Philadelphia,Pennsylvania,USA - 19103",
+    "104 S 20th Street, Suite C, Philadelphia, PA 19103",
   organizationNumber: "+1 (215) 874-3883",
   organizationEmail: "info@sportsgamex.com",
-  copyRights: `GX. All rights reserved.`,
+  copyRights: `SportsGameX INC. All rights reserved.`,
 };
 
 export { footerConst };

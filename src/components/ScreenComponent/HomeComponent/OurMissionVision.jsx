@@ -9,15 +9,9 @@ import {
 import MissionImgOne from "../../../assets/Home/Our_mission_image_1.png";
 import MissionImgTwo from "../../../assets/Home/Our_mission_image_2.png";
 import MissionImgThree from "../../../assets/Home/Our_mission_image_3.png";
-import MissionImgFour from "../../../assets/Home/Our_mission_image_4.png";
-import MissionImgFive from "../../../assets/Home/Our_mission_image_5.png";
-import MissionImgSix from "../../../assets/Home/Our_mission_image_6.png";
 import MissionImgOneWebp from "../../../assets/Home/Our_mission_image_1.webp";
 import MissionImgTwoWebp from "../../../assets/Home/Our_mission_image_2.webp";
 import MissionImgThreeWebp from "../../../assets/Home/Our_mission_image_3.webp";
-import MissionImgFourWebp from "../../../assets/Home/Our_mission_image_4.webp";
-import MissionImgFiveWebp from "../../../assets/Home/Our_mission_image_5.webp";
-import MissionImgSixWebp from "../../../assets/Home/Our_mission_image_6.webp";
 
 import ArrowDownImg from "../../../assets/Home/Arrow-down.svg";
 
@@ -32,9 +26,10 @@ const OurMissionVision = () => {
           <Row justify={"center"} type="flex" className="px-0 md:px-5">
             <Col xs={24} md={16}>
               <p className="mb-10 flex items-center justify-center text-3xl font-bold text-lightPurple md:text-5xl">
-                {homeData?.SectionFourHeadOneText}
+                {/* {homeData?.SectionFourHeadOneText} */}
                 <span className="text-3xl font-bold text-white md:text-5xl">
-                  &nbsp;{homeData?.SectionFourHeadTwoText}
+                  {/* &nbsp; */}
+                  {homeData?.SectionFourHeadOneText + " " + homeData?.SectionFourHeadTwoText}
                 </span>
               </p>
               <p
@@ -49,19 +44,22 @@ const OurMissionVision = () => {
       </Row>
       <Row className="bg-mainBackgroundTwo px-4 md:px-8 xl:px-16">
         <Col xs={24} md={11} className="block md:hidden">
-          <Row gutter={16}>
-            <Col xs={12} md={12}>
+          <Row 
+          // gutter={16}
+          >
+            <Col xs={24} md={24}>
               <picture>
                 <source
                   srcSet={
                     currentActiveTab === 1
                       ? MissionImgOneWebp
                       : currentActiveTab === 2
-                      ? MissionImgThreeWebp
-                      : MissionImgFiveWebp
+                      ? MissionImgTwoWebp
+                      : MissionImgThreeWebp
                   }
                   type="image/webp"
-                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  className="mt-4 h-[235px] w-full md:h-[525px]"
+                  // md:w-[333px]
                   alt={
                     currentActiveTab === 1
                       ? "Redefine Sports Engagement"
@@ -82,10 +80,11 @@ const OurMissionVision = () => {
                     currentActiveTab === 1
                       ? MissionImgOne
                       : currentActiveTab === 2
-                      ? MissionImgThree
-                      : MissionImgFive
+                      ? MissionImgTwo
+                      : MissionImgThree
                   }
-                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  className="mt-4 h-[235px] w-full md:h-[525px]"
+                  // md:w-[333px]
                   alt={
                     currentActiveTab === 1
                       ? "Redefine Sports Engagement"
@@ -103,7 +102,7 @@ const OurMissionVision = () => {
                 />
               </picture>
             </Col>
-            <Col xs={12} md={12}>
+            {/* <Col xs={12} md={12}>
               <picture>
                 <source
                   srcSet={
@@ -155,7 +154,7 @@ const OurMissionVision = () => {
                   }
                 />
               </picture>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
         <Col
@@ -178,19 +177,21 @@ const OurMissionVision = () => {
           </div>
         </Col>
         <Col xs={24} md={11} offset={1} className="hidden md:block">
-          <Row justify={"end"} gutter={16}>
-            <Col xs={12} md={12}>
+          <Row justify={"end"}>
+             {/* gutter={16} */}
+            <Col xs={24} md={23}>
               <picture>
                 <source
                   srcSet={
                     currentActiveTab === 1
                       ? MissionImgOneWebp
                       : currentActiveTab === 2
-                      ? MissionImgThreeWebp
-                      : MissionImgFiveWebp
+                      ? MissionImgTwoWebp
+                      : MissionImgThreeWebp
                   }
                   type="image/webp"
-                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  className="mt-4 h-[235px] !w-full md:h-[535px]"
+                  // md:w-[333px]
                   alt={
                     currentActiveTab === 1
                       ? "Redefine Sports Engagement"
@@ -211,10 +212,11 @@ const OurMissionVision = () => {
                     currentActiveTab === 1
                       ? MissionImgOne
                       : currentActiveTab === 2
-                      ? MissionImgThree
-                      : MissionImgFive
+                      ? MissionImgTwo
+                      : MissionImgThree
                   }
-                  className="mt-4 h-[235px] w-full md:h-[525px] md:w-[333px]"
+                  className="mt-4 h-[235px] w-full md:h-[550px]"
+                  // md:w-[333px]
                   alt={
                     currentActiveTab === 1
                       ? "Redefine Sports Engagement"
@@ -232,7 +234,7 @@ const OurMissionVision = () => {
                 />
               </picture>
             </Col>
-            <Col xs={12} md={12}>
+            {/* <Col xs={12} md={12}>
               <picture>
                 <source
                   srcSet={
@@ -284,7 +286,7 @@ const OurMissionVision = () => {
                   }
                 />
               </picture>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
       </Row>
