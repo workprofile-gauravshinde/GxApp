@@ -14,6 +14,8 @@ import {
   GxAppConst,
   InvestWithEaseObj,
 } from "../../../utils/ConstantPageData/GxAppConstantData";
+import { CaretUpOutlined } from "@ant-design/icons";
+
 
 const InvestWithEase = () => {
   return (
@@ -158,7 +160,7 @@ const InvestWithEase = () => {
                         className="text-sm font-normal"
                         style={{ color: "#06A45B" }}
                       >
-                        5.21%
+                        5.21% <CaretUpOutlined style={{color: "#06A45B"}}/>
                       </p>
                     </div>
                   </div>
@@ -184,16 +186,16 @@ const InvestWithEase = () => {
               wrap
             >
               <img
+                src={BallFive}
+                className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-9 xl:w-9"
+                alt={"American football icon"}
+                title={"American Football icon"}
+              />
+              <img
                 src={BallOne}
                 className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-9 xl:w-9"
                 alt={"Basketball icon"}
                 title={"Basketball icon"}
-              />
-              <img
-                src={BallTwo}
-                className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-8 xl:w-9"
-                alt={"Soccer icon"}
-                title={"Soccer icon"}
               />
               <img
                 src={BallThree}
@@ -206,13 +208,13 @@ const InvestWithEase = () => {
                 className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-9 xl:w-9"
                 alt={"Cricket icon"}
                 title={"Cricket icon"}
-              />
+              />  
               <img
-                src={BallFive}
-                className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-9 xl:w-9"
-                alt={"American football icon"}
-                title={"American Football icon"}
-              />
+                src={BallTwo}
+                className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-8 xl:w-9"
+                alt={"Soccer icon"}
+                title={"Soccer icon"}
+              />                   
               <img
                 src={BallSix}
                 className="h-8 w-8 rounded md:h-8 md:w-8 xl:h-9 xl:w-9"
