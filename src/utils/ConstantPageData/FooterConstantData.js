@@ -8,7 +8,7 @@ const footerConst = {
   organizationAddress:
     "104 S 20th Street, Suite C, Philadelphia, PA 19103",
   organizationNumber: "+1 (215) 874-3883",
-  organizationEmail: "info@sportsgamex.com",
+  organizationEmail: "media@sportsgamex.com",
   copyRights: `SportsGameX INC. All rights reserved.`,
 };
 

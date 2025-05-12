@@ -74,35 +74,40 @@ const GX_FAQS = [
   {
     key: "9",
     label: "How is fantasy scoring calculated on GX?",
-    children: "Fantasy points are based on live game stats like goals, assists, touchdowns, wickets, etc., and vary by sport. Each contest shows its scoring breakdown before you join.  Is real money involved in GX trading and contests?  Yes. You use real money to buy athlete stocks and enter premium contests. Funds are securely handled through verified payment gateways.",
+    children: "Fantasy points are based on live game stats like goals, assists, touchdowns, wickets, etc., and vary by sport. Each contest shows its scoring breakdown before you join.Is real money involved in GX trading and contests? Yes. You use real money to buy athlete stocks and enter premium contests. Funds are securely handled through verified payment gateways.",
   },
   {
     key: "10",
+    label: "Is real money involved in GX trading and contests?",
+    children: "Yes. You use real money to buy athlete stocks and enter premium contests. Funds are securely handled through verified payment gateways.",
+  }, 
+  {
+    key: "11",
     label: "Can I withdraw my earnings? If yes, how?",
     children: "Yes. You can withdraw profits from trades or fantasy winnings through your linked bank account or payment method after standard verification.",
   },
   {
-    key: "11",
+    key: "12",
     label: "Are there any fees or charges for trading or entering contests?",
     children: "GX charges small transaction fees on trades and entry fees for premium contests. Most contests are free if you own the required player stock.",
   },
   {
-    key: "12",
+    key: "13",
     label: "How does GX ensure fair play and prevent manipulation?",
     children: "GX uses trusted sports data providers, monitors activity for suspicious behavior, and enforces strict contest rules to ensure fairness for all users.",
   },
   {
-    key: "13",
+    key: "14",
     label: "Is my data and payment information safe on GX?",
     children: "Yes. GX uses advanced encryption, secure payment processors, and follows global data protection practices to safeguard your information.",
   },
   {
-    key: "14",
+    key: "15",
     label: "Is the GX App legal in the USA?",
     children: "Yes. GX operates within the legal frameworks of most U.S. states by offering skill-based contests. Fantasy sports are considered legal under the UIGEA, but laws vary by state — please check your local regulations.",
   },
   {
-    key: "15",
+    key: "16",
     label: "Is the GX App legal in India?",
     children: "GX is designed as a skill-based platform in line with Indian laws that permit games of skill. However, state regulations vary, and some regions may restrict such platforms. Users are advised to review local laws before participating.",
   },
