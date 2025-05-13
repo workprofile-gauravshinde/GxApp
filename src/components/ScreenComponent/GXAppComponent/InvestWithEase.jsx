@@ -34,14 +34,14 @@ const InvestWithEase = () => {
             </span>
           </p>
           <p
-            className="my-8 text-center font-body text-base font-normal md:text-xl"
+            className="mt-8 mb-0 md:my-8 text-center font-body text-base font-normal md:text-xl"
             style={{ color: "rgba(253, 253, 253, 0.8)" }}
           >
             {GxAppConst.sectionFiveDesc}
           </p>
         </Col>
       </Row>
-      <Row justify={"center"} type="flex" className="px-5 md:px-0 xl:px-5">
+      <Row justify={"center"} type="flex" className="px-5 md:px-0 xl:px-5 pb-14 md:pb-28">
         <Col xs={24} md={7} xl={7} className="m-2">
           <div className="gxApp-card-box w-full">
             <div className="relative w-full rounded-2xl bg-cardBackgroundTwo p-5">

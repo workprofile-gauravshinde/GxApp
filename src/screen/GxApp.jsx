@@ -73,7 +73,7 @@ const GxApp = () => {
         paragraph={GxAppConst.sectionFourDesc}
       />
       <InvestWithEase />
-      <Faqs />
+      {/* <Faqs /> */}
     </div>
   );
 };
