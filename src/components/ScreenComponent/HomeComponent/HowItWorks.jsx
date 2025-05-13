@@ -11,7 +11,7 @@ const HowItWorks = () => {
   return (
     <Row
       justify={"center"}
-      className="relative bg-mainBackgroundTwo px-5 pt-16 md:pt-28 xl:pt-[150px]"
+      className="relative bg-mainBackground px-5 pt-16 md:pt-28 xl:pt-[150px]"
     >
       <div className="home-spread-background-purple"></div>
       <div className="gxApp-spread-background-lightWhite hidden md:block"></div>
