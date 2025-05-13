@@ -34,7 +34,7 @@ const HowItWorks = () => {
         </Col>
       </Col>
       <Col xs={24} xl={24} id={"gxApp-faq"}>
-        <Row className="mx-auto h-auto w-full justify-center gap-12 mt-24 mb-36">
+        <Row className="mx-auto h-auto w-full justify-center gap-12 mt-10 md:mt-24 mb-36">
           {howItWorks.map((item, index) => {
             return (
               <Col
