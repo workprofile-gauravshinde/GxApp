@@ -52,7 +52,7 @@ const HowItWorks = () => {
                     className="h-12 w-12 rounded-full shadow-md"
                   />
                   <h5 className="text-lg font-body font-bold my-4 capitalize">{item?.title}</h5>
-                  <p className="text-sm font-body font-normal w-2/3 mx-auto">{item?.desc}</p>
+                  <p className="text-sm font-body font-normal w-2/3 mx-auto how-it-works-desc">{item?.desc}</p>
                   <Button className="!border-none !bg-transparent !text-sm !font-normal text-white !font-body mt-6 underline" onClick={() => navigate(`/${item?.route}`)}>
                     Learn more <RightOutlined style={{fontSize: 10}}/>
                   </Button>

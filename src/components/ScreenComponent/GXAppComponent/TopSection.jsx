@@ -47,16 +47,16 @@ const TopSection = (props) => {
         md={12}
         xl={10}
       >
-        <p className="mt-28 font-secondFont text-[64px] font-bold text-white">
+        <p className="mt-28 font-secondFont text-[64px] topsection_head font-bold text-white">
           {mainHead}
         </p>
         <p
-          className="mt-3 pr-36 font-body text-xl font-normal"
+          className="mt-3 pr-36 font-body text-xl font-normal topsection_desc"
           style={{ color: "#FDFDFD80" }}
         >
           {mainSubDesc}
         </p>
-        <Row justify={"start"} className="mt-0 md:mt-16">
+        <Row justify={"start"} className="mt-0 md:mt-16 topsection_button_box">
           {/* <Col
             xs={24}
             md={10}
@@ -65,7 +65,7 @@ const TopSection = (props) => {
           <button
             onClick={openModal("play")}
             aria-label="Play Store"
-            className="mr-5 h-[53px] w-[180px]"
+            className="mr-5 h-[53px] w-[180px] topsection_button_width"
           >
             <img
               src={leftPlayStoreImg}
@@ -79,7 +79,7 @@ const TopSection = (props) => {
           <button
             onClick={openModal("apple")}
             aria-label="Apple Store"
-            className="h-[53px] w-[180px]"
+            className="h-[53px] w-[180px] topsection_button_width"
           >
             <img
               src={rightAppleStoreImg}
@@ -97,7 +97,7 @@ const TopSection = (props) => {
         md={12}
         xl={14}
       >
-        <picture className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px]">
+        <picture className="mb-0 hidden h-[354px] w-[333px] md:mb-10 md:block md:h-[430px] xl:h-[675px] topsection_right_imageOne">
           <source
             srcSet={topLeftImgWebp}
             type="image/webp"
@@ -127,7 +127,7 @@ const TopSection = (props) => {
             title="GX APP"
           />
         </picture>
-        <picture className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[500px]">
+        <picture className="ml-0 hidden h-[354px] w-[343px] md:ml-5 md:block md:h-[330px] xl:h-[530px] topsection_right_imageTwo">
           <source
             srcSet={topRightImgWebp}
             type="image/webp"
@@ -142,7 +142,7 @@ const TopSection = (props) => {
             title="GX APP"
           />
         </picture>
-        <div className="absolute -right-8 bottom-20 hidden md:block">
+        <div className="absolute -right-8 bottom-20 hidden md:block topsection-scrollmouse">
           <ScrollMouse />
         </div>
       </Col>

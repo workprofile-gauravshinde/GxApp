@@ -69,3 +69,170 @@ html {
     width: 100%;
   }
 }
+
+/* iPad Pro 12.9" in portrait and landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (orientation: landscape) {
+    /* Your styles here */
+    .home-topmain {
+      font-size: 46px !important;
+    }
+    .topsection_head {
+      font-size: 48px !important;
+    }
+    .topsection-scrollmouse{
+      bottom: 1rem !important;
+      right: -4rem !important;
+    }
+    .ourmission-image-right {
+      height: 350px !important;
+    }
+    .how-it-works-desc {
+      width: 100% !important;
+    }
+    #home_about_slider .slick-slider .custom-prev {
+      left: 40% !important;
+    }
+    #home_about_slider .slick-slider .custom-next {
+      right: 40% !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 820px) 
+  and (max-device-width: 1180px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Your styles for iPad Air here */
+    .home-topmain {
+      font-size: 35px !important;
+    }
+    .topsection_head {
+      margin-top: 40px !important;
+      font-size: 35px !important;
+    }
+    .topsection_desc{
+      padding-right: 10px !important;
+    }
+    .topsection_button_box .topsection_button_width{
+      width: 150px !important;
+    }
+    .topsection_right_imageOne{
+      height: 350px !important;
+    }
+    .topsection_right_imageTwo{
+      height: 250px !important;
+    }
+    .topsection-scrollmouse{
+      bottom: 1rem !important;
+      right: -4rem !important;
+    }
+    .ourmission-image-right {
+      height: 350px !important;
+    }
+    .how-it-works-desc {
+      width: 100% !important;
+    }
+    #home_about_slider .slick-slider .custom-prev {
+      left: 40% !important;
+    }
+    #home_about_slider .slick-slider .custom-next {
+      right: 40% !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 744px) 
+  and (max-device-width: 1133px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles for iPad mini 6 */
+.home-topmain {
+      font-size: 35px !important;
+    }
+    .topsection_head {
+      margin-top: 40px !important;
+      font-size: 35px !important;
+    }
+    .topsection_desc{
+      padding-right: 10px !important;
+    }
+    .topsection_button_box .topsection_button_width{
+      width: 150px !important;
+    }
+    .topsection_right_imageOne{
+      height: 350px !important;
+    }
+    .topsection_right_imageTwo{
+      height: 250px !important;
+    }
+    .topsection-scrollmouse{
+      bottom: 1rem !important;
+      right: -4rem !important;
+    }
+    .ourmission-image-right {
+      height: 350px !important;
+    }
+    .how-it-works-desc {
+      width: 100% !important;
+    }
+    #home_about_slider .slick-slider .custom-prev {
+      left: 40% !important;
+    }
+    #home_about_slider .slick-slider .custom-next {
+      right: 40% !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Styles for older iPad mini models */
+    .main-nav-fontsize {
+      font-size: 12px !important;
+    }
+    .home-topmain {
+      font-size: 35px !important;
+    }
+    .topsection_head {
+      margin-top: 40px !important;
+      font-size: 35px !important;
+    }
+    .home-topdesc {
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
+    }
+    .topsection_desc{
+      padding-right: 10px !important;
+    }
+    .topsection_button_box .topsection_button_width{
+      width: 150px !important;
+    }
+    .topsection_right_imageOne{
+      height: 350px !important;
+    }
+    .topsection_right_imageTwo{
+      height: 235px !important;
+    }
+    .topsection-scrollmouse{
+      bottom: 1rem !important;
+      right: -4rem !important;
+    }
+    .ourmission-image-right {
+      height: 350px !important;
+    }
+    .how-it-works-desc {
+      width: 100% !important;
+    }
+    #home_about_slider .slick-slider .custom-prev {
+      left: 40% !important;
+    }
+    #home_about_slider .slick-slider .custom-next {
+      right: 40% !important;
+    }
+}
