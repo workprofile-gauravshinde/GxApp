@@ -5,6 +5,7 @@ import WhySportsGameX from "../components/ScreenComponent/HomeComponent/WhySport
 import OurMissionVision from "../components/ScreenComponent/HomeComponent/OurMissionVision";
 import AboutUsHome from "../components/ScreenComponent/HomeComponent/AboutUsHome";
 import TopMainHome from "../components/ScreenComponent/HomeComponent/TopMainHome";
+import Faqs from "../components/ScreenComponent/GXAppComponent/Faqs";
 
 const Home = () => {
   const aboutRef = useRef(null);
@@ -21,6 +22,7 @@ const Home = () => {
       <WhySportsGameX />
       <OurMissionVision />
       <InnovatingSports />
+      <Faqs />
       <HowItWorks />
     </div>
   );
