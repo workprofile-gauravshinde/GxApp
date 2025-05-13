@@ -49,9 +49,7 @@ const PlayAppleStoreModal = ({ show, onClose, activeType }) => {
             🚀 The wait Is Almost Over!
           </p>
           <p className="text-sm md:text-lg">
-            The GX App is launching soon on the{" "}
-            {activeType === "play" ? "Play" : "App"} Store. We're putting the
-            finishing touches on the ultimate sports trading experience.
+            The GX App is launching soon on the {activeType === "play" ? "Play" : "App"} Store. We’re putting the final touches on an all-new way to trade players, play fantasy, and explore strike and options trading. Stay tuned for the ultimate sports trading experience!
           </p>
         </div>
       </div>
