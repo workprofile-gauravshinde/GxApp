@@ -1,5 +1,5 @@
-import { Col, Row, Flex, Button, Image } from "antd";
 import React from "react";
+import { Col, Row, Flex, Button, Image } from "antd";
 import worksBottomWebp from "../../../assets/Home/Splash_mockup.webp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
 import { homeData, howItWorks } from "../../../utils/ConstantPageData/Home";
@@ -11,7 +11,7 @@ const HowItWorks = () => {
   return (
     <Row
       justify={"center"}
-      className="relative bg-mainBackgroundTwo px-5 pt-16 md:pt-28 xl:pt-[150px]"
+      className="relative bg-mainBackground px-5 pt-16 md:pt-28 xl:pt-[150px]"
     >
       <div className="home-spread-background-purple"></div>
       <div className="gxApp-spread-background-lightWhite hidden md:block"></div>
