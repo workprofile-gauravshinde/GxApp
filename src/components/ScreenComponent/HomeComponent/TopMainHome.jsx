@@ -19,17 +19,17 @@ const TopMainHome = (props) => {
         xs={24}
         md={12}
       >
-        <p className="font-secondFont text-[64px] font-bold text-white">
+        <p className="font-secondFont text-[64px] font-bold text-white home-topmain">
           {homeData?.SectionOneHead}
         </p>
         <p
-          className="mb-5 font-body text-xl font-normal"
+          className="mb-5 font-body text-xl font-normal home-topdesc"
           style={{ color: "#FDFDFD80" }}
         >
           {homeData?.SectionOneDesc}
         </p>
         <p
-          className="font-body text-xl font-normal"
+          className="font-body text-xl font-normal home-topdesc"
           style={{ color: "#FDFDFD80" }}
         >
           {homeData?.SectionOneDescTwo}

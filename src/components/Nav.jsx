@@ -51,7 +51,7 @@ const Nav = () => {
         </div>
         <div className="gap-8 pb-4 font-body font-semibold transition-all md:block md:pb-0">
           {/** nav for desktop */}
-          <ul className="hidden flex-row space-x-8 font-body font-medium text-white md:flex ">
+          <ul className="hidden flex-row space-x-8 font-body font-medium text-white md:flex main-nav-fontsize">
             <li>
               <NavLink
                 to="/"

@@ -9,7 +9,7 @@ const Faqs = () => {
   return (
     <Row justify={"center"} className="relative px-5 py-24">
       <div className="why_sports_gamex_purpal"></div>
-      <Col xs={24} md={15} xl={11} id={"gxApp-faq"}>
+      <Col xs={24} md={22} xl={11} id={"gxApp-faq"}>
         <Col xs={24} xl={24} className="mb-14 text-center">
           <p className="text-3xl font-bold text-white md:text-5xl">
             {GxAppConst.sectionSixHead}

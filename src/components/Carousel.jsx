@@ -37,7 +37,7 @@ const CustomCarousel = () => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" id="home_about_slider">
       <div className="with-blur-backdrop-left -left-[3rem] hidden md:block"></div>
       <div className="with-blur-backdrop-left -right-[3rem] hidden md:block"></div>
       <Slider {...settings}>
