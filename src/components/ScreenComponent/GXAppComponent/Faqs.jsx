@@ -7,10 +7,10 @@ import {
 
 const Faqs = () => {
   return (
-    <Row justify={"center"} className="relative px-5 py-24 bg-mainBackgroundTwo">
+    <Row justify={"center"} className="relative px-5 py-16 md:py-24 bg-mainBackgroundTwo">
       <div className="why_sports_gamex_purpal"></div>
       <Col xs={24} md={22} xl={15} id={"gxApp-faq"}>
-        <Col xs={24} xl={24} className="mb-14 text-center">
+        <Col xs={24} xl={24} className="mb-10 md:mb-14 text-center">
           <p className="text-3xl font-bold text-white md:text-5xl">
             {GxAppConst.sectionSixHead}
           </p>
