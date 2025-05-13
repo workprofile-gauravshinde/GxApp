@@ -190,7 +190,7 @@ const OurMissionVision = () => {
                       : MissionImgThreeWebp
                   }
                   type="image/webp"
-                  className="mt-4 h-[235px] !w-full md:h-[535px] ourmission-image-right"
+                  className="mt-4 h-[235px] !w-full md:h-[535px] ourmission-image-right object-contain"
                   // md:w-[333px]
                   alt={
                     currentActiveTab === 1
@@ -215,7 +215,7 @@ const OurMissionVision = () => {
                       ? MissionImgTwo
                       : MissionImgThree
                   }
-                  className="mt-4 h-[235px] w-full md:h-[550px] ourmission-image-right"
+                  className="mt-4 h-[235px] w-full md:h-[550px] ourmission-image-right object-contain"
                   // md:w-[333px]
                   alt={
                     currentActiveTab === 1
