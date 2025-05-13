@@ -1,5 +1,5 @@
-import { Col, Row, Flex, Button, Image } from "antd";
 import React from "react";
+import { Col, Row, Flex, Button, Image } from "antd";
 import worksBottomWebp from "../../../assets/Home/Splash_mockup.webp";
 import worksBottom from "../../../assets/Home/Splash_mockup.png";
 import { homeData, howItWorks } from "../../../utils/ConstantPageData/Home";
